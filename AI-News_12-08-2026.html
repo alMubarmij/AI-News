@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-News — 12-08-2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f8f9fa; --bg-card: #ffffff; --text: #1a1a2e; --text-secondary: #4a4a6a;
+  --accent: #2563eb; --accent-hover: #1d4ed8; --border: #e2e8f0;
+  --tag-bg: #eef2ff; --tag-text: #4338ca; --sep: #d1d5db;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-hover: 0 10px 25px rgba(0,0,0,0.08);
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --bg-card: #1e293b; --text: #e2e8f0; --text-secondary: #94a3b8;
+  --accent: #60a5fa; --accent-hover: #3b82f6; --border: #334155;
+  --tag-bg: #1d283a; --tag-text: #93c5fd; --sep: #334155;
+  --shadow: 0 1px 3px rgba(0,0,0,0.2); --shadow-hover: 0 10px 25px rgba(0,0,0,0.3);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Tajawal', sans-serif; background: var(--bg); color: var(--text);
+  line-height: 1.8; transition: background 0.3s, color 0.3s; padding: 0;
+}
+.container { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+header { padding: 40px 0 20px; border-bottom: 3px solid var(--accent); margin-bottom: 30px; }
+.header-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+h1 { font-family: 'Cairo', sans-serif; font-weight: 900; font-size: 30px; color: var(--accent); letter-spacing: -0.5px; }
+.date-badge { font-family: 'Tajawal', sans-serif; background: var(--accent); color: #fff; padding: 6px 18px; border-radius: 20px; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.subhead { font-size: 15px; color: var(--text-secondary); margin-top: 8px; }
+.theme-toggle { display: flex; gap: 4px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 30px; padding: 3px; }
+.theme-btn { border: none; background: none; cursor: pointer; font-size: 16px; padding: 5px 12px; border-radius: 20px; color: var(--text-secondary); transition: all 0.2s; font-family: 'Tajawal', sans-serif; font-weight: 500; }
+.theme-btn.active { background: var(--accent); color: #fff; }
+.category { margin-bottom: 40px; }
+.category-title { font-family: 'Cairo', sans-serif; font-weight: 700; font-size: 22px; color: var(--accent); padding-bottom: 8px; border-bottom: 2px solid var(--border); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.news-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; box-shadow: var(--shadow); transition: box-shadow 0.2s, transform 0.2s; }
+.news-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+.news-title { font-family: 'Cairo', sans-serif; font-weight: 700; font-size: 19px; color: var(--text); margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.news-desc { font-family: 'Tajawal', sans-serif; font-size: 16px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 6px; }
+.news-link { display: inline-block; font-family: 'Tajawal', sans-serif; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; border-bottom: 1px dashed var(--accent); transition: all 0.15s; word-break: break-all; }
+.news-link:hover { color: var(--accent-hover); border-bottom-style: solid; }
+.news-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+.tag { font-family: 'Tajawal', sans-serif; font-size: 11px; font-weight: 600; background: var(--tag-bg); color: var(--tag-text); padding: 2px 10px; border-radius: 12px; }
+hr { border: none; border-top: 1px solid var(--sep); margin: 24px 0; }
+footer { text-align: center; padding: 30px 0 40px; border-top: 1px solid var(--border); margin-top: 10px; }
+footer p { font-family: 'Tajawal', sans-serif; font-size: 13px; color: var(--text-secondary); }
+@media (max-width:500px) { h1 { font-size:22px; } .category-title { font-size:18px; } .news-title { font-size:16px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="header-top">
+    <div>
+      <h1>📰 AI-News — النشرة التقنية</h1>
+      <div class="subhead">البرمجة بالذكاء الاصطناعي • Vibe Coding • هندسة السياق • الوكلاء البرمجيون • الأمان</div>
+    </div>
+    <div class="date-badge">🗓 12-08-2026</div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;flex-wrap:wrap;gap:8px">
+    <span style="font-family:'Tajawal';font-size:13px;color:var(--text-secondary)">🕐 07:17 ص — بتوقيت مكة</span>
+    <div class="theme-toggle">
+      <button class="theme-btn active" data-theme="light" onclick="setTheme('light')">☀️ فاتح</button>
+      <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')">🌙 داكن</button>
+    </div>
+  </div>
+</header>
+
+<div class="category">
+  <div class="category-title">🚨 تطورات كبرى</div>
+
+  <div class="news-card">
+    <h2 class="news-title">🎵 Xirp — تطبيق Spotify لتشغيل وكلاء البرمجة</h2>
+    <div class="news-desc">سبوتيفاي تكشف عن Xirp، تطبيق macOS يتيح تشغيل وكلاء برمجة ذكاء اصطناعي وإدارتهم مباشرة من شريط القوائم — انعكاس جديد لاهتمام كبرى الشركات التقنية بالوكلاء (12 أغسطس).</div>
+    <a class="news-link" href="https://xirp.spotify.com/" target="_blank">https://xirp.spotify.com/</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">🤖 ByteDance تطلق Seed-2.0-Code للبرمجة الوكيلية</h2>
+    <div class="news-desc">نموذج جديد من مختبر Seed التابع لـ ByteDance مصمم خصيصاً لمهام البرمجة الوكيلية، متاح عبر OpenRouter — يضيف منافساً قوياً في سباق نماذج الكود (11 أغسطس).</div>
+    <a class="news-link" href="https://openrouter.ai/bytedance-seed/seed-2.0-code" target="_blank">https://openrouter.ai/bytedance-seed/seed-2.0-code</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">🎓 هارفارد تطلق مقرر Vibe Coding</h2>
+    <div class="news-desc">جامعة هارفارد تضيف مقرراً أكاديمياً رسمياً للبرمجة بالذكاء الاصطناعي في فصل خريف 2026 — مؤشر على دخول هذا المجال إلى المناهج الجامعية العريقة (11 أغسطس).</div>
+    <a class="news-link" href="https://my.harvard.edu/course/EDUT564A/2026-Fall/1" target="_blank">https://my.harvard.edu/course/EDUT564A/2026-Fall/1</a>
+  </div>
+</div>
+
+<div class="category">
+  <div class="category-title">📖 مقالات وتحليلات</div>
+
+  <div class="news-card">
+    <h2 class="news-title">⚠️ مشكلة التملّق في البرمجة بالذكاء الاصطناعي</h2>
+    <div class="news-desc">مقال نقدي في Tedium يتناول ظاهرة "تملّق" أدوات البرمجة بالذكاء الاصطناعي: مديحها المستمر للمستخدم يضلل الحكم على جودة الكود ويؤخر اكتشاف الأخطاء (9 أغسطس).</div>
+    <a class="news-link" href="https://tedium.co/2026/08/09/vibe-coding-insincerity/" target="_blank">https://tedium.co/2026/08/09/vibe-coding-insincerity/</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">🛡 Username.md — هوية رقمية موقّعة يملكها الوكلاء</h2>
+    <div class="news-desc">مشروع يمنح الوكلاء صفحة هوية موقّعة رقمياً (signed identity) يتحكم بها صاحبها، لتوثيق من يعمل باسم من — خطوة نحو حل أزمة هوية الوكلاء في بيئات العمل الآلي (11 أغسطس).</div>
+    <a class="news-link" href="https://username.md/" target="_blank">https://username.md/</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">📜 AIUC-1 — معيار جديد لأمن الوكلاء</h2>
+    <div class="news-desc">مبادرة AIUC-1 تطرح معياراً موحداً لأمن وسلامة وموثوقية وكلاء الذكاء الاصطناعي، في محاولة لتنظيم سباق الوكلاء المتسارع وضمان بيئات تشغيل آمنة (10 أغسطس).</div>
+    <a class="news-link" href="https://www.aiuc-1.com/" target="_blank">https://www.aiuc-1.com/</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">🎨 الهندسة البصرية للمطالبات لنماذج الفيديو</h2>
+    <div class="news-desc">ورقة جديدة تعرض منهجية "الهندسة البصرية للمطالبات" (Visual Prompt Engineering) لتوجيه نماذج توليد الفيديو — امتداد لفن كتابة المطالبات من النص إلى الصورة والحركة (5 أغسطس).</div>
+    <a class="news-link" href="https://visual-prompt-engineering.github.io/" target="_blank">https://visual-prompt-engineering.github.io/</a>
+  </div>
+</div>
+
+<div class="category">
+  <div class="category-title">🛠 أدوات جديدة</div>
+
+  <div class="news-card">
+    <h2 class="news-title">📱 Needle2 — نموذج وكيلي بحجم 14MB للأجهزة الطرفية</h2>
+    <div class="news-desc">نموذج وكيلي فائق الصغر (14 ميجابايت) مصمم للهواتف والأجهزة القابلة للارتداء والمنزل الذكي — يجعل الوكلاء المحليين ممكناً دون اتصال بالسحابة (10 أغسطس).</div>
+    <a class="news-link" href="https://cactuscompute.com/needle" target="_blank">https://cactuscompute.com/needle</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">📚 Kernelspace — دورة تفاعلية في أنظمة تشغيل النماذج</h2>
+    <div class="news-desc">دورة تفاعلية في برمجة الأنظمة لخدمة النماذج اللغوية (LLM Serving) — من البنى التحتية إلى تحسين كفاءة الاستدلال وتوفير التوكنات على نطاق واسع (12 أغسطس).</div>
+    <a class="news-link" href="https://kernelspace.naigap.com/" target="_blank">https://kernelspace.naigap.com/</a>
+  </div>
+</div>
+
+<div class="category">
+  <div class="category-title">🎥 مقاطع YouTube</div>
+
+  <div class="news-card">
+    <h2 class="news-title">🎬 IBM: ما هي هندسة السياق ولماذا تهم الوكلاء؟</h2>
+    <div class="news-desc">شرح من IBM Technology لمفهوم هندسة السياق (Context Engineering) ودورها الحاسم في تحسين أداء وكلاء الذكاء الاصطناعي وتقليل استهلاك التوكنات (11 أغسطس).</div>
+    <a class="news-link" href="https://www.youtube.com/watch?v=Qx0fCqpkBus" target="_blank">https://www.youtube.com/watch?v=Qx0fCqpkBus</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">🎬 IBM: 5 ممارسات لبناء مهارات الوكلاء</h2>
+    <div class="news-desc">IBM Technology تستعرض خمس ممارسات أساسية لبناء مهارات وكلاء الذكاء الاصطناعي — من تصميم المطالبات إلى إدارة سياق متعدد الخطوات (10 أغسطس).</div>
+    <a class="news-link" href="https://www.youtube.com/watch?v=qYNs80FKIVc" target="_blank">https://www.youtube.com/watch?v=qYNs80FKIVc</a>
+  </div>
+
+  <div class="news-card">
+    <h2 class="news-title">🔑 مفاتيح API مجانية لنماذج GPT-5.6 وClaude وDeepSeek</h2>
+    <div class="news-desc">فيديو يشرح خطوة بخطوة كيفية الحصول على مفاتيح API مجانية لأحدث النماذج ودمجها في مشاريعك دون بطاقة ائتمان — دليل عملي لمطوري التطبيقات (9 أغسطس).</div>
+    <a class="news-link" href="https://www.youtube.com/watch?v=Q4YvIvpAtNw" target="_blank">https://www.youtube.com/watch?v=Q4YvIvpAtNw</a>
+  </div>
+</div>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <p>📰 AI-News — 12-08-2026 | المصادر: Hacker News • OpenRouter • Harvard • Tedium • IBM Technology • YouTube</p>
+    <p style="margin-top:4px;font-size:12px;">حقوق المحتوى متاحة للجميع</p>
+  </div>
+</footer>
+
+<script>
+function setTheme(t) {
+  document.documentElement.setAttribute('data-theme', t);
+  document.querySelectorAll('.theme-btn').forEach(b => b.classList.toggle('active', b.dataset.theme === t));
+}
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  const sw = `self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).catch(()=>new Response('<!DOCTYPE html><html dir="rtl"><meta charset="UTF-8"><title>خطأ</title><style>body{font-family:Tajawal,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#0f172a;color:#e2e8f0;text-align:center;padding:20px}h1{color:#60a5fa}</style><body><h1>⚠️ تعذّر الاتصال</h1><p>تحقق من اتصالك بالإنترنت</p></body></html>',{headers:{'Content-Type':'text/html;charset=utf-8'}})))}`;
+  navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'application/javascript'}))).catch(()=>{});
+}
+</script>
+</body>
+</html>

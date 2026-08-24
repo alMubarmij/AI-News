@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نشرة البرمجة بالذكاء الاصطناعي — الأرشيف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--txt:#12151c;--mut:#5a6272;--acc:#0e6ba8;--brd:#e3e7ef}
+html[data-theme="dark"]{--bg:#0f1218;--card:#161b23;--txt:#eef1f6;--mut:#a3adbd;--acc:#63b3ed;--brd:#242c38}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:'Tajawal',system-ui,sans-serif;transition:background .25s,color .25s}
+.wrap{max-width:820px;margin:0 auto;padding:20px 16px 60px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+h1{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.7rem;margin:0}
+.sub{color:var(--mut);font-size:1rem;margin-top:6px}
+button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-family:'Cairo';font-size:.95rem;cursor:pointer}
+ul{list-style:none;padding:0;margin:0}
+li{background:var(--card);border:1px solid var(--brd);border-radius:14px;margin-bottom:14px;transition:transform .12s}
+li:hover{transform:translateY(-2px)}
+a.item{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 20px;color:var(--txt);text-decoration:none}
+a.item .t{font-family:'Cairo',sans-serif;font-weight:700;font-size:1.15rem}
+a.item .d{color:var(--mut);font-size:.95rem;white-space:nowrap}
+footer{text-align:center;color:var(--mut);margin-top:30px;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div>
+<h1>📰 نشرة البرمجة بالذكاء الاصطناعي</h1>
+<div class="sub">أرشيف النشرات اليومية — المحتوى من مصادر مفتوحة خلال آخر عشرة أيام</div>
+</div>
+<button id="tg">🌗 تبديل الوضع</button>
+</header>
+<ul>
+<li><a class="item" href="AI-News_24-08-2026.html"><span class="t">نشرة ٢٤ أغسطس ٢٠٢٦</span><span class="d">الأحد ٢٤ / ٨</span></a></li>
+<li><a class="item" href="AI-News_22-08-2026.html"><span class="t">نشرة ٢٢ أغسطس ٢٠٢٦</span><span class="d">الجمعة ٢٢ / ٨</span></a></li>
+<li><a class="item" href="AI-News_21-08-2026.html"><span class="t">نشرة ٢١ أغسطس ٢٠٢٦</span><span class="d">الخميس ٢١ / ٨</span></a></li>
+<li><a class="item" href="AI-News_20-08-2026.html"><span class="t">نشرة ٢٠ أغسطس ٢٠٢٦</span><span class="d">الأربعاء ٢٠ / ٨</span></a></li>
+<li><a class="item" href="AI-News_19-08-2026.html"><span class="t">نشرة ١٩ أغسطس ٢٠٢٦</span><span class="d">الثلاثاء ١٩ / ٨</span></a></li>
+<li><a class="item" href="AI-News_12-08-2026.html"><span class="t">نشرة ١٢ أغسطس ٢٠٢٦</span><span class="d">الثلاثاء ١٢ / ٨</span></a></li>
+<li><a class="item" href="AI-News_11-08-2026.html"><span class="t">نشرة ١١ أغسطس ٢٠٢٦</span><span class="d">الإثنين ١١ / ٨</span></a></li>
+<li><a class="item" href="AI-News_10-08-2026.html"><span class="t">نشرة ١٠ أغسطس ٢٠٢٦</span><span class="d">الأحد ١٠ / ٨</span></a></li>
+</ul>
+<footer>نشرة يومية مستقلة — حقوق المحتوى متاحة للجميع.</footer>
+</div>
+<script>
+function tgl(){var b=document.body;var d=b.getAttribute('data-theme')==='dark';b.setAttribute('data-theme',d?'light':'dark');}
+document.getElementById('tg').onclick=tgl;
+if('serviceWorker' in navigator){window.addEventListener('load',function(){try{navigator.serviceWorker.register('sw.js').catch(function(){});}catch(e){}});}
+</script>
+</body>
+</html>

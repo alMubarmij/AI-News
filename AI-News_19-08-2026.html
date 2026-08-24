@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نشرة البرمجة بالذكاء الاصطناعي — 19 أغسطس 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f9fc;--card:#ffffff;--txt:#16202c;--mut:#5b6b7d;--acc:#1f8a70;--brd:#e3e9f0;}
+  [data-theme="dark"]{--bg:#0e141b;--card:#161f2b;--txt:#e8eef5;--mut:#9fb0c0;--acc:#37c8a0;--brd:#243140;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:'Tajawal',sans-serif;line-height:1.8;}
+  header{text-align:center;padding:28px 16px 8px;}
+  h1{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.9rem;margin:0 0 6px;}
+  .sub{color:var(--mut);font-size:1.05rem;}
+  .toggle{position:fixed;top:14px;left:14px;background:var(--card);color:var(--txt);border:1px solid var(--brd);border-radius:24px;padding:8px 14px;cursor:pointer;font-family:'Cairo';font-weight:600;z-index:50;}
+  main{max-width:760px;margin:0 auto;padding:18px 16px 60px;}
+  article{background:var(--card);border:1px solid var(--brd);border-radius:16px;padding:18px 20px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+  h2{font-family:'Cairo',sans-serif;font-weight:700;font-size:1.45rem;margin:0 0 10px;color:var(--acc);}
+  p{font-size:1.18rem;margin:0 0 12px;}
+  a{color:var(--acc);word-break:break-all;font-size:1.02rem;}
+  .date{display:inline-block;color:var(--mut);font-size:.95rem;border-top:1px dashed var(--brd);padding-top:8px;margin-top:4px;}
+  #offline{display:none;background:#b3261e;color:#fff;text-align:center;padding:10px;font-weight:700;position:sticky;top:0;z-index:60;}
+  body.offline #offline{display:block;}
+  footer{text-align:center;color:var(--mut);font-size:.9rem;padding:20px;}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="toggleTheme()" aria-label="تبديل الضوء والظلام">🌗 الوضع</button>
+<div id="offline">⚠️ تعذّر الاتصال — الصفحة تعمل من النسخة المحفوظة.</div>
+<header>
+  <h1>📰 نشرة البرمجة بالذكاء الاصطناعي</h1>
+  <div class="sub">الأربعاء 19 أغسطس 2026 — أحدث التطورات في وكلاء الترميز وهندسة السياق</div>
+</header>
+<main>
+
+<article>
+  <h2>🔐 OneCLI (YC S26): حزمة تقنيات لعزل وكلاء الذكاء</h2>
+  <p>أطلق فريق OneCLI بيئة مفتوحة المصدر تعزل وكلاء الأتمتة داخل حاضنة آمنة للفرق. الحل يحدّ من صلاحيات الوكيل ويفصل تنفيذه عن بيئة الإنتاج لمنع الأخطار الجانبية.</p>
+  <a href="https://github.com/onecli/onecli" target="_blank" rel="noopener">https://github.com/onecli/onecli</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-19</div>
+</article>
+
+<article>
+  <h2>🧮 CIYA: ذكاء حتمي بالكامل بلا عشوائية</h2>
+  <p>عرض جديد يقدّم نموذجاً حتمياً تماماً لا ينتج أي خرج متغيّر لنفس المدخل. الفكرة تقلّل هدر التوكنات وتزيد موثوقية الوكلاء في المهام الحسّاسة.</p>
+  <a href="https://iiio.app?u=showhn" target="_blank" rel="noopener">https://iiio.app?u=showhn</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-19</div>
+</article>
+
+<article>
+  <h2>🧩 ContextForge: منصة لهندسة السياق</h2>
+  <p>أداة مفتوحة المصدر تُركّز على هندسة السياق لدعم التطوير المعتمد على الذكاء الاصطناعي. تجمع ContextForge السياق المناسب للوكيل وتديره عبر دورة حياة المشروع.</p>
+  <a href="https://github.com/waterflane/ContextForge" target="_blank" rel="noopener">https://github.com/waterflane/ContextForge</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-21</div>
+</article>
+
+<article>
+  <h2>✂️ Gisting (Shopify): ضغط سياق وكلاء LLM</h2>
+  <p>تقنية من Shopify Engineering تختزل سياق الوكيل عبر التلخيص المستمر للحالة. النتيجة ارتفاع في الإنتاجية وانخفاض ملموس في تكلفة التوكنات.</p>
+  <a href="https://shopify.engineering/gisting" target="_blank" rel="noopener">https://shopify.engineering/gisting</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-21</div>
+</article>
+
+<article>
+  <h2>🛡️ Bounded Agents: تأطير تفويض الوكلاء</h2>
+  <p>ورقة بحثية تعالج أمن التفويض في أنظمة الذكاء متعددة الوكلاء. تقترح حدوداً صارمة تمنع تصعيد الصلاحيات عند تفويض مهمة من وكيل إلى آخر.</p>
+  <a href="https://arxiv.org/abs/2608.15888" target="_blank" rel="noopener">https://arxiv.org/abs/2608.15888</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-21</div>
+</article>
+
+<article>
+  <h2>🔒 Bulwark Gateway: وسيط أمني يفشل مغلقاً</h2>
+  <p>بوابة حماية مفتوحة المصدر تُشغَّل أمام وكيلات LLM وفق مبدأ «الفشل المغلق». أي طلب مشبوه يُحجب تلقائياً قبل وصوله إلى الأنظمة الحساسة.</p>
+  <a href="https://github.com/red-orbita/bulwark-gateway" target="_blank" rel="noopener">https://github.com/red-orbita/bulwark-gateway</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-21</div>
+</article>
+
+<article>
+  <h2>🧠 OzBrain: دماغ مشترك للمعرفة بين الوكلاء</h2>
+  <p>أداة توفّر ذاكرة معرفية مشتركة بين وكلاء الذكاء وفريق العمل. تتيح تبادل السياق والمعرفة بأمان عبر المشاريع دون تكرار الحالة.</p>
+  <a href="https://ozbrain.com" target="_blank" rel="noopener">https://ozbrain.com</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-21</div>
+</article>
+
+<article>
+  <h2>🔓 Proliferate: بديل مفتوح لـ Codex قابل للاستضافة الذاتية</h2>
+  <p>مشروع مفتوح المصدر يقدّم نسخة قابلة للاستضافة الذاتية من Codex تعمل مع أي وكيل برمجة. يمنح الفرق تحكماً كاملاً ببياناتهم ونماذجهم.</p>
+  <a href="https://github.com/proliferate-ai/proliferate" target="_blank" rel="noopener">https://github.com/proliferate-ai/proliferate</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-21</div>
+</article>
+
+<article>
+  <h2>🪨 Caveman Saves Tokens: وفر بالفعل لا بالقول</h2>
+  <p>تحليل عملي يوضّح أن توفير التوكنات يتحقق بفعل خطوات أقل لا بمجرد صياغة مطالبات أقصر. الدراسة تقيس أثر تقليص الإجراءات على فاتورة الاستخدام.</p>
+  <a href="https://stuckinalocalminima.com/blog/2026/caveman/" target="_blank" rel="noopener">https://stuckinalocalminima.com/blog/2026/caveman/</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-18</div>
+</article>
+
+<article>
+  <h2>🔐 Break In, Break Out: حصاد أمن وكلاء 2026</h2>
+  <p>مقال يستعرض دروس هذا العام في أمن وكلاء الذكاء ومسارات الاختراق الشائعة. يسلّط الضوء على فجوات الصلاحيات وكيفية سدّها بالحوكمة.</p>
+  <a href="https://subramanya.ai/2026/08/17/break-in-break-out-ai-agent-security-in-2026/" target="_blank" rel="noopener">https://subramanya.ai/2026/08/17/break-in-break-out-ai-agent-security-in-2026/</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-17</div>
+</article>
+
+<article>
+  <h2>🖥️ Hands-Rust: أداة MCP ترى سطح مكتب ويندوز</h2>
+  <p>أداة سطر أوامر مبنية بـ Rust تتيح للوكيل رؤية سطح مكتب ويندوز والنقر داخل متصفح كروم الحقيقي. خطوة نحو وكلاء بصريين يتفاعلون مع الواجهات مباشرة.</p>
+  <a href="https://news.ycombinator.com/item?id=49405405" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=49405405</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-23</div>
+</article>
+
+<article>
+  <h2>🤝 Lemmaflow: منظومة لكبح ثقة التطبيقات الأصيلة</h2>
+  <p>مشروع مفتوح المصدر يبني «عِقال ثقة» للتطبيقات المبنية على الذكاء الأصيل. يراقب قرارات الوكيل ويحوكمها لمنع التصرفات غير المبرّرة.</p>
+  <a href="https://news.ycombinator.com/item?id=49407337" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=49407337</a>
+  <div class="date">🗓️ بتاريخ: 2026-08-23</div>
+</article>
+
+</main>
+<footer>نُشرت عبر وكيل نشر النشرة التقنية — جميع الروابط ضمن آخر 10 أيام.</footer>
+
+<script>
+function toggleTheme(){
+  const cur=document.body.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.body.setAttribute('data-theme',cur);
+  try{localStorage.setItem('theme',cur);}catch(e){}
+}
+try{if(localStorage.getItem('theme')==='dark')document.body.setAttribute('data-theme','dark');}catch(e){}
+window.addEventListener('online',()=>document.body.classList.remove('offline'));
+window.addEventListener('offline',()=>document.body.classList.add('offline'));
+if(!navigator.onLine)document.body.classList.add('offline');
+// Service Worker مضمّن يعالج أخطاء الاتصال وتخزين الصفحة
+if('serviceWorker' in navigator){
+  const sw='self.addEventListener("install",e=>self.skipWaiting());'
+    +'self.addEventListener("activate",e=>e.waitUntil(self.clients.claim()));'
+    +'self.addEventListener("fetch",e=>{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request).then(r=>r||new Response("offline",{status:503}))));'
+    +'if(e.request.method==="GET"){caches.open("ainews").then(c=>c.add(e.request));}});';
+  const blob=new Blob([sw],{type:'text/javascript'});
+  navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});
+}
+</script>
+</body>
+</html>
