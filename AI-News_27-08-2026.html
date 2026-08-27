@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --text:#1a1a1a; --muted:#5b6470;
+    --accent:#0a66c2; --border:#e3e7ee;
+  }
+  [data-theme="dark"]{
+    --bg:#0e1116; --card:#171b22; --text:#e8edf4; --muted:#9aa6b5;
+    --accent:#4ea1ff; --border:#262d38;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;line-height:1.9;padding:0 0 60px}
+  header{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;z-index:10}
+  header h1{font-family:'Cairo',sans-serif;font-size:20px;font-weight:700}
+  .toggle{background:var(--accent);color:#fff;border:none;padding:8px 14px;border-radius:8px;font-family:'Cairo',sans-serif;cursor:pointer;font-size:14px}
+  .wrap{max-width:760px;margin:24px auto;padding:0 16px}
+  article{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  h2{font-family:'Cairo',sans-serif;font-size:21px;font-weight:700;margin-bottom:10px;line-height:1.5}
+  p.summary{font-size:18px;color:var(--text);margin-bottom:12px}
+  p.vid{font-size:16px;color:var(--muted);background:var(--bg);border-right:3px solid var(--accent);padding:8px 12px;border-radius:6px;margin-bottom:12px}
+  a.link{display:inline-block;color:var(--accent);font-family:'Cairo',sans-serif;font-size:15px;text-decoration:none;word-break:break-all}
+  a.link:hover{text-decoration:underline}
+  .date{display:block;margin-top:8px;color:var(--muted);font-size:14px}
+  #offline{display:none;background:#b00020;color:#fff;text-align:center;padding:10px;font-family:'Cairo',sans-serif;position:fixed;bottom:0;width:100%;z-index:20}
+  body.offline #offline{display:block}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧠 نشرة الذكاء الاصطناعي — ٢٧ أغسطس ٢٠٢٦</h1>
+  <button class="toggle" id="themeBtn">تبديل الفاتح/الداكن</button>
+</header>
+<div id="offline">⚠️ انقطع الاتصال — تعرض نسخة محفوظة محلياً</div>
+<main class="wrap">
+
+<article>
+  <h2>🤝 TaskShell: جسر إنتاجية يقود كل وكلائك</h2>
+  <p class="summary">أطلق مشروع TaskShell منظومة تربط وكلاء الذكاء الاصطناعي المتفرقين بجسر موحّد، ما يسهّل توزيع المهام وتنسيق العمل بين عدّة وكلاء داخل بيئة واحدة.</p>
+  <a class="link" href="https://www.taskshell.app/">https://www.taskshell.app/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٧</span>
+</article>
+
+<article>
+  <h2>🤔 متى يتوقف الوكيل عن العمل؟ نقاش حول حدود وكيل البرمجة</h2>
+  <p class="summary">طرح أحد المطوّرين سؤالاً عملياً على Hacker News: ماذا تفعل حين ينجز وكيل البرمجة مهمته ويبقى بانتظار التوجيه، وكيف تُدار دورة حياته داخل سير العمل اليومي.</p>
+  <a class="link" href="https://news.ycombinator.com/item?id=49461055">https://news.ycombinator.com/item?id=49461055</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٧</span>
+</article>
+
+<article>
+  <h2>🧠 Contextual: ذاكرة محلية لمستودع الشيفرة لوكلاء البرمجة</h2>
+  <p class="summary">عرض مشروع Contextual أداة تحفظ سياق المستودع محلياً لتغذية وكلاء البرمجة بفهم أعمق للبنية التقنية، ما يقلّل الحاجة لإعادة شرح المشروع في كل جلسة.</p>
+  <a class="link" href="https://contextuallabs.dev">https://contextuallabs.dev</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٧</span>
+</article>
+
+<article>
+  <h2>📐 القواعد الجديدة لهندسة السياق مع نماذج Claude 5</h2>
+  <p class="summary">ناقش منشور حديث ضوابط هندسة السياق المحدّثة لطرازات Claude 5، موضحاً كيف تؤثّر طريقة ترتيب وتقديم السياق على جودة مخرجات الوكيل بشكل مباشر.</p>
+  <a class="link" href="https://twitter.com/trq212/status/2080710971228918066">https://twitter.com/trq212/status/2080710971228918066</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٦</span>
+</article>
+
+<article>
+  <h2>🔐 أجهزة الذكاء الاصطناعي كابوس أمني… أم لا؟</h2>
+  <p class="summary">تناولت مقالة مخاوف الأمان المحيطة بالوكلاء المستقلين، وناقشت متى تكون هذه المخاوف مبرّرة ومتى تُبالَغ فيها، مع اقتراح أساليب تخفيف عملية.</p>
+  <a class="link" href="https://write.as/z2x3hj2ph6zhf">https://write.as/z2x3hj2ph6zhf</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٦</span>
+</article>
+
+<article>
+  <h2>📊 دراسة مصنّفة: ١٠٠٠ حادث فشل أمني لوكلاء الذكاء</h2>
+  <p class="summary">نُشرت على منصّة Hugging Face مجموعة بيانات توثّق وتصنّف ألف حادثة فشل أمني في وكلاء الذكاء، مرجع مفتوح يساعد الباحثين على فهم أنماط الضعف الشائعة.</p>
+  <a class="link" href="https://huggingface.co/datasets/gemmozero/ai-agent-security-incidents">https://huggingface.co/datasets/gemmozero/ai-agent-security-incidents</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٦</span>
+</article>
+
+<article>
+  <h2>🛡️ Gibson ADK وبيئة تشغيل بالثقة الصفرية للوكلاء</h2>
+  <p class="summary">أعلن مشروع Gibson عن مجموعة تطوير وبيئة تشغيل تعتمد نموذج الثقة الصفرية، لعزل صلاحيات وكلاء الذكاء وتقييد وصولهم ضمن حدود آمنة أثناء التنفيذ.</p>
+  <a class="link" href="https://www.zeroroot.ai">https://www.zeroroot.ai</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٥</span>
+</article>
+
+<article>
+  <h2>🔑 قائمة واجهات LLM المجانية الدائمة بلا بطاقة ائتمان</h2>
+  <p class="summary">يجمع المستودع awesome-free-llm-apis قائمة بواجهات برمجة النماذج اللغوية ذات الطبقات المجانية الدائمة، مع وصول مجهول الهدف وبلا متطلبات دفع لتمويل الوكلاء.</p>
+  <a class="link" href="https://github.com/mnfst/awesome-free-llm-apis">https://github.com/mnfst/awesome-free-llm-apis</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦ (حديث)</span>
+</article>
+
+<article>
+  <h2>💡 OpenRouter: ١٣ واجهة LLM مجانية مُصنّفة لعام ٢٠٢٦</h2>
+  <p class="summary">نشر OpenRouter دليلاً يقارن بين ثلاث عشرة واجهة مجانية من حيث حدود الاستخدام والطرازات والتكلفة الحقيقية، مع رمز جاهز لأول استدعاء خلال ستين ثانية.</p>
+  <a class="link" href="https://openrouter.ai/blog/tutorials/free-llm-apis-compared/">https://openrouter.ai/blog/tutorials/free-llm-apis-compared/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦ (حديث)</span>
+</article>
+
+<article>
+  <h2>🔀 Agent-hop: واجهة نصية تنقل محادثة Claude Code إلى Codex</h2>
+  <p class="summary">عرض مشروع مفتوح المصدر بلغة Rust أداة طرفية تتيح نقل محادثة حيّة من Claude Code إلى Codex، ما يسهّل التنقّل بين وكلاء البرمجة ضمن جلسة واحدة.</p>
+  <a class="link" href="https://github.com/hetpatel-11/agent-hop">https://github.com/hetpatel-11/agent-hop</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٦</span>
+</article>
+
+</main>
+<script>
+(function(){
+  var btn=document.getElementById('themeBtn');
+  btn.addEventListener('click',function(){
+    var cur=document.body.getAttribute('data-theme');
+    var next=cur==='dark'?'light':'dark';
+    document.body.setAttribute('data-theme',next);
+  });
+  document.body.setAttribute('data-theme','light');
+  window.addEventListener('online',function(){document.body.classList.remove('offline');});
+  window.addEventListener('offline',function(){document.body.classList.add('offline');});
+  if('serviceWorker' in navigator){
+    var sw="self.addEventListener('fetch',function(e){if(!navigator.onLine){e.respondWith(new Response('offline'));}});";
+    try{var b=new Blob([sw],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(b)).catch(function(){});}catch(e){}
+  }
+})();
+</script>
+</body>
+</html>
