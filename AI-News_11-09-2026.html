@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --text:#1a1a1a; --muted:#5b6470;
+    --accent:#0a66c2; --border:#e3e7ee;
+  }
+  [data-theme="dark"]{
+    --bg:#0e1116; --card:#171b22; --text:#e8edf4; --muted:#9aa6b5;
+    --accent:#4ea1ff; --border:#262d38;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;line-height:1.9;padding:0 0 60px}
+  header{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;z-index:10}
+  header h1{font-family:'Cairo',sans-serif;font-size:20px;font-weight:700}
+  .toggle{background:var(--accent);color:#fff;border:none;padding:8px 14px;border-radius:8px;font-family:'Cairo',sans-serif;cursor:pointer;font-size:14px}
+  .wrap{max-width:760px;margin:24px auto;padding:0 16px}
+  article{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  h2{font-family:'Cairo',sans-serif;font-size:21px;font-weight:700;margin-bottom:10px;line-height:1.5}
+  p.summary{font-size:18px;color:var(--text);margin-bottom:12px}
+  p.vid{font-size:16px;color:var(--muted);background:var(--bg);border-right:3px solid var(--accent);padding:8px 12px;border-radius:6px;margin-bottom:12px}
+  a.link{display:inline-block;color:var(--accent);font-family:'Cairo',sans-serif;font-size:15px;text-decoration:none;word-break:break-all}
+  a.link:hover{text-decoration:underline}
+  .date{display:block;margin-top:8px;color:var(--muted);font-size:14px}
+  #offline{display:none;background:#b00020;color:#fff;text-align:center;padding:10px;font-family:'Cairo',sans-serif;position:fixed;bottom:0;width:100%;z-index:20}
+  body.offline #offline{display:block}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧠 نشرة الذكاء الاصطناعي — ١١ سبتمبر ٢٠٢٦</h1>
+  <button class="toggle" id="themeBtn">تبديل الفاتح/الداكن</button>
+</header>
+<div id="offline">⚠️ انقطع الاتصال — تعرض نسخة محفوظة محلياً</div>
+<main class="wrap">
+
+<article>
+  <h2>🚂 ردّ نقدي على التوقعات المفرطة بحوث الانقراض المرتبطة بالنماذج اللغوية</h2>
+  <p class="summary">نشر مطور على Hacker News رداً مفصلاً يعارض التوقعات التي تتنبأ بحدث انقراض مرتبط بالذكاء الاصطناعي، مقارناً rhetorical hype بالواقع التقني الفعلي للنماذج الحالية ويستنتج أن الخطاب التحذيري الإعلامي يتجاوز الأدلة المتاحة.</p>
+  <a class="link" href="https://news.ycombinator.com/item?id=49637237">https://news.ycombinator.com/item?id=49637237</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١٠</span>
+</article>
+
+<article>
+  <h2>🎼 Orchestra — خط أنابيب تجريبي لوكيل برمجة متعدد النماذج بالكامل مجاناً</h2>
+  <p class="summary">عُرض مشروع Orchestra على Hacker News كخط أنابيب Agentic متكامل يجمع بين نماذج مجانية (GPT-OSS من OpenAI، وهندسة النماذج من Qwen، وتوليد الشيفرة من Kimi)، مما يتيح سير عمل برمجة آلي بالكامل دون رسوم استخدام ونسبة استجابة عالية.</p>
+  <a class="link" href="https://github.com/archbeat-dev/orchestra">https://github.com/archbeat-dev/orchestra</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١١</span>
+</article>
+
+<article>
+  <h2>🎻 Symphony — خريطة حية لوكيلك البرمجي الذكي</h2>
+  <p class="summary">أطلق مطور أداة مفتوحة المصدر تُسمى Symphony تُظهر خريطة تفاعلية حية لجميع وكلاء البرمجة الذين يعملون معك، مما يوفّر شفافية كاملة حول ما يفعله كل وكيل أو 있을까 في لحظة معينة ضمن مشروعك.</p>
+  <a class="link" href="https://github.com/itsloganmann/symphony">https://github.com/itsloganmann/symphony</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١٠</span>
+</article>
+
+<article>
+  <h2>🔍 MaruCheck — ضمان جودة مستقل للشيفرة المولّدة بالذكاء الاصطناعي</h2>
+  <p class="summary">عُرض مشروع MaruCheck كأداة QA مستقلة تُقيّم تلقائياً الشيفرة التي يولدها الذكاء الاصطناعي، مما يساعد المطورين على اكتشاف الثغرات والأخطاء الهيكلية قبل دمجها في مشروعهم، مع تركيز خاص على حالات الحواف والأنماط غير الآمنة.</p>
+  <a class="link" href="https://github.com/Kidus-M/MaruCheck">https://github.com/Kidus-M/MaruCheck</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١٠</span>
+</article>
+
+<article>
+  <h2>🛡️ Security Cards — خفض الشيفرة غير الآمنة المولّدة بالذكاء الاصطناعي بنسبة ٧٢٪</h2>
+  <p class="summary">نُشر تحليل من Reware Labs حول أداة Security Cards التي تقلّل من ظهور الثغرات الأمنية في الشيفرة المولّدة بالذكاء الاصطناعي بنسبة ٧٢٪، باستخدام نهج Cards قابلة لإعادة الاستخدام يُحسّن من وعي الوكلاء بالأمن أثناء التوليد.</p>
+  <a class="link" href="https://www.rewarelabs.com/blog/introducing-security-cards/">https://www.rewarelabs.com/blog/introducing-security-cards/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١٠</span>
+</article>
+
+<article>
+  <h2>🆓 قائمة بمفاتيح واجهات LLM مجانية دائمة — لا حاجة لبطاقة ائتمان</h2>
+  <p class="summary">نُشرت قائمة على GitHub تجمع مجموعة شاملة من واجهات LLM المجانية الدائمة التي تتيح الاستخدام المباشر دون Emit مفتاح أو بتكلفة صفرية، مع أمثلة على الوصول المجهول والحدود الفعلية لكل واجهة، مفيدة جداً لتجربة الوكلاء بتكلفة محدودة.</p>
+  <a class="link" href="https://github.com/mnfst/awesome-free-llm-apis">https://github.com/mnfst/awesome-free-llm-apis</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦ (حديث)</span>
+</article>
+
+<article>
+  <h2>⚡ مقارنة واجهات LLM المجانية: الحدود والنماذج والتكلفة الفعلية (٢٠٢٦)</h2>
+  <p class="summary">نُشر دليل عملي من OpenRouter يقارن بين واجهات LLM المجانية المتاحة في ٢٠٢٦، ويعرض حدود المعدل (Rate Limits) والنماذج المدعومة والتكلفة الحقيقية لكل خيار، مع أمثلة شيفرة جاهزة لتجربة الواجهات فوراً بلغات متعددة.</p>
+  <a class="link" href="https://openrouter.ai/blog/tutorials/free-llm-apis-compared/">https://openrouter.ai/blog/tutorials/free-llm-apis-compared/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦ (حديث)</span>
+</article>
+
+<article>
+  <h2>📱 MiMo V2 Pro من Xiaomi مجاناً على Nous Portal مع Hermes Agent</h2>
+  <p class="summary">أعلن فريق Nous Research عن شراكة مع Xiaomi لتوفير نموذج MiMo V2 Pro مجاناً عبر منصة Nous Portal، قابل للتشغيل المباشر مع Hermes Agent بعد تحديثه وتفعيل التوجيه المناسب، مما يفتح إمكانية استخدام نموذج قوي دون تكلفة إضافية.</p>
+  <a class="link" href="https://www.tencentcloud.com/techpedia/143925">https://www.tencentcloud.com/techpedia/143925</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١٠</span>
+</article>
+
+<article>
+  <h2>💻 OpenCode — الوكيل البرمجي المفتوح المصدر الأكثر شعبية (١٩٩,٦٤٠ نجمة)</h2>
+  <p class="summary">حاز OpenCode على لقب الوكيل البرمجي المفتوح المصدر الأكثر شعبية في ٢٠٢٦ بفضل ١٩٩,٦٤٠ نجمة على GitHub، ويدعم أكثر من ٧٥ مزوداً للنماذج مع مرونة كاملة في اختيار النموذج، مع إصدار v1.18.19 الصادر في ٢٠ أغسطس ٢٠٢٦.</p>
+  <a class="link" href="https://opencode.ai/">https://opencode.ai/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٨-٢٠</span>
+</article>
+
+<article>
+  <h2>⚠️ ثغرات أمنية جديدة في الوكلاء البرمجية: الحقن، تزوير الذاكرة، وسلسلة التوريد</h2>
+  <p class="summary">نُشر تحليل شامل من Cycode يحذر من تزايد هجمات الحقن المباشر والهجمات على الذاكرة المستمرة (Memory Poisoning) وسلسلة التوريد للوكلاء، حيث تتزايد الهجمات بنسبة ٥٦٪ من ٢٠٢٣ إلى ٢٠٢٤ وفق تقرير HAI التابع لجامعة ستانفورد.</p>
+  <a class="link" href="https://cycode.com/blog/ai-security-vulnerabilities/">https://cycode.com/blog/ai-security-vulnerabilities/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦ (حديث)</span>
+</article>
+
+</main>
+<script>
+(function(){
+  var btn=document.getElementById('themeBtn');
+  btn.addEventListener('click',function(){
+    var cur=document.body.getAttribute('data-theme');
+    var next=cur==='dark'?'light':'dark';
+    document.body.setAttribute('data-theme',next);
+  });
+  document.body.setAttribute('data-theme','light');
+  window.addEventListener('online',function(){document.body.classList.remove('offline');});
+  window.addEventListener('offline',function(){document.body.classList.add('offline');});
+  if('serviceWorker' in navigator){
+    var sw="self.addEventListener('fetch',function(e){if(!navigator.onLine){e.respondWith(new Response('offline'));}});";
+    try{var b=new Blob([sw],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(b)).catch(function(){});}catch(e){}
+  }
+})();
+</script>
+</body>
+</html>

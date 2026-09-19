@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+}
+[data-theme="light"] { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+[data-theme="dark"] { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:2rem 1rem; transition:background 0.3s; }
+.container { max-width:800px; margin:0 auto; }
+header { text-align:center; margin-bottom:2.5rem; }
+h1 { font-family:'Cairo',sans-serif; font-weight:900; font-size:2rem; color:var(--accent); margin-bottom:0.5rem; }
+.subtitle { color:var(--muted); font-size:1rem; }
+.theme-toggle { position:fixed; top:1rem; left:1rem; background:var(--card); border:1px solid var(--border); border-radius:50%; width:40px; height:40px; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; }
+.news-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.5rem; margin-bottom:1.2rem; transition:transform 0.2s, box-shadow 0.2s; }
+.news-card:hover { transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+.news-card h2 { font-family:'Cairo',sans-serif; font-weight:700; font-size:1.25rem; margin-bottom:0.6rem; color:var(--text); }
+.news-card p { color:var(--muted); font-size:1.05rem; margin-bottom:0.8rem; }
+.meta { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; font-size:0.85rem; }
+.meta a { color:var(--accent); text-decoration:none; font-weight:500; }
+.meta a:hover { text-decoration:underline; }
+.date-badge { background:var(--accent); color:white; padding:0.2rem 0.6rem; border-radius:6px; font-size:0.75rem; }
+footer { text-align:center; margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.85rem; }
+@media (max-width:600px) { h1 { font-size:1.5rem; } body { padding:1rem; } .news-card { padding:1rem; } }
+</style>
+</head>
+<body>
+<button class="theme-toggle" id="themeBtn" aria-label="تبديل المظهر">🌓</button>
+<div class="container">
+<header>
+<h1>📰 النشرة التقنية اليومية</h1>
+<p class="subtitle">البرمجة بالذكاء الاصطناعي — الجمعة 18 سبتمبر 2026</p>
+</header>
+
+<div class="news-card">
+<h2>🔒 Vigil PR Scanner: ماسح مجاني للكود الخبيث في GitHub</h2>
+<p>GitHub Action جديد يفحص فروقات السحب (PR diffs) بحثاً عن تعليمات برمجية خبيثة وليس جودة الكود. إضافة مجانية تحمي المستودعات من هجمات حقن الكود عبر المساهمات.</p>
+<div class="meta"><span class="date-badge">18 سبتمبر</span> <a href="https://github.com/marketplace/actions/vigil-pr-scanner" target="_blank" rel="noopener">GitHub Marketplace</a></div>
+</div>
+
+<div class="news-card">
+<h2>🧹 How to Unslop a Commit؟ — تحسين جودة المساهمات</h2>
+<p>نقاش نشط على Hacker News حول كيفية تنظيف وتحسين المساهمات الناتجة عن الذكاء الاصطناعي قبل دمجها. تقنيات عملية لرفع جودة "الكود الملوث" وتحويله إلى كود نظيف قابل للصيانة.</p>
+<div class="meta"><span class="date-badge">18 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49751233" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>🧠 Union Alpha: نموذج متعدد الوسائط من OpenRouter</h2>
+<p>نموذج جديد متعدد الوسائط مُحسَّب خصيصاً للأبحاث والبرمجة وسير العمل الوكيلي. يقدم أداءً متقدماً في مهام البرمجة المعقدة مع دعم السياقات الطويلة والتفكير المتعدد الخطوات.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://openrouter.ai/stealth/union-alpha" target="_blank" rel="noopener">OpenRouter</a></div>
+</div>
+
+<div class="news-card">
+<h2>🤝 Skillsync (YC W26): نقل جلسات الذكاء الاصطناعي بين الوكلاء</h2>
+<p>شركة ناشئة من Y Combinator تتيح تصدير واستيراد جلسات المحادثة مع الذكاء الاصطناعي بين مختلف الوكلاء والمنصات. وداعاً لتقدم العمل عند تبديل الأداة.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49743049" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>🏪 Skillbay: كريغز ليست لمهارات الوكلاء المنسقة بشرياً</h2>
+<p>سوق مفتوح لمهارات وتصاميم الوكلاء البرمجية، تختار وتنظم يدوياً بواسطة إنسان. بديل منظم لفوضى مشاركة المهارات بين المطورين.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://skillbay.sh/" target="_blank" rel="noopener">Skillbay</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔍 Scry: بحث إنترنت قابل للبرمجة مع تسعير ازدحام</h2>
+<p>محرك بحث جديد يتيح تخصيص استعلامات البحث برمجياً مع نموذج تسعير ديناميكي يعتمد على مستوى الازدحام. أداة قوية للباحثين والمطورين الذين يحتاجون إلى نتائج دقيقة.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://scry.io/" target="_blank" rel="noopener">Scry</a></div>
+</div>
+
+<div class="news-card">
+<h2>🎮 ألعاب الكونسول القديمة تصبح ساحة معركة البرمجة بالذكاء الاصطناعي</h2>
+<p>PC Gamer يستكشف كيف تتصارع أدوات البرمجة بالذكاء الاصطناعي لإنتاج نسخ PC من ألعاب الكونسول الكلاسيكية. نقاش حول حدود هذه الأدوات في مشاريع الترميم المعقدة.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://www.pcgamer.com/gaming-industry/pc-ports-of-old-console-games-are-the-new-ai-vibe-coding-battleground/" target="_blank" rel="noopener">PC Gamer</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔑 مفاتيح API مجانية: مقارنة شاملة OpenRouter</h2>
+<p>دليل محدث من OpenRouter يقارن بين نماذج LLM المجانية المتاحة: حدود المعدلات، النماذج المدعومة، والتكاليف الحقيقية. يشمل Llama 3.3 70B وQwen3 Coder وgpt-oss-120B مجاناً.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://openrouter.ai/blog/tutorials/free-llm-apis-compared/" target="_blank" rel="noopener">OpenRouter</a></div>
+</div>
+
+<div class="news-card">
+<h2>🎬 فيديو: مفاتيح API مجانية للبرمجة بالذكاء الاصطناعي</h2>
+<p>قناة The Ai Algorithm تشرح كيفية الحصول على مفاتيح API مجانية من مزودين متعددين واستخدامها في مشاريع البرمجة. دليل عملي للمبتدئين.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://www.youtube.com/watch?v=3w4oB1Ww3Hw" target="_blank" rel="noopener">YouTube</a></div>
+</div>
+
+
+
+<div class="news-card">
+<h2>🚀 Freeform: أنشئ تطبيقات بالذكاء الاصطناعي بنقرة واحدة</h2>
+<p>منصة جديدة تتيح إنشاء تطبيقات كاملة بالذكاء الاصطناعي ومشاركتها فوراً. لا حاجة لأي إعداد أو معرفة مسبقة بالبرمجة.</p>
+<div class="meta"><span class="date-badge">16 سبتمبر</span> <a href="https://sharefreeform.com" target="_blank" rel="noopener">Freeform</a></div>
+</div>
+
+<div class="news-card">
+<h2>📊 Swift-Qwen3.8-27B: تقليل التفكير 58% مع تسريع x1.95</h2>
+<p>نموذج محسّن على HuggingFace يقلل استهلاك التفكير بنسبة 58.3% مع تسريع معالجة 1.95 مرة، مع الحفاظ على دقة عالية في مهام البرمجة والاستدلال.</p>
+<div class="meta"><span class="date-badge">16 سبتمبر</span> <a href="https://huggingface.co/ukisai/Swift-Qwen3.8-27b" target="_blank" rel="noopener">HuggingFace</a></div>
+</div>
+
+<div class="news-card">
+<h2>🛡️ استضافة آمنة للكود الملوث بالبرمجة الهمجية</h2>
+<p>دليل شامل حول كيفية استضافة التطبيقات المنتجة بالبرمجة الهمجية بأمان. يتناول عزل البيئة، فحص الثغرات، وتأمين البيانات.</p>
+<div class="meta"><span class="date-badge">16 سبتمبر</span> <a href="https://wissem.io/posts/vibecoding" target="_blank" rel="noopener">Wissem</a></div>
+</div>
+
+<div class="news-card">
+<h2>💾 Slowave: ذاكرة تكيفية محلية لجلوسات البرمجة</h2>
+<p>مشروع مفتوح المصدر يضيف ذاكرة محلية تكيفية لجلسات البرمجة مع الوكلاء. يحفظ السياق بين الجلسات دون الاعتماد على خوادم خارجية.</p>
+<div class="meta"><span class="date-badge">14 سبتمبر</span> <a href="https://github.com/slowave-ai/slowave" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>✂️ Skillzero: حذف المهارات من سياق الوكيل لتوفير الرموز</h2>
+<p>أداة جديدة تحسّن أداء الوكلاء بإزالة المهارات غير ذات الصلة من سياق المحادثة. توفير كبير في عدد الرموز المستهلكة وتحسين سرعة الاستجابة.</p>
+<div class="meta"><span class="date-badge">14 سبتمبر</span> <a href="https://github.com/kurtextrem/skillzero" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🐐 GoatCode: وكيل مفتوح المصدر للمطال مع تبديل المزودين</h2>
+<p>وكيل ذكاء اصطناعي للمطال مفتوح المصدر يدعم التبديل التلقائي بين مزودي LLM المختلفين. يضمن استمرارية العمل عند فشل أي مزود.</p>
+<div class="meta"><span class="date-badge">12 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49670455" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>⚠️ ثغرة خطيرة في Flowise: CSV Agent Prompt Injection (CVSS 9.8)</h2>
+<p>Zero Day Initiative تكشف عن ثغرة CVSS 9.8 في Flowise CSV Agent تتيحق تنفيذ تعليمات برمجية عن بُعد عبر حقن المطالبات. التحديث الفوري ضروري لجميع المستخدمين.</p>
+<div class="meta"><span class="date-badge">9 سبتمبر</span> <a href="https://www.zerodayinitiative.com/advisories/ZDI-26-634/" target="_blank" rel="noopener">ZDI</a></div>
+</div>
+
+<footer>
+<p>حقوق المحتوى متاحة للجميع — النشرة التقنية اليومية</p>
+<p>📅 الجمعة 18 سبتمبر 2026 | 🌐 توقيت مكة المكرمة</p>
+</footer>
+</div>
+
+<script>
+(function() {
+  const btn = document.getElementById('themeBtn');
+  const saved = localStorage.getItem('theme');
+  if (saved) { document.documentElement.setAttribute('data-theme', saved); }
+  btn.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e) {}
+  });
+})();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>

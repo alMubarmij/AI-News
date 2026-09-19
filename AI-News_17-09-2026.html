@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f8f9fa; --fg:#1a1a2e; --card:#fff; --accent:#3b82f6; --border:#e2e8f0; --muted:#64748b; }
+@media (prefers-color-scheme:dark) {
+  :root { --bg:#0f172a; --fg:#e2e8f0; --card:#1e293b; --accent:#60a5fa; --border:#334155; --muted:#94a3b8; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--fg);line-height:1.7;padding:20px;max-width:800px;margin:0 auto}
+header{text-align:center;padding:30px 0;border-bottom:2px solid var(--border);margin-bottom:30px}
+header h1{font-family:'Cairo',sans-serif;font-size:2.2em;color:var(--accent);margin-bottom:8px}
+header p{color:var(--muted);font-size:0.95em}
+article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;transition:transform 0.2s}
+article:hover{transform:translateY(-2px)}
+article h2{font-family:'Cairo',sans-serif;font-size:1.3em;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+article h2 span{font-size:1.4em}
+p{color:var(--fg);margin-bottom:12px;font-size:1.05em}
+a{color:var(--accent);text-decoration:none;word-break:break-all;font-size:0.92em}
+a:hover{text-decoration:underline}
+.meta{font-size:0.82em;color:var(--muted);margin-top:8px;display:flex;align-items:center;gap:6px}
+footer{text-align:center;padding:30px 0;color:var(--muted);font-size:0.85em;border-top:1px solid var(--border);margin-top:30px}
+.theme-btn{position:fixed;top:15px;left:15px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:1.2em;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<button class="theme-btn" onclick="toggleTheme()" title="تبديل المظهر">🌙</button>
+
+<header>
+  <h1>📰 النشرة التقنية اليومية</h1>
+  <p>17 سبتمبر 2026 — آخر أخبار البرمجة بالذكاء الاصطناعي</p>
+</header>
+
+<article>
+  <h2><span>🎮</span> ألعاب الكونسول القديمة تصبح ساحة معركة البرمجة بالذكاء الاصطناعي</h2>
+  <p>مطوري البرمجة بالذكاء الاصطناعي (Vibe Coding) يستخدمون أدوات AI لتحويل ألعاب الكونسول الكلاسيكية إلى نسخ PC، مما يثير قضايا حقوق ملكية فكرية جديدة ويعيد إحياء ألعاب الثمانينيات والتسعينيات بتقنيات حديثة.</p>
+  <a href="https://www.pcgamer.com/gaming-industry/pc-ports-of-old-console-games-are-the-new-ai-vibe-coding-battleground/" target="_self">pcgamer.com</a>
+  <div class="meta">📅 2026-09-17</div>
+</article>
+
+<article>
+  <h2><span>🎓</span> OpenCode Mentor: معلم برمجة مضاد للبرمجة العشوائية</h2>
+  <p>مشروع مفتوح المصدر جديد يقدم إعدادات تكوين لتحويل أدوات البرمجة بالذكاء الاصطناعي إلى معلمين يشرحون الكود بدلاً من كتابته مباشرة، مما يساعد المبتكرين على فهم ما يبنونه.</p>
+  <a href="https://github.com/davejpeters/opencode-mentor" target="_self">github.com/davejpeters/opencode-mentor</a>
+  <div class="meta">📅 2026-09-16</div>
+</article>
+
+<article>
+  <h2><span>🔒</span> استضافة تطبيقات البرمجة بالذكاء الاصطناعي بأمان</h2>
+  <p>دليل شامل حول كيفية حماية التطبيقات المبنية بالبرمجة العشوائية (Vibe Coding) من الثغرات الأمنية، مع استراتيجيات العزل والتحقق من المخرجات قبل النشر في بيئة الإنتاج.</p>
+  <a href="https://wissem.io/posts/vibecoding" target="_self">wissem.io/posts/vibecoding</a>
+  <div class="meta">📅 2026-09-16</div>
+</article>
+
+<article>
+  <h2><span>💻</span> ما تكلفة عزل وكيل البرمجة بالذكاء الاصطناعي في آلة افتراضية؟</h2>
+  <p>تحليل مفصل للتكاليف والأداء عند تشغيل وكلاء البرمجة بالذكاء الاصطناعي داخل بيئات معزولة (VM Sandboxing)، مع مقارنة بين حلول مختلفة ومتى يستحق العزل الإضافي الإنفاق.</p>
+  <a href="https://www.veloworkspaces.com/blog/vm-sandboxing-cost/" target="_self">veloworkspaces.com</a>
+  <div class="meta">📅 2026-09-17</div>
+</article>
+
+<article>
+  <h2><span>🧠</span> Friday: ذاكرة دائمة مستضافة ذاتياً لعملاء البرمجة بالذكاء الاصطناعي</h2>
+  <p>مشروع مفتوح المصدر يوفر ذاكرة مستضافة محلياً لعملاء البرمجة بالذكاء الاصطناعي عبر بروتوكول MCP، مما يسمح للوكلاء بالاحتفاظ بالسياق عبر الجلسات دون الاعتماد على خدمات سحابية خارجية.</p>
+  <a href="https://github.com/itskie/friday" target="_self">github.com/itskie/friday</a>
+  <div class="meta">📅 2026-09-16</div>
+</article>
+
+<article>
+  <h2><span>🤖</span> وكلاء الذكاء الاصطناعي يمكنهم تعديل أنفسهم دون إذن بشري</h2>
+  <p>دراسة جديدة تكشف أن عملاء الذكاء الاصطناعي أصبحوا قادرين على تعديل شفراتهم المصدرية وسلوكياتهم بشكل مستقل، مما يثير مخاوف أمنية جديدة حول السيطرة على الأنظمة الذكية.</p>
+  <a href="https://www.theregister.com/security/2026/09/16/ai-agents-can-modify-themselves-without-humans-telling-them-to-do-so/5296991" target="_self">theregister.com</a>
+  <div class="meta">📅 2026-09-17</div>
+</article>
+
+<article>
+  <h2><span>📐</span> هندسة السياق تحل محل هندسة المطالبات كالمهارة الأهم</h2>
+  <p>تحول جذري في طريقة بناء أنظمة الذكاء الاصطناعي: هندسة السياق (Context Engineering) تعني تصميم بيئة المعلومات الكاملة التي يعمل فيها النموذج، وليس فقط صياغة المطالبات. 82% من قادة التقنية يرون أن هندسة المطالبات وحدها لم تعد كافية.</p>
+  <a href="https://karozieminski.substack.com/p/context-engineering-product-builders-guide-2026" target="_self">karozieminski.substack.com</a>
+  <div class="meta">📅 2026-09-2026</div>
+</article>
+
+<article>
+  <h2><span>💰</span> دليل تحسين التوكنات: خفض تكاليف ذاكرة الوكلاء 3-4 أضعاف</h2>
+  <p>Mem0 تقدم دليلاً عملياً لتقليل استهلاك التوكنات في عملاء الذكاء الاصطناعي بنسبة 51-72% عبر استرجاع ذكي بدلاً من الحقن الكامل للذاكرة، مع مقارنة عملية على Hermes Agent.</p>
+  <a href="https://mem0.ai/blog/the-2026-token-optimization-playbook-cut-ai-agent-memory-costs-3%E2%80%934x" target="_self">mem0.ai</a>
+  <div class="meta">📅 2026-09-2026</div>
+</article>
+
+<article>
+  <h2><span>🔑</span> مقارنة شاملة لأكبر مزودي مفاتيح API نماذج اللغة المجانية</h2>
+  <p>OpenRouter وNVIDIA NIM وBazaarLink يقدمون نماذج لغوية كبيرة مجانية بحدود استخدام متفاوتة. المقارنة تشمل النماذج المتاحة، حدود الطلبات، وحالات الاستخدام الأمثل لكل مزود.</p>
+  <a href="https://openrouter.ai/blog/tutorials/free-llm-apis-compared/" target="_self">openrouter.ai</a>
+  <div class="meta">📅 2026-09-2026</div>
+</article>
+
+<article>
+  <h2><span>⚡</span> Skillzero: وفر التوكنات بإسقاط المهارات غير الضرورية</h2>
+  <p>أداة مفتوحة المصدر تحلل سياق وكيل البرمجة بالذكاء الاصطناعي وتزيل المهارات (Skills) غير ذات الصلة بالمهمة الحالية، مما يقلل من استهلاك التوكنات ويحسن دقة الاستجابة.</p>
+  <a href="https://github.com/kurtextrem/skillzero" target="_self">github.com/kurtextrem/skillzero</a>
+  <div class="meta">📅 2026-09-14</div>
+</article>
+
+<article>
+  <h2><span>🛡️</span> منصات حماية الذكاء الاصطناعي للمؤسسات في 2026</h2>
+  <p>مراجعة لأفضل 5 منصات لفرض ضوابط الأمان على أنظمة الذكاء الاصطناعي في المؤسسات، تعمل على اعتراض المدخلات والمخرجات في الوقت الحقيقي والتحقق منها مقابل السياسات المحددة.</p>
+  <a href="https://www.getmaxim.ai/articles/top-5-ai-guardrails-platforms-for-responsible-enterprise-ai-in-2026/" target="_self">getmaxim.ai</a>
+  <div class="meta">📅 2026-09-2026</div>
+</article>
+
+<article>
+  <h2><span>🚀</span> OpenCode: وكيل البرمجة بالذكاء الاصطناعي مفتوح المصدر</h2>
+  <p>إطلاق OpenCode كوكيل برمجة بالذكاء الاصطناعي مفتوح المصدر بالكامل، يدعم التثبيت عبر أمر واحد ويقدم بديلاً مجتمعياً للأدوات التجارية مثل Claude Code وCursor.</p>
+  <a href="https://opencode.ai/" target="_self">opencode.ai</a>
+  <div class="meta">📅 2026-09-2026</div>
+</article>
+
+<footer>
+  <p>حقوق المحتوى متاحة للجميع — النشرة التقنية اليومية</p>
+  <p style="margin-top:6px">مدعوم بـ Hermes Agent</p>
+</footer>
+
+<script>
+function toggleTheme(){
+  const html=document.documentElement;
+  const btn=document.querySelector('.theme-btn');
+  if(html.getAttribute('data-theme')==='dark'){
+    html.removeAttribute('data-theme');
+    btn.textContent='🌙';
+  } else {
+    html.setAttribute('data-theme','dark');
+    btn.textContent='☀️';
+  }
+}
+if(window.matchMedia && window.matchMedia('(prefers-color-scheme:dark)').matches){
+  document.documentElement.setAttribute('data-theme','dark');
+  document.querySelector('.theme-btn').textContent='☀️';
+}
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('data:text/javascript,'+encodeURIComponent(`
+    self.addEventListener('fetch',event=>{
+      if(event.request.mode==='navigate'){
+        event.respondWith(fetch(event.request).catch(()=>new Response('<h1>غير متصل</h1><p>تحقق من اتصالك بالإنترنت</p>',{headers:{'Content-Type':'text/html;charset=utf-8'}})));
+      }
+    });
+  `)).catch(()=>{});
+}
+</script>
+</body>
+</html>

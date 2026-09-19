@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --text:#1a1a1a; --muted:#5b6470;
+    --accent:#0a66c2; --border:#e3e7ee;
+  }
+  [data-theme="dark"]{
+    --bg:#0e1116; --card:#171b22; --text:#e8edf4; --muted:#9aa6b5;
+    --accent:#4ea1ff; --border:#262d38;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;line-height:1.9;padding:0 0 60px}
+  header{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--border);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;z-index:10}
+  header h1{font-family:'Cairo',sans-serif;font-size:20px;font-weight:700}
+  .toggle{background:var(--accent);color:#fff;border:none;padding:8px 14px;border-radius:8px;font-family:'Cairo',sans-serif;cursor:pointer;font-size:14px}
+  .wrap{max-width:760px;margin:24px auto;padding:0 16px}
+  article{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  h2{font-family:'Cairo',sans-serif;font-size:21px;font-weight:700;margin-bottom:10px;line-height:1.5}
+  p.summary{font-size:18px;color:var(--text);margin-bottom:12px}
+  p.vid{font-size:16px;color:var(--muted);background:var(--bg);border-right:3px solid var(--accent);padding:8px 12px;border-radius:6px;margin-bottom:12px}
+  a.link{display:inline-block;color:var(--accent);font-family:'Cairo',sans-serif;font-size:15px;text-decoration:none;word-break:break-all}
+  a.link:hover{text-decoration:underline}
+  .date{display:block;margin-top:8px;color:var(--muted);font-size:14px}
+  #offline{display:none;background:#b00020;color:#fff;text-align:center;padding:10px;font-family:'Cairo',sans-serif;position:fixed;bottom:0;width:100%;z-index:20}
+  body.offline #offline{display:block}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧠 نشرة الذكاء الاصطناعي — ١٠ سبتمبر ٢٠٢٦</h1>
+  <button class="toggle" id="themeBtn">تبديل الفاتح/الداكن</button>
+</header>
+<div id="offline">⚠️ انقطع الاتصال — تعرض نسخة محفوظة محلياً</div>
+<main class="wrap">
+
+<article>
+  <h2>🚂 نqueda paleoge لـ Anthropic و "قطار الهيبري"</h2>
+  <p class="summary">نشر مطور على Hacker News ردّاً نقدياً على التوقعات المفرطة بحوث الانقراض المرتبطة بالنماذج اللغوية الكبرى، مقارناً بين rhetorical hype والواقع التقني الفعلي للنماذج الحالية.</p>
+  <a class="link" href="https://news.ycombinator.com/item?id=49637237">https://news.ycombinator.com/item?id=49637237</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-١٠</span>
+</article>
+
+<article>
+  <h2>🧠 هل أفرغت "البرمجة بالذكاء الاصطناعي" أدمغة المطورين؟</h2>
+  <p class="summary">نشر موقع Codeset.ai مقالاً يتساءل عن Whether relying heavily on AI coding agents is eroding developers' problem-solving skills, analyzing the trade-offs between productivity gains and cognitive dependency on LLMs.</p>
+  <a class="link" href="https://codeset.ai/blog/has-vibecoding-fried-your-brain">https://codeset.ai/blog/has-vibecoding-fried-your-brain</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-٠٩</span>
+</article>
+
+<article>
+  <h2>🔧 تشريح هندسة الإطارสำหรับ وكلاء البرمجة بالذكاء الاصطناعي</h2>
+  <p class="summary">نشر مهندسون من Google مقالاً تقنياً عميقاً حول كيفية تقييم وكلاء البرمجة، والتنقل بين benchmarks الشاملة والتقييم السلوكي الدقيق، مع نصائح عملية لضمان موثوقية الوكلاء مع تطور النماذج.</p>
+  <a class="link" href="https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/">https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-٠٩</span>
+</article>
+
+<article>
+  <h2>⚠️ مهاجمون يستخدمون حقن Prompt ضد وكلاء البرمجة — تحذير من Google Cloud</h2>
+  <p class="summary">أصدرت مجموعة التهديدات التابعة لـ Google Cloud (GTIG) تقريراً مفصلاً حول تطور الهجمات المعادية ضد أنظمة الذكاء الاصطناعي، من 주입 النصوص الأولية إلى الوكلاء المستقلين، مع سيناريوهات واقعية لاختراق المسارات البرمجية.</p>
+  <a class="link" href="https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai">https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-٠٩</span>
+</article>
+
+<article>
+  <h2>🔐 مفتاح إعداد Git نفذ شيفرة في 7 وكلاء برمجة — الإصلاح القديم لا يكفي</h2>
+  <p class="summary">نشر فريق grith تحليلاً للأمن يتناول كيفية استغلال مفتاح الإعداد core.fsmonitor لتنفيذ شيفرة ضمن 7 وكلاء برمجة (Claude Code, Codex, Qwen Code, Goose, Grok Build, Hermes وغيرها)، مؤكدين أن تصحيح 2022 لا يغطي مسار الهجوم الجديد.</p>
+  <a class="link" href="https://grith.ai/blog/git-config-key-2022-fix-coding-agents">https://grith.ai/blog/git-config-key-2022-fix-coding-agents</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-٠٩</span>
+</article>
+
+<article>
+  <h2>🕳️ Blackholes — منظومة عمل ماك لمشاريع وكلاء البرمجة المتعددة</h2>
+  <p class="summary">عرض مطورون مشروع Blackholes بيئة عمل على نظام ماك تتيح تجميع مستودعات متعددة في مشروع واحد، وتفويض مهام للوكلاء بسياق مشترك، دون الحاجة لدمج الشيفرة في مستودع ضخم واحد.</p>
+  <a class="link" href="https://blackholes.dev">https://blackholes.dev</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-٠٨</span>
+</article>
+
+<article>
+  <h2>📹 ١ مليار Token مجانية لوكلاء الذكاء الاصطناعي (Claude Code & Hermes Agent)</h2>
+  <p class="summary">استعرض مستخدم على YouTube فيديو عملياً يشرح كيفية الحصول على ١ مليار 토큰 مجانية لتشغيل وكلاء البرمجة مثل Claude Code و Hermes Agent، مع اختبارات مباشرة и حدود الاستخدام الفعلية.</p>
+  <a class="link" href="https://www.youtube.com/watch?v=SIuMt_UmYy8">https://www.youtube.com/watch?v=SIuMt_UmYy8</a>
+  <span class="date">تاريخ الخبر: ٢٠٢٦-٠٩-٠٩</span>
+  <p class="vid">ملخص الفيديو: مصادر Tokens مجانية فعالة حالياً مع خطوات تشغيل سريعة لـ Claude Code و Hermes Agent.</p>
+</article>
+
+</main>
+<script>
+(function(){
+  var btn=document.getElementById('themeBtn');
+  btn.addEventListener('click',function(){
+    var cur=document.body.getAttribute('data-theme');
+    var next=cur==='dark'?'light':'dark';
+    document.body.setAttribute('data-theme',next);
+  });
+  document.body.setAttribute('data-theme','light');
+  window.addEventListener('online',function(){document.body.classList.remove('offline');});
+  window.addEventListener('offline',function(){document.body.classList.add('offline');});
+  if('serviceWorker' in navigator){
+    var sw="self.addEventListener('fetch',function(e){if(!navigator.onLine){e.respondWith(new Response('offline'));}});";
+    try{var b=new Blob([sw],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(b)).catch(function(){});}catch(e){}
+  }
+})();
+</script>
+</body>
+</html>
