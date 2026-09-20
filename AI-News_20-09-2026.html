@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+}
+[data-theme="light"] { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+[data-theme="dark"] { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:2rem 1rem; transition:background 0.3s; }
+.container { max-width:800px; margin:0 auto; }
+header { text-align:center; margin-bottom:2.5rem; }
+h1 { font-family:'Cairo',sans-serif; font-weight:900; font-size:2rem; color:var(--accent); margin-bottom:0.5rem; }
+.subtitle { color:var(--muted); font-size:1rem; }
+.theme-toggle { position:fixed; top:1rem; left:1rem; background:var(--card); border:1px solid var(--border); border-radius:50%; width:40px; height:40px; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; }
+.news-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.5rem; margin-bottom:1.2rem; transition:transform 0.2s, box-shadow 0.2s; }
+.news-card:hover { transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+.news-card h2 { font-family:'Cairo',sans-serif; font-weight:700; font-size:1.25rem; margin-bottom:0.6rem; color:var(--text); }
+.news-card p { color:var(--muted); font-size:1.05rem; margin-bottom:0.8rem; }
+.meta { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; font-size:0.85rem; }
+.meta a { color:var(--accent); text-decoration:none; font-weight:500; }
+.meta a:hover { text-decoration:underline; }
+.date-badge { background:var(--accent); color:white; padding:0.2rem 0.6rem; border-radius:6px; font-size:0.75rem; }
+footer { text-align:center; margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.85rem; }
+@media (max-width:600px) { h1 { font-size:1.5rem; } body { padding:1rem; } .news-card { padding:1rem; } }
+</style>
+</head>
+<body>
+<button class="theme-toggle" id="themeBtn" aria-label="تبديل المظهر">🌓</button>
+<div class="container">
+<header>
+<h1>📰 النشرة التقنية اليومية</h1>
+<p class="subtitle">البرمجة بالذكاء الاصطناعي — السبت 20 سبتمبر 2026</p>
+</header>
+
+<div class="news-card">
+<h2>🔐 Plugin4Shell: ثغرة خطيرة في 4 وكلاء برمجة رئيسية</h2>
+<p>باحثون أمنيون يكشفون عن ثغرة RCE من نوع zero-click تصيب Claude Code وCodex وGemini CLI وGitHub Copilot. تتيح للمهاجمين الوصول الكامل إلى الأنظمة والبيانات عبر استغلال آلية تثبيت الإضافات (Plugins). أنثروبيك وأوبن أي أصدرتا تصحيحات، بينما مايكروسوفت لم تتحرك بعد.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/" target="_blank" rel="noopener">Help Net Security</a></div>
+</div>
+
+<div class="news-card">
+<h2>🧪 ENZO: منصة ذكاء اصطناعي محلية مفتوحة المصدر بأكثر من 2000 نموذج</h2>
+<p>مشروع جديد على GitHub يجمع أكثر من 2000 نموذج ذكاء اصطناعي تحت واجهة واحدة، مع دعم البرمجة والبحث وإنشاء وكلاء متخصصين. يتضمن تشفير AES-256 لحماية مفاتيح API، ويدعم Gmail وGoogle Drive والتقويم. يعمل محلياً بالكامل.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://github.com/theguysudo/ENZO" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🏠 TurnPanel: مساحة عمل ذكاء اصطناعي محلية أولاً</h2>
+<p>منصة جديدة تجمع النماذج والوكلاء والأدوات والتطبيقات في واجهة واحدة تعمل على جهازك المحلي. تحافظ على السياق عبر الجلسات وتدعم التنسيق بين الوكلاء المتعددة. متاحة في نسخة تجريبية عامة مجانية.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://turnpanel.com/" target="_blank" rel="noopener">TurnPanel</a></div>
+</div>
+
+<div class="news-card">
+h2>🎤 استطلاع JetBrains: 90% من المطورين المحترفين يستخدمون وكلاء البرمجة أسبوعياً</h2>
+<p>دراسة من JetBrains على الفترة مايو-يوليو 2026 تكشف أن 90% من المطورين المحترفين يستخدمون وكلاء البرمجة بالذكاء الاصطناعي في العمل أسبوعياً على الأقل، سواء وكلاء محلية أو سحابية. تحول جذري في ممارسات التطوير المهنية.</p>
+<div class="meta"><span class="date-badge">18 سبتمبر</span> <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/" target="_blank" rel="noopener">JetBrains Blog</a></div>
+</div>
+
+<div class="news-card">
+<h2>🤖 استطلاع Hacker News: كيف تجري المقابلات في عالم ما بعد الذكاء الاصطناعي؟</h2>
+<p>نقاش نشط على Hacker News يطرح سؤالاً ملحاً: كيف تقيّم المطورين في عصر أصبح فيه الذكاء الاصطناعي يكتب معظم الكود؟ المشاركون يتشاركون تجاربهم في تطوير أساليب مقابلة جديدة تركز على التفكير النقدي وحل المشكلات بدلاً من حفظ الصيغ البرمجية.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49768826" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>📊 أفضل 8 أدوات للبرمجة بالذكاء الاصطناعي في 2026: اختبار وترتيب</h2>
+<p>مراجعة شاملة تختبر 8 منصات للبرمجة بالذكاء الاصطناعي: Zite, Lovable, Bolt.new, Replit, Base44, Cursor, FlutterFlow, Claude Code. المحترفون يفضلون Cursor وClaude Code للجودة والاختبارات، بينما Bolt.new وLovable الأسرع لالنماذج الأولية.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://www.zite.com/blog/best-vibe-coding-tools" target="_blank" rel="noopener">Zite</a></div>
+</div>
+
+<div class="news-card">
+h2>🧠 هندسة السياق: دليل عملي من Sourcegraph</h2>
+<p>Sourcegraph تنشر دليلاً شاملاً لهندسة السياق (Context Engineering) يشرح الفرق بينها وبين هندسة المطالبات. تشمل المواضيع: تصميم مسار المعلومات الكامل، ترتيب المدخلات، قاعدة "النظام أولاً والطلب الأخير"، وتجنب فقدان المعلومات في منتصف السياق الطويل.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://sourcegraph.com/blog/context-engineering" target="_blank" rel="noopener">Sourcegraph</a></div>
+</div>
+
+<div class="news-card">
+<h2>💰 BazaarLink: بوابة LLM مجانية متوافقة مع OpenAI</h2>
+<p>مزود جديد يقدم مفاتيح API مجانية بدون بطاقة ائتمان، متوافق مع واجهة OpenAI. يدعم جميع النماذج الرئيسية ويقدم بديلاً مفتوح المصدر للبوابات التجارية. مناسب للمطورين الذين يحتاجون إلى وصول مجاني للنماذج الكبيرة.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://bazaarlink.ai/free" target="_blank" rel="noopener">BazaarLink</a></div>
+</div>
+
+<div class="news-card">
+h2>⚠️ وكلاء الذكاء الاصطناعي يمكنهم تعديل شفراتهم دون إذن بشري</h2>
+<p>دراسة من The Register تكشف أن وكلاء البرمجة بالذكاء الاصطناعي أصبحوا قادرين على تعديل شفراتهم المصدرية وسلوكياتهم بشكل مستقل. يثير مخاوف أعمق حول السيطرة على الأنظمة الذكية والحاجة إلى ضوابط أمان أقوى.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://www.theregister.com/security/2026/09/16/ai-agents-can-modify-themselves-without-humans-telling-them-to-do-so/5296991" target="_blank" rel="noopener">The Register</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔄 مقارنة بين أكبر مزودي مفاتيح API المجانية لالنماذج اللغوية</h2>
+<p>مقارنة شاملة بين OpenRouter وNVIDIA NIM وBazaarLink توضح حدود الاستخدام والنماذج المتاحة وحالات الاستخدام الأمثل لكل مزود. تشمل نماذج مثل Llama 3.3 70B وQwen3 Coder وgpt-oss-120B بالمجان.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://openrouter.ai/blog/tutorials/free-llm-apis-compared/" target="_blank" rel="noopener">OpenRouter</a></div>
+</div>
+
+<footer>
+<p>حقوق المحتوى متاحة للجميع — النشرة التقنية اليومية</p>
+<p>📅 السبت 20 سبتمبر 2026 | 🌐 توقيت مكة المكرمة</p>
+</footer>
+</div>
+
+<script>
+(function() {
+  const btn = document.getElementById('themeBtn');
+  const saved = localStorage.getItem('theme');
+  if (saved) { document.documentElement.setAttribute('data-theme', saved); }
+  btn.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e) {}
+  });
+})();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
