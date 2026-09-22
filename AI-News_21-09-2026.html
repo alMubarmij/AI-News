@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+}
+[data-theme="light"] { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+[data-theme="dark"] { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:2rem 1rem; transition:background 0.3s; }
+.container { max-width:800px; margin:0 auto; }
+header { text-align:center; margin-bottom:2.5rem; }
+h1 { font-family:'Cairo',sans-serif; font-weight:900; font-size:2rem; color:var(--accent); margin-bottom:0.5rem; }
+.subtitle { color:var(--muted); font-size:1rem; }
+.theme-toggle { position:fixed; top:1rem; left:1rem; background:var(--card); border:1px solid var(--border); border-radius:50%; width:40px; height:40px; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; }
+.news-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.5rem; margin-bottom:1.2rem; transition:transform 0.2s, box-shadow 0.2s; }
+.news-card:hover { transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+.news-card h2 { font-family:'Cairo',sans-serif; font-weight:700; font-size:1.25rem; margin-bottom:0.6rem; color:var(--text); }
+.news-card p { color:var(--muted); font-size:1.05rem; margin-bottom:0.8rem; }
+.meta { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; font-size:0.85rem; }
+.meta a { color:var(--accent); text-decoration:none; font-weight:500; }
+.meta a:hover { text-decoration:underline; }
+.date-badge { background:var(--accent); color:white; padding:0.2rem 0.6rem; border-radius:6px; font-size:0.75rem; }
+footer { text-align:center; margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.85rem; }
+@media (max-width:600px) { h1 { font-size:1.5rem; } body { padding:1rem; } .news-card { padding:1rem; } }
+</style>
+</head>
+<body>
+<button class="theme-toggle" id="themeBtn" aria-label="تبديل المظهر">🌓</button>
+<div class="container">
+<header>
+<h1>📰 النشرة التقنية اليومية</h1>
+<p class="subtitle">البرمجة بالذكاء الاصطناعي — الإثنين 21 سبتمبر 2026</p>
+</header>
+
+<div class="news-card">
+<h2>🤖 ZCode: وكيل برمجة مفتوح المصدر من Z.ai يحصد 1.7 نجمة في يومه الأول</h2>
+<p>Z.ai تطلق ZCode، وكيل برمجة ذكي قابل للتوسع ومفتوح المصدر. المشروع حصد أكثر من 1.7 ألف نجمة و419 تفرعاً خلال ساعات من إطلاقه. يدعم بيئة عمل متكاملة للبرمجة بالذكاء الاصطناعي مع قدرات متقدمة في فهم السياق وتنفيذ المهام المعقدة.</p>
+<div class="meta"><span class="date-badge">20 سبتمبر</span> <a href="https://github.com/zai-org/ZCode" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔐 Casbin Gateway: بوابة أمان مخصصة لوكلاء البرمجة المحلية</h2>
+<p>مشروع جديد من أباتشي يقدم بوابة أمان مخصصة لوكلاء البرمجة بالذكاء الاصطناعي التي تعمل على جهازك المحلي. يهدف إلى منع الوصول غير المصرح به إلى الملفات والأنظمة، ويعالج المخاطر الأمنية التي كشفت عنها ثغرات مثل Plugin4Shell.</p>
+<div class="meta"><span class="date-badge">20 سبتمبر</span> <a href="https://github.com/apache/casbin-gateway" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🧠 ThinkRail: انشقاق من بيئة JetBrains لاستضافة Claude Code</h2>
+<p>مطور ينشئ انشقاقاً (Fork) من بيئة JetBrains الجديدة المدعومة بالوكلاء (Agent IDE) لجعلها تستضيف Claude Code مباشرة. المشروع يفتح الباب أمام استخدام وكلاء برمجة متعددة داخل بيئة تطوير موحدة مع الحفاظ على أدوات JetBrains المتقدمة.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://github.com/CommanderTvis/thinkrail" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔄 Skillsync (YC W26): جلسات محادثة ذكاء اصطناعي قابلة للنقل بين الوكلاء</h2>
+<p>شركة ناشئة من Y Combinator دفعة صيف 2026 تطلق Skillsync، منصة تتيح نقل جلسات المحادثة والسياق بين وكلاء الذكاء الاصطناعي المختلفة بسلاسة. تنهي مشكلة الارتباط بوكيل واحد وتسمح للمطورين بتبديل الأدوات دون فقدان السياق.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49743049" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>🛡️ TimeCodeSecurity: تحليل ثابت وتصحيح تلقائي لكود Python</h2>
+<p>أداة أمنية جديدة تستخدم التحليل الثابت لشجرة بناء الجملة (AST) للكشف عن الثغرات في كود Python وتصحيحها تلقائياً. تعتمد على نهج حتمي (Deterministic) يضمن نتائج قابلة للتكرار، مما يجعلها مناسبة لبيئات التكامل المستمر.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49765426" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>🎯 onPanda: تحكم على مستوى الرموز (Tokens) للنماذج اللغوية والوكلاء</h2>
+<p>منصة جديدة تتيح التحكم في مخرجات النماذج اللغوية على مستوى الرموز الفردية. تعرض احتمالية كل رمز بصرياً (أخضر = احتمالية عالية، أحمر = منخفضة)، وتسمح بتعديل الرموز وإكمال النص من أي نقطة. مفيدة لتحسين مخرجات الوكلاء وتدريب النماذج.</p>
+<div class="meta"><span class="date-badge">18 سبتمبر</span> <a href="https://onpanda.diyer22.com/" target="_blank" rel="noopener">onPanda</a></div>
+</div>
+
+<div class="news-card">
+<h2>📄 OpenDocBot: اجلب نموذجك الخاص إلى Word وExcel وPowerPoint</h2>
+<p>مشروع مفتوح المصدر يتيح توصيل نماذج الذكاء الاصطناعي المحلية أو السحابية مباشرة إلى تطبيقات مايكروسوفت أوفيس. يمكنك استخدام نموذجك المفضل لإنشاء المستندات والجداول والعروض التقديمية دون الاعتماد على خدمات طرف ثالث.</p>
+<div class="meta"><span class="date-badge">16 سبتمبر</span> <a href="https://opendocbot.com/" target="_blank" rel="noopener">OpenDocBot</a></div>
+</div>
+
+<div class="news-card">
+<h2>🍕 Pizza Bot: صندوق وارد لوكلاء الذكاء الاصطناعي التي تعمل في الخلفية</h2>
+<p>منصة جديدة تقدم صندوق وارد موحد لوكلاء الذكاء الاصطناعي التي تعمل بشكل غير متزامن في الخلفية. تجمع إشعارات ومخرجات الوكلاء المتعددة في مكان واحد، مما يسهل متابعة المهام الطويلة والمراجعة البشرية عند الحاجة.</p>
+<div class="meta"><span class="date-badge">15 سبتمبر</span> <a href="https://github.com/pizza-bot-app/pizza-bot" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🎮 البرمجة بالذكاء الاصطناعي تعيد إحياء ألعاب المنصات القديمة</h2>
+<p>موجة جديدة من المطورين يستخدمون وكلاء البرمجة بالذكاء الاصطناعي لتحويل ألعاب المنصات الكلاسيكية (Console) إلى نسخ PC حديثة. النقاش على PC Gamer يسلط الضوء على التحديات القانونية والتقنية، وكيف يسرع الذكاء الاصطناعي عملية التحويل بشكل غير مسبوق.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://www.pcgamer.com/gaming-industry/pc-ports-of-old-console-games-are-the-new-ai-vibe-coding-battleground/" target="_blank" rel="noopener">PC Gamer</a></div>
+</div>
+
+<footer>
+<p>حقوق المحتوى متاحة للجميع — النشرة التقنية اليومية</p>
+<p>📅 الإثنين 21 سبتمبر 2026 | 🌐 توقيت مكة المكرمة</p>
+</footer>
+</div>
+
+<script>
+(function() {
+  const btn = document.getElementById('themeBtn');
+  const saved = localStorage.getItem('theme');
+  if (saved) { document.documentElement.setAttribute('data-theme', saved); }
+  btn.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e) {}
+  });
+})();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
