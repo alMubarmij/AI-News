@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+}
+[data-theme="light"] { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+[data-theme="dark"] { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:2rem 1rem; transition:background 0.3s; }
+.container { max-width:800px; margin:0 auto; }
+header { text-align:center; margin-bottom:2.5rem; }
+h1 { font-family:'Cairo',sans-serif; font-weight:900; font-size:2rem; color:var(--accent); margin-bottom:0.5rem; }
+.subtitle { color:var(--muted); font-size:1rem; }
+.theme-toggle { position:fixed; top:1rem; left:1rem; background:var(--card); border:1px solid var(--border); border-radius:50%; width:40px; height:40px; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; }
+.news-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.5rem; margin-bottom:1.2rem; transition:transform 0.2s, box-shadow 0.2s; }
+.news-card:hover { transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+.news-card h2 { font-family:'Cairo',sans-serif; font-weight:700; font-size:1.25rem; margin-bottom:0.6rem; color:var(--text); }
+.news-card p { color:var(--muted); font-size:1.05rem; margin-bottom:0.8rem; }
+.meta { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; font-size:0.85rem; }
+.meta a { color:var(--accent); text-decoration:none; font-weight:500; }
+.meta a:hover { text-decoration:underline; }
+.date-badge { background:var(--accent); color:white; padding:0.2rem 0.6rem; border-radius:6px; font-size:0.75rem; }
+footer { text-align:center; margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.85rem; }
+@media (max-width:600px) { h1 { font-size:1.5rem; } body { padding:1rem; } .news-card { padding:1rem; } }
+</style>
+</head>
+<body>
+<button class="theme-toggle" id="themeBtn" aria-label="تبديل المظهر">🌓</button>
+<div class="container">
+<header>
+<h1>📰 النشرة التقنية اليومية</h1>
+<p class="subtitle">البرمجة بالذكاء الاصطناعي — الأحد 22 سبتمبر 2026</p>
+</header>
+
+<div class="news-card">
+<h2>🧠 Motif Labs: ذاكرة مشتركة مفتوحة المصدر لفرق وكلاء البرمجة</h2>
+<p>مشروع جديد على Hacker News يقدم حلاً للذاكرة المشتركة بين فرق وكلاء البرمجة بالذكاء الاصطناعي. يتيح للفرق المتعددة العمل على نفس المشروع مشاركة السياق والمخرجات بكفاءة، مما يقلل التكرار ويحسن التنسيق بين الوكلاء المختلفة.</p>
+<div class="meta"><span class="date-badge">21 سبتمبر</span> <a href="https://github.com/motif-Labs/motif" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔍 Agent Harness Replay: إعادة تشغيل جلسات البرمجة وفحص طلباتها</h2>
+<p>أداة جديدة تتيح إعادة تشغيل جلسات البرمجة بالذكاء الاصطناعي خطوة بخطوة وفحص كل طلب أرسله الوكيل. مفيدة لتصحيح الأخطاء وفهم كيفية اتخاذ القرارات، وتوفر شفافية كاملة في عمل الوكلاء.</p>
+<div class="meta"><span class="date-badge">21 سبتمبر</span> <a href="https://ishamf.dev/p/agent-harness-replay/" target="_blank" rel="noopener">المقالة</a></div>
+</div>
+
+<div class="news-card">
+<h2>🎯 Easiest.ai: أداة فعالة بتقنية Vim لتقليل الرموز من 350k إلى 20-80k</h2>
+<p>أداة جديدة مستوحاة من محرر Vim تقدم طريقة فائقة الكفاءة للتفاعل مع النماذج اللغوية. تدعي تقليل عدد الرموز المستخدمة من أكثر من 350 ألف إلى ما بين 20 و80 ألف رمز، مما يوفر تكاليف بشكل كبير مع الحفاظ على جودة المخرجات.</p>
+<div class="meta"><span class="date-badge">17 سبتمبر</span> <a href="https://easiest.ai/" target="_blank" rel="noopener">الموقع</a></div>
+</div>
+
+<div class="news-card">
+<h2>🐢 Slowave: ذاكرة محلية تكيفية لوكلاء البرمجة</h2>
+<p>مشروع مفتوح المصدر يقدم ذاكرة محلية قابلة للتكيف لوكلاء البرمجة بالذكاء الاصطناعي. يتعلم من تفاعلات المطور السابقة ويبني سياقاً تراكمياً يحسن جودة المقترحات ويقلل التكرار.</p>
+<div class="meta"><span class="date-badge">14 سبتمبر</span> <a href="https://github.com/slowave-ai/slowave" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>📊 Novgraph: رسم بياني مستدام لقواعد الكود</h2>
+<p>مشروع جديد يبني رسماً بيانياً للمعرفة المستدامة لقواعد الكود الكبيرة. يساعد المطورين ووكلاء الذكاء الاصطناعي على فهم العلاقات بين المكونات بشكل أفضل، ويسهل عملية الصيانة والتطوير.</p>
+<div class="meta"><span class="date-badge">12 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49672213" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>🧪 ClientCoded: منصة اختبار جودة لوكلاء الذكاء الاصطناعي</h2>
+<p>منصة جديدة متخصصة في اختبار جودة الوكلاء الذكاء الاصطناعية التي تولد الكود. توفر بيئات اختبار متكاملة تتحقق من صحة المخرجات وأمانها قبل الإنتاج.</p>
+<div class="meta"><span class="date-badge">13 سبتمبر</span> <a href="https://clientcoded.com/environments" target="_blank" rel="noopener">الموقع</a></div>
+</div>
+
+<div class="news-card">
+<h2>🏠 Turnpanel: مساحة عمل ذكاء اصطناعي محلية أولاً</h2>
+<p>مشروع جديد يقدم مساحة عمل للذكاء الاصطناعي تعمل محلياً أولاً (Local-first). تضمن خصوصية البيانات والعمل دون اتصال مع إمكانية المزامنة عند الحاجة.</p>
+<div class="meta"><span class="date-badge">18 سبتمبر</span> <a href="https://turnpanel.com" target="_blank" rel="noopener">الموقع</a></div>
+</div>
+
+<div class="news-card">
+<h2>⚡ Swift-Qwen3.8-27B: نموذج جديد بسرعة مضاعفة وتفكير أقل</h2>
+<p>إصدار جديد من نماذج Qwen يحقق سرعة بمقدار 1.95x مع تقليل التفكير بنسبة 58.3% مقارنة بالإصدار السابق، مع الحفاظ على دقة عالية. متاح على Hugging Face للاستخدام المجاني.</p>
+<div class="meta"><span class="date-badge">16 سبتمبر</span> <a href="https://huggingface.co/ukisai/Swift-Qwen3.8-27b" target="_blank" rel="noopener">Hugging Face</a></div>
+</div>
+
+<div class="news-card">
+<h2>🎨 Freeform: تطبيقات ذكاء اصطناعي قابلة للمشاركة بنقرة واحدة</h2>
+<p>منصة جديدة تتيح إنشاء تطبيقات مولدة بالذكاء الاصطناعي ومشاركتها بنقرة واحدة. تستهدف المطورين غير التقنيين الذين يريدون تحويل أفكارهم إلى تطبيقات قابلة للنشر فوراً.</p>
+<div class="meta"><span class="date-badge">16 سبتمبر</span> <a href="https://sharefreeform.com" target="_blank" rel="noopener">الموقع</a></div>
+</div>
+
+<div class="news-card">
+<h2>🤖 Xiaomi MiMo V2 Pro: نموذج استدلال مجاني على منصة Hermes</h2>
+<p>شراكة بين Nous Research وXiaomi لتقديم نموذج MiMo V2 Pro الاستدلالي مجاناً عبر منصة Hermes Agent. النموذج متاح للاستخدام الفوري دون الحاجة لمفتاح API منفصل.</p>
+<div class="meta"><span class="date-badge">20 سبتمبر</span> <a href="https://x.com/NousResearch/status/2041580747161481405" target="_blank" rel="noopener">الإعلان</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔑 OpenRouter: مقارنة شاملة لواجهات برمجة النماذج اللغوية المجانية</h2>
+<p>OpenRouter تنشر مقارنة مفصلة لواجهات برمجة النماذج اللغوية المجانية المتاحة في 2026، تشمل حدود المعدلات، النماذج المتاحة، والتكاليف الفعلية. تغطي نماذج مثل Llama 3.3 70B وQwen3 Coder وGPT-oss 120B.</p>
+<div class="meta"><span class="date-badge">21 سبتمبر</span> <a href="https://openrouter.ai/blog/tutorials/free-llm-apis-compared/" target="_blank" rel="noopener">المقالة</a></div>
+</div>
+
+<div class="news-card">
+<h2>🛡️ ENZO: منصة ذكاء اصطناعي مفتوحة المصدر تعمل محلياً</h2>
+<p>مشروع مفتوح المصدر يقدم منصة ذكاء اصطناعي كاملة تعمل محلياً على جهازك. تدعم النماذج المتعددة وتوفر بيئة متكاملة للتطوير والاستخدام اليومي دون الاعتماد على خدمات سحابية.</p>
+<div class="meta"><span class="date-badge">19 سبتمبر</span> <a href="https://github.com/theguysudo/ENZO" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<footer>
+<p>حقوق المحتوى متاحة للجميع — النشرة التقنية اليومية</p>
+<p>📅 الأحد 22 سبتمبر 2026 | 🌐 توقيت مكة المكرمة</p>
+</footer>
+</div>
+
+<script>
+(function() {
+  const btn = document.getElementById('themeBtn');
+  const saved = localStorage.getItem('theme');
+  if (saved) { document.documentElement.setAttribute('data-theme', saved); }
+  btn.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e) {}
+  });
+})();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
