@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+}
+[data-theme="light"] { --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; --accent:#6366f1; --border:#e2e8f0; }
+[data-theme="dark"] { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#818cf8; --border:#334155; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:2rem 1rem; transition:background 0.3s; }
+.container { max-width:800px; margin:0 auto; }
+header { text-align:center; margin-bottom:2.5rem; }
+h1 { font-family:'Cairo',sans-serif; font-weight:900; font-size:2rem; color:var(--accent); margin-bottom:0.5rem; }
+.subtitle { color:var(--muted); font-size:1rem; }
+.theme-toggle { position:fixed; top:1rem; left:1rem; background:var(--card); border:1px solid var(--border); border-radius:50%; width:40px; height:40px; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; }
+.news-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.5rem; margin-bottom:1.2rem; transition:transform 0.2s, box-shadow 0.2s; }
+.news-card:hover { transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+.news-card h2 { font-family:'Cairo',sans-serif; font-weight:700; font-size:1.25rem; margin-bottom:0.6rem; color:var(--text); }
+.news-card p { color:var(--muted); font-size:1.05rem; margin-bottom:0.8rem; }
+.meta { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; font-size:0.85rem; }
+.meta a { color:var(--accent); text-decoration:none; font-weight:500; }
+.meta a:hover { text-decoration:underline; }
+.date-badge { background:var(--accent); color:white; padding:0.2rem 0.6rem; border-radius:6px; font-size:0.75rem; }
+footer { text-align:center; margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.85rem; }
+@media (max-width:600px) { h1 { font-size:1.5rem; } body { padding:1rem; } .news-card { padding:1rem; } }
+</style>
+</head>
+<body>
+<button class="theme-toggle" id="themeBtn" aria-label="تبديل المظهر">🌓</button>
+<div class="container">
+<header>
+<h1>📰 النشرة التقنية اليومية</h1>
+<p class="subtitle">البرمجة بالذكاء الاصطناعي — الأربعاء 23 سبتمبر 2026</p>
+</header>
+
+<div class="news-card">
+<h2>🧪 DiscoBox: بيئات معزولة قابلة للتصرف لوكلاء البرمجة</h2>
+<p>مشروع جديد يقدم بيئات معزولة (Sandboxes) قابلة للتصرف لوكلاء البرمجة بالذكاء الاصطناعي. يتيح لكل وكيل العمل في بيئة معزولة تمامًا يمكن إنشاؤها وتدميرها حسب الحاجة، مما يحسن الأمان ويمنع التلوث المتبادل بين المهام المختلفة.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://github.com/discobox-ai/discobox" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🛡️ Brig: بيئة MicroVM لوكلاء البرمجة على ماك ولينكس</h2>
+<p>مشروع مفتوح المصدر يقدم بيئة عزل خفيفة الوزن (MicroVM) مخصصة لوكلاء البرمجة بالذكاء الاصطناعي. تعمل على أنظمة ماك ولينكس وتوفر عزلًا أمنيًا قويًا مع الحفاظ على أداء عالٍ.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://news.ycombinator.com/item?id=49802729" target="_blank" rel="noopener">Hacker News</a></div>
+</div>
+
+<div class="news-card">
+<h2>🖼️ Lightdrift: بحث صور عبر واجهة برمجية للوكلاء</h2>
+<p>أداة جديدة تتيح لوكلاء البرمجة بالذكاء الاصطناعي البحث عن مرئيات باستخدام اللغة الطبيعية عبر واجهة برمجية (API) وبروتوكول MCP. تجمع النتائج من مصادر متعددة وتسهل على الوكلاء العثور على المراجع البصرية المطلوبة.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://lightdrift.ai" target="_blank" rel="noopener">الموقع</a></div>
+</div>
+
+<div class="news-card">
+<h2>⚠️ مخاطر البرمجة الحسيّة (Vibe Coding): تحذيرات ونقاش</h2>
+<p>نقاش واسع على Hacker News حول مخاطر البرمجة الحسيّة (Vibe Coding) والاعتماد المفرط على الذكاء الاصطناعي في كتابة الكود دون فهم حقيقي. المطورون يتشاركون تجاربهم مع الأخطار الأمنية والجودة المنخفضة والمخاطر طويلة المدى.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://thesimpledev.com/blog/opinion/vibe-coding-dangers/" target="_blank" rel="noopener">المقالة</a></div>
+</div>
+
+<div class="news-card">
+<h2>🏆 هاكاثون Quesma: اقتصاد الرموز في عصر البرمجة الحسيّة</h2>
+<p>شركة Quesما تنظم هاكاثون متخصص في تحليل 18 غيغابايت من محادثات وكلاء البرمجة لفهم أين يتم استهلاك الرموز (Tokens) بشكل مفرط. النتائج تكشف أن اشتراك 100-200$ شهريًا يمثل عائقًا أمام الطلاب.</p>
+<div class="meta"><span class="date-badge">21 سبتمبر</span> <a href="https://quesma.com/blog/our-first-hackathon/" target="_blank" rel="noopener">المقالة</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔬 تدريب نموذج لتحديد المحتوى المُولَّد بالذكاء الاصطناعي</h2>
+<p>ورقة بحثية جديدة تقدم نموذجًا مدربًا على تحديد المحتوى المُولَّد بالذكاء الاصطناعي من خلال بنية النص وحده، دون الحاجة لتحليل المحتوى الدلالي. الدقة تتحسن بشكل كبير عند دمج هذه التقنية مع أدوات الكشف الحالية.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://arxiv.org/abs/2609.15369" target="_blank" rel="noopener">arXiv</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔀 Relay: بوابة نماذج لغوية ذاتية الاستضافة مع توجيه ذكي</h2>
+<p>مشروع مفتوح المصدر يقدم بوابة (Gateway) ذاتية الاستضافة للنماذج اللغوية مع ميزات التوجيه الذكي بين النماذج المختلفة وضبط وتيرة الطلبات. يدعم التبديل التلقائي عند فشل نموذج معين ويوفر تحكمًا كاملًا في التكاليف.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://github.com/anchorshell/relay" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+
+<div class="news-card">
+<h2>🧠 AI·rete·RAG: محرك قواعد Rete + نظام استرجاع RAG</h2>
+<p>مشروع جديد يجمع بين محرك قواعد Rete ونظام الاسترجاع المعزز بإنشاء (RAG). القواعد تقرر الإجراء، وRAG يوضح السبب. النهج الهجين يحسن شفافية القرارات ويوفر تفسيرات قابلة للتدقيق للمخرجات.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://ai-rete-rag.com/" target="_blank" rel="noopener">الموقع</a></div>
+</div>
+
+<div class="news-card">
+<h2>🔑 OpenRouter يضيف نماذج مجانية جديدة</h2>
+<p>منصة OpenRouter توسع مجموعتها من النماذج المجانية بإضافة: Nex AGI Nex-N2.5-Mini و Nex-N2.5-Pro، Poolside Laguna S 2.1، و inclusionAI Ling 3.0 Flash Fin/VL. النماذج المجانية أصبحت أكثر تنوعًا وقدرة من أي وقت مضى.</p>
+<div class="meta"><span class="date-badge">22 سبتمبر</span> <a href="https://openrouter.ai/collections/free-models" target="_blank" rel="noopener">OpenRouter</a></div>
+</div>
+
+<div class="news-card">
+<h2>📡 بروتوكول MCP الإصدار 2026-07-28: بدون مصادقة أو جلسات</h2>
+<p>الإصدار الجديد من بروتوكول سياق النماذج (MCP) يعتمد على بروتوكول عديم الحالة (Stateless) بدون حاجة لمصادقة أولية أو جلسات مستمرة. هذا يبسط بشكل كبير نشر خوادم MCP على البنية التحتية السحابية ويتكامل مع Amazon Bedrock AgentCore.</p>
+<div class="meta"><span class="date-badge">21 سبتمبر</span> <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noopener">المدونة</a></div>
+</div>
+
+<div class="news-card">
+<h2>🏗️ هندسة السياق (Context Engineering) للمنتجات: دليل 2026</h2>
+<p>دليل شامل يشرح الفرق بين هندسة الموجهات (Prompt Engineering) وهندسة السياق (Context Engineering). يقدم استراتيجيات Write/Select/Compress/Isolate لإدارة السياق، ويشرح كيف أصبحت هندسة السياق المهارة الأساسية لبناء منتجات الذكاء الاصطناعي الموثوقة.</p>
+<div class="meta"><span class="date-badge">20 سبتمبر</span> <a href="https://karozieminski.substack.com/p/context-engineering-product-builders-guide-2026" target="_blank" rel="noopener">المقالة</a></div>
+</div>
+
+<footer>
+<p>حقوق المحتوى متاحة للجميع — مدعومة من <a href="https://hermes-agent.nousresearch.com/" target="_blank" rel="noopener">Hermes Agent</a></p>
+<p>البرمجة بالذكاء الاصطناعي — الأربعاء 23 سبتمبر 2026</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('themeBtn');
+  var stored=localStorage.getItem('theme');
+  if(stored){document.documentElement.setAttribute('data-theme',stored);}
+  btn.addEventListener('click',function(){
+    var cur=document.documentElement.getAttribute('data-theme');
+    var next=(cur==='dark')?'light':'dark';
+    document.documentElement.setAttribute('data-theme',next);
+    localStorage.setItem('theme',next);
+  });
+})();
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').catch(function(){});
+}
+</script>
+</body>
+</html>

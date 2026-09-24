@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 النشرة التقنية اليومية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f8f9fa; --card:#fff; --text:#1a1a2e; --accent:#6c63ff; --border:#e0e0e0; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; padding:1rem; }
+    h1 { font-family:'Cairo',sans-serif; text-align:center; font-size:1.8rem; margin:1.5rem 0; }
+    h2 { font-family:'Cairo',sans-serif; font-size:1.25rem; margin:0.5rem 0; }
+    .subtitle { text-align:center; font-size:0.95rem; opacity:0.7; margin-bottom:2rem; }
+    .news-item { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.2rem; margin-bottom:1.2rem; }
+    .news-item h2 { color:var(--accent); }
+    .news-item .summary { font-size:1rem; margin:0.6rem 0; }
+    .news-item a { color:var(--accent); font-size:0.9rem; word-break:break-all; }
+    .news-item .date { font-size:0.8rem; opacity:0.6; margin-top:0.4rem; }
+    .toggle { display:block; margin:0 auto 1.5rem; padding:0.5rem 1.2rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:8px; font-family:'Tajawal',sans-serif; cursor:pointer; }
+    @media (min-width:700px) { body { max-width:700px; margin:0 auto; } }
+  </style>
+</head>
+<body>
+  <h1>📰 النشرة التقنية اليومية</h1>
+  <p class="subtitle">أحدث أخبار البرمجة بالذكاء الاصطناعي — 24 سبتمبر 2026</p>
+
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">تبديل الوضع</button>
+
+  <div class="news-item">
+    <h2>🤖 Step Code — وكيل برمجية مفتوح المصدر برخصة MIT من StepFun</h2>
+    <p class="summary">StepFun تطلق Step Code v0.1.0 كأداة سطر أوامر مفتوحة المصدر لوكيل برمجية يغطي الحلقة الكاملة من قراءة الكود وتعديله إلى تشغيل الاختبارات والنشر، مبني حول Step 5 Preview.</p>
+    <a href="https://github.com/stepfun-ai/Step-Code" target="_blank">github.com/stepfun-ai/Step-Code</a>
+    <div class="date">23 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🏭 Local Software Factory — تشغيل عدة وكلاء برمجية بالتوازي</h2>
+    <p class="summary">مشروع مفتوح المصدر على GitHub يتيح تشغيل عدة وكلاء برمجية بالذكاء الاصطناعي بالتوازي، في محاولة لمضاعفة سرعة تطوير المشاريع البرمجية.</p>
+    <a href="https://github.com/stratonext/software-factory" target="_blank">github.com/stratonext/software-factory</a>
+    <div class="date">23 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>⚡ Step 3.7 Flash — نموذج مفتوح المصدر قادر على قراءة واجهات المستخدم والمستندات</h2>
+    <p class="summary">StepFun تطلق Step 3.7 Flash، نموذج وكيل مفتوح المصدر يقرأ واجهات المستخدم والرسوم البيانية والمستندات والصور، ثم يتخذ إجراءات عبر كتابة الكود أو استدعاء الأدوات.</p>
+    <a href="https://github.com/stepfun-ai" target="_blank">github.com/stepfun-ai</a>
+    <div class="date">23 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🧠 Context Engineering يحل محل Prompt Engineering</h2>
+    <p class="summary">Sourcegraph تنشر دليلاً شاملاً يوضح كيف أصبح هندسة السياق (تصميم خط أنابيب المعلومات التي يراها النموذج) أهم من صياغة المطالبات، خاصة مع الوكلاء المعقدة. الدليل يشمل إدارة ميزانية الرموز والاسترجاع والذاكرة.</p>
+    <a href="https://sourcegraph.com/blog/context-engineering" target="_blank">sourcegraph.com/blog/context-engineering</a>
+    <div class="date">22 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>💰 تحسين الرموز: خوارزمية Mem0 تخفض تكاليف الذاكرة 3-4 مرات</h2>
+    <p class="summary">Mem0 تقدم خوارزمية جديدة للذاكرة الفعالة من حيث الرموز، تخفض استهلاك Hermes Agent بنسبة 72% (من 617 إلى 187 رمزاً فقط)، مع الحفاظ على الدقة في المعايير المرجعية.</p>
+    <a href="https://mem0.ai/blog/the-2026-token-optimization-playbook-cut-ai-agent-memory-costs-3%E2%80%934x" target="_blank">mem0.ai/blog/the-2026-token-optimization-playbook</a>
+    <div class="date">22 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🖼️ Lightdrift — بحث صور للوكلاء عبر API و MCP</h2>
+    <p class="summary">عرض على Hacker News لأداة Lightdrift التي تتيح للوكلاء استرجاع صور حقيقية مع وصف بلغة طبيعية وبيانات وصفية وشروط الترخيص، عبر واجهة برمجية وبروتوكول MCP.</p>
+    <a href="https://lightdrift.ai" target="_blank">lightdrift.ai</a>
+    <div class="date">22 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🐧 Qualcomm Snapdragon X2 يدعم Linux للحواسيب الشخصية</h2>
+    <p class="summary">Qualcomm تعلن دعم Linux لمعالجات Snapdragon X2، مما يفتح الباب أمام المطورين لبناء تجارب وكلاء ذكاء اصطناعي على الحواسيب الشخصية. الدعم سيبدأ بـ Debian و Ubuntu في 2027.</p>
+    <a href="https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux" target="_blank">qualcomm.com/news/onq/2026/09/snapdragon-summit</a>
+    <div class="date">23 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🦙 Swift-Qwen3.8-27B — استدلال أقل بـ 58% وسرعة مضاعفة</h2>
+    <p class="summary">نموذج مفتوح المصدر على HuggingFace يحقق انخفاضاً بنسبة 58.3% في الاستدلال مع تسريع 1.95x، مع الحفاظ على دقة المستوى العالي، مبني على Qwen3.8.</p>
+    <a href="https://huggingface.co/ukisai/Swift-Qwen3.8-27b" target="_blank">huggingface.co/ukisai/Swift-Qwen3.8-27b</a>
+    <div class="date">16 سبتمبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 TokenShift — محسِّن الرموز لوكلاء البرمجية</h2>
+    <p class="summary">شركة Pointfive تستعرض أفضل 10 حلول لتحسين استهلاك الرموز في 2026، وتضع TokenShift في المقدمة كمحسِّن من طرف المطور يخفض التكاليف قبل مغادرة الطلب للجهاز، مع حوكمة شاملة للوكلاء المتعددة.</p>
+    <a href="https://www.pointfive.co/guides/top-token-optimization-solutions-2026" target="_blank">pointfive.co/guides/top-token-optimization-solutions-2026</a>
+    <div class="date">20 سبتمبر 2026</div>
+  </div>
+
+  <footer style="text-align:center; font-size:0.8rem; opacity:0.6; margin-top:2rem; padding-bottom:2rem;">
+    حقوق المحتوى متاحة للجميع
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(`
+        self.addEventListener('fetch', e => { e.respondWith(fetch(e.request).catch(() => new Response('⚠️ تعذر الاتصال'))); });
+      `)).catch(() => {});
+    }
+  </script>
+</body>
+</html>
