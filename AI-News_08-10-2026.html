@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--card:#ffffff;--ink:#14161c;--muted:#5b6478;--line:#e3e6ef;--accent:#3b5bdb;--accent2:#0b7285;--shadow:0 6px 24px rgba(20,22,28,.07)}
+html[data-theme="dark"]{--bg:#0e1016;--card:#161a23;--ink:#eef0f6;--muted:#9aa4bb;--line:#252b38;--accent:#748ffc;--accent2:#3bc9db;--shadow:0 6px 24px rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Tajawal',system-ui,sans-serif;font-size:20px;line-height:2.0;padding:0 14px 70px}
+.wrap{max-width:840px;margin:0 auto}
+header{padding:52px 6px 26px;border-bottom:1px solid var(--line);margin-bottom:30px}
+h1{font-family:'Cairo',sans-serif;font-size:36px;line-height:1.5;margin:0 0 10px;font-weight:800}
+.kicker{font-family:'Cairo',sans-serif;color:var(--accent);font-size:19px;font-weight:700;letter-spacing:.4px;margin:0 0 12px}
+.meta{color:var(--muted);font-size:18px;margin:0}
+.toggle{position:fixed;top:14px;left:14px;z-index:50;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-family:'Cairo',sans-serif;font-size:17px;cursor:pointer;box-shadow:var(--shadow)}
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin:0 0 20px;box-shadow:var(--shadow)}
+h2{font-family:'Cairo',sans-serif;font-size:26px;line-height:1.65;margin:0 0 12px;font-weight:700}
+.tag{display:inline-block;font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:2px 12px;margin-bottom:12px}
+p{margin:0 0 14px;color:var(--ink)}
+p.sum{font-size:20.5px;line-height:2.05}
+.meta-line{color:var(--muted);font-size:16px;margin:0}
+a.src{display:inline-block;font-family:'Cairo',sans-serif;font-weight:700;color:var(--accent);text-decoration:none;border-bottom:2px solid var(--line);padding-bottom:2px;overflow-wrap:anywhere}
+a.src:hover{border-bottom-color:var(--accent)}
+footer{border-top:1px solid var(--line);margin-top:38px;padding-top:24px;color:var(--muted);font-size:18px;text-align:center}
+.offline{position:fixed;bottom:0;left:0;right:0;background:#c92a2a;color:#fff;padding:12px;text-align:center;font-family:'Cairo',sans-serif;display:none;z-index:60}
+@media(max-width:600px){body{font-size:19px}h1{font-size:29px}h2{font-size:22px}article{padding:20px 18px}}
+</style>
+</head>
+<body>
+<button class="toggle" id="tg">تبديل الوضع</button>
+<div class="wrap">
+<header>
+<p class="kicker">نشرة يومية</p>
+<h1>نشرة البرمجة بالذكاء الاصطناعي</h1>
+<p class="meta">٨ أكتوبر ٢٠٢٦ - نماذج مجانية، وكلاء برمجة، هندسة السياق، وأمن الوكلاء</p>
+</header>
+
+<article>
+<span class="tag">تمويل ونماذج مجانية</span>
+<h2>🔥 Nous Research تجمع ٩٠ مليون دولار وتفتح نماذجها المجانية</h2>
+<p class="sum">أعلنت Nous Research جمعها تسعين مليون دولار، وتشير في رسالتها إلى أن الوصول المجاني إلى النماذج المفتوحة عبر البوابة يبقى متاحاً. ويؤكد تقرير مالي أن منشأة Hermes Agent نُسخت أكثر من أربعة وعشرين مليون مرة منذ إطلاقها، ما يضعها في مقدمة أدوات البرمجة بالذكاء الاصطناعي المفتوحة.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://nousresearch.com/a-note-on-our-fundraise">nousresearch.com</a></p>
+</article>
+
+<article>
+<span class="tag">مفاتيح API مجانية</span>
+<h2>🔑 FreeLLMAPI: واجهة واحدة متوافقة مع OpenAI لمزوّدين مجانيين متعددين</h2>
+<p class="sum">أداة مفتوحة المصدر تجمع عدة مزوّدي نماذج مجانية خلف مفتاح واحد ونقطة نهاية واحدة متوافقة مع واجهة OpenAI، فتبقى المشاريع الحالية تعمل دون تعديل مع تبديل المزوّد تلقائياً عند نفاد الحصة. حل عملي لمن يبني نماذج أولية دون بطاقة ائتمان.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/tashfeenahmed/freellmapi">github.com/tashfeenahmed/freellmapi</a></p>
+</article>
+
+<article>
+<span class="tag">نماذج محلية</span>
+<h2>💸 نموذج محلي مجاني يغني عن اشتراكات المحادثة المدفوعة</h2>
+<p class="sum">يستعرض هذا الدليل ما ينجزه نموذج محلي مفتوح على جهاز واحد دون دفع عشرين دولاراً شهرياً: كتابة الشيفرة، تلخيص المستندات، وتحليل البيانات مع بقاء البيانات داخل الجهاز. المهم هنا ليس الأداء فقط بل التكلفة الصفرية وغياب الحصص اليومية.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://www.xda-developers.com/im-not-paying-20-for-chatgpt-claude-or-gemini-because-a-free-local-llm-does-everything-i-need/">xda-developers.com</a></p>
+</article>
+
+<article>
+<span class="tag">توفير الرموز</span>
+<h2>✂️ easiest.ai: أداة LLM خفيفة تعمل بعشرين إلى ثمانين ألف رمز بدل ٣٥٠ ألف</h2>
+<p class="sum">واجهة طرفية تشبه محرر Vim لكنها موجهة للنماذج، وتبيّن المشروع أن ضغط السياق وإرسال ما يلزم فقط يخفض استهلاك الرموز إلى ما بين عشرين وثمانين ألفاً في الجلسة بدل ثلاثمائة وخمسين ألفاً. الفرق يظهر مباشرة في الفاتورة وسرعة الاستجابة.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://easiest.ai/">easiest.ai</a></p>
+</article>
+
+<article>
+<span class="tag">توفير الرموز</span>
+<h2>🧮 DaiDocs: توثيق مفتوح يستهلك رموزاً أقل بـ٢١٨ ضعفاً</h2>
+<p class="sum">مشروع مفتوح ينشر أرقاماً مقارنة على قياس LME بتحقيق ٨٣٪ مع تخفيض في الرموز بمقدار ٢١٨ ضعفاً مقارنة بأدوات التوثيق السائدة. الأمر يعتمد على إرسال مقاطع مختارة بدل التحميل الكامل للمستودع في السياق.</p>
+<p class="meta-line">٨ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/Kerneta/daidocs">github.com/Kerneta/daidocs</a></p>
+</article>
+
+<article>
+<span class="tag">هندسة السياق</span>
+<h2>📚 Matryoshka: خادم MCP لتحليل المستندات الضخمة بكفاءة</h2>
+<p class="sum">خادم MCP يعالج الملفات الكبيرة داخل بيئة REPL بدل لصق النص كاملاً في السياق، فيستعلم النموذج عن المقاطع التي يحتاجها فقط. نمط جيد لملفات السجلات والعقود الطويلة حيث يضيع السياق سريعاً.</p>
+<p class="meta-line">١ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/yogthos/Matryoshka">github.com/yogthos/Matryoshka</a></p>
+</article>
+
+<article>
+<span class="tag">أمن الوكلاء</span>
+<h2>🛡️ JevShield: جدار حماية لحقن المطالبات في واجهات البرمجة وأدوات الوكلاء</h2>
+<p class="sum">طبقة وسيطة تراقب نداءات واجهات البرمجة وأدوات الوكلاء لكشف محاولات حقن المطالبات قبل تنفيذها. الاتجاه يتفق مع تقارير أمنية حديثة تُجمع على أن وكلاء البرمجة هم مركز الهجمات الجديدة على طبقة الوكيل.</p>
+<p class="meta-line">١ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/rajatrao/jevshield">github.com/rajatrao/jevshield</a></p>
+</article>
+
+<article>
+<span class="tag">رصد الوكلاء</span>
+<h2>📊 Crashlytics لوكلاء البرمجة: رصد الأعطال داخل الجلسات</h2>
+<p class="sum">أداة جديدة تجلب نموذج تقارير الأعطال إلى عالم الوكلاء: تسجيل الأخطاء والتكرارات الفاشلة ومسارات الأدوات داخل جلسة البرمجة. هذا يكمل ما تبقيه هندسة السياق عاجزة عنه، وهو معرفة أين تعطل الوكيل فعلاً.</p>
+<p class="meta-line">٨ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/0xfirattamur/xcrashlytics">github.com/0xfirattamur/xcrashlytics</a></p>
+</article>
+
+<article>
+<span class="tag">رصد وتحليل</span>
+<h2>🧠 الوكلاء يحتاجون إلى الرصد لا إلى مزيد من السياق فقط</h2>
+<p class="sum">تحليل يجادل بأن توسيع نافذة السياق لا يحل تعطل الوكلاء، وأن الحاجة الحقيقية هي تتبّع قراراتهم وأدواتهم ونتائجها. يفصّل المقال أنواع الرصد المطلوبة: تتبّع التكرار، كشف الحلقات، وتسجيل قرارات اختيار الأدوات.</p>
+<p class="meta-line">٥ أكتوبر ٢٠٢٦ - <a class="src" href="https://ateliti99.substack.com/p/agents-need-observability-not-just">ateliti99.substack.com</a></p>
+</article>
+
+<article>
+<span class="tag">وكلاء على الهاتف</span>
+<h2>📱 AgentOS: تشغيل وكلاء البرمجة من الهاتف باستضافة ذاتية</h2>
+<p class="sum">مشروع مفتوح يتيح إطلاق وكلاء البرمجة ومتابعتهم من الهاتف على خادم تختاره أنت. يلائم من يريد متابعة المهام الطويلة خارج المكتب دون تسليم الشيفرة إلى خدمة سحابية خارجية.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/saadnvd1/agent-os">github.com/saadnvd1/agent-os</a></p>
+</article>
+
+<article>
+<span class="tag">وكلاء وأدوات</span>
+<h2>🖥️ OpenComputerUse: استخدام الحاسوب في الخلفية للوكلاء كخادم MCP</h2>
+<p class="sum">خادم MCP يمنح الوكلاء القدرة على تشغيل مهام الحاسوب في الخلفية بدل التحكم المباشر في الشاشة، ما يقلل التعارض مع عمل المستخدم. خطوة نحو وكلاء يعملون بالتوازي على جهاز واحد.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://github.com/IAmJSD/OpenComputerUse">github.com/IAmJSD/OpenComputerUse</a></p>
+</article>
+
+<article>
+<span class="tag">وكلاء وواجهات</span>
+<h2>🤖 Agent.reviews: وكيل يقرأ ويكتب مراجعات الأدوات</h2>
+<p class="sum">منصة تجعل وكلاء الذكاء الاصطناعي هم من يقرأ ويحرر مراجعات الأدوات التقنية. تطرح سؤالاً عملياً: هل تصلح مراجعات الوكلاء مرجعاً أمَرْ للمطور قبل الشراء، وماذا يعني ذلك لثقة المستخدم؟</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://agent.reviews/">agent.reviews</a></p>
+</article>
+
+<article>
+<span class="tag">فيديو - مفاتيح مجانية</span>
+<h2>🎥 توقف عن الدفع: مفاتيح API مجانية لـ GPT وClaude وDeepSeek</h2>
+<p class="sum">مراجعة بالفيديو تُظهر طريقة الحصول على مفاتيح مجانية لعدة مزوّدين كبار وربطها بمحرر الشيفرة، مع مقارنة الحصص اليومية والقيود. ملاحظة: التحقق دائماً من صلاحية المفتاح وتحديث الحصة قبل الاعتماد عليه في عمل حقيقي.</p>
+<p class="meta-line">٨ أكتوبر ٢٠٢٦ - <a class="src" href="https://www.youtube.com/watch?v=xUW_20yku1E">youtube.com</a></p>
+</article>
+
+<article>
+<span class="tag">نقاش</span>
+<h2>❓ كيف تفحص تطبيقات الحاسوب من الشيفرة الخبيثة؟</h2>
+<p class="sum">سؤال على Hacker News يخصّ بالتحديد البرامج المبنية بالبرمجة بالذكاء الاصطناعي. أجاب المختصون بخطوات عملية: فحص التبعيات، مراجعة الأذونات المطلوبة، وقراءة الشيفرة المولّدة عند طلب أذونات حساسة.</p>
+<p class="meta-line">٧ أكتوبر ٢٠٢٦ - <a class="src" href="https://news.ycombinator.com/item?id=49990079">news.ycombinator.com</a></p>
+</article>
+
+<footer>
+حقوق المحتوى متاحة للجميع - نشرة البرمجة بالذكاء الاصطناعي - ٨ أكتوبر ٢٠٢٦
+</footer>
+</div>
+<div class="offline" id="offline">انقطع الاتصال - تُعرض النسخة المحفوظة من النشرة</div>
+<script>
+(function(){var r='ai-news-08-10-2026-theme';
+var b=document.documentElement;var s=null;try{s=localStorage.getItem(r)}catch(e){}
+if(s==='dark'||s==='light'){b.setAttribute('data-theme',s)}
+else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){b.setAttribute('data-theme','dark')}
+document.getElementById('tg').addEventListener('click',function(){var c=b.getAttribute('data-theme')==='dark'?'light':'dark';b.setAttribute('data-theme',c);try{localStorage.setItem(r,c)}catch(e){}});
+function net(v){document.getElementById('offline').style.display=v?'block':'none'}
+window.addEventListener('offline',function(){net(true)});window.addEventListener('online',function(){net(false)});if(!navigator.onLine)net(true);
+})();
+</script>
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+</script>
+</body>
+</html>
