@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 النشرة التقنية اليومية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f8f9fa; --card:#fff; --text:#1a1a2e; --accent:#6c63ff; --border:#e0e0e0; }
+    body.dark { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:1rem; transition:background .2s,color .2s; }
+    h1 { font-family:'Cairo',sans-serif; text-align:center; font-size:1.8rem; margin:1.5rem 0; }
+    h2 { font-family:'Cairo',sans-serif; font-size:1.25rem; margin:0.5rem 0; line-height:1.6; }
+    .subtitle { text-align:center; font-size:0.95rem; opacity:0.7; margin-bottom:2rem; }
+    .news-item { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.2rem; margin-bottom:1.2rem; }
+    .news-item h2 { color:var(--accent); }
+    .news-item .summary { font-size:1.05rem; margin:0.6rem 0; }
+    .news-item a { color:var(--accent); font-size:0.9rem; word-break:break-all; }
+    .news-item .date { font-size:0.8rem; opacity:0.6; margin-top:0.4rem; }
+    .toggle { display:block; margin:0 auto 1.5rem; padding:0.5rem 1.2rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:8px; font-family:'Tajawal',sans-serif; cursor:pointer; }
+    @media (min-width:700px) { body { max-width:700px; margin:0 auto; } }
+  </style>
+</head>
+<body>
+  <h1>📰 النشرة التقنية اليومية</h1>
+  <p class="subtitle">أحدث أخبار البرمجة بالذكاء الاصطناعي — 10 أكتوبر 2026</p>
+
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">🌓 تبديل الوضع</button>
+
+  <div class="news-item">
+    <h2>🔬 دراسة: وكلاء البرمجة ينتجون كوداً أكثر لا برمجيات أكثر</h2>
+    <p class="summary">تورد Ars Technica دراسة حديثة تفيد بأن المكاسب التي يحققها وكلاء البرمجة تُستوعب في عنق مراجعة الكود البشري، فالنمو في سرعة توليد الشيفرة لا يترجم إلى إنتاج برمجيات أكبر. النتيجة تعيد طرح السؤال: أين يذهب الوقت فعلياً في دورة التطوير بمساعدة الذكاء الاصطناعي؟</p>
+    <a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/" target="_blank">arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software</a>
+    <div class="date">10 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🔑 FreeLLMAPI: واجهة برمجية واحدة لكل مزوّدي النماذج المجانية</h2>
+    <p class="summary">مشروع مفتوح المصدر يجمع مزوّدي النماذج اللغوية المجانية خلف واجهة واحدة متوافقة مع OpenAI SDK، فيكتفي المطور بمفتاح واحد للتبديل بين المزودين. الحل عملي للمطورين الذين يبنون تجارب بلا تكاليف ثابتة.</p>
+    <a href="https://github.com/tashfeenahmed/freellmapi" target="_blank">github.com/tashfeenahmed/freellmapi</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🆓 StepFun تفتح نموذج Step5 Preview مجاناً لأسبوع</h2>
+    <p class="summary">أعلنت StepFun توفير نموذج Step5 Preview بلا مقابل لأسبوع كامل عبر OpenCode وCline وKilo Code، ليصبح بإمكان مستخدمي هذه الأدوات تجربة نموذج قوي دون دفع أي رسوم. فرصة قصيرة لكنها مجدية لتقييم النموذج في مشاريع حقيقية.</p>
+    <a href="https://twitter.com/StepFun_ai/status/2108182763002278158" target="_blank">twitter.com/StepFun_ai/status/2108182763002278158</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>⚠️ Google تحصر المستخدمين المجانيين في أضعف نماذج Gemini</h2>
+    <p class="summary">يشير The Decoder إلى أن هيكلة الخطوط الجديدة من Gemini تمنح المشتركين المدفوعين الأولوية في أحدث النماذج، بينما يحصل المستخدمون على المستوى الأدنى، مع استثناءات جزئية لبعض الخطوط المتوسطة. الخبر يستحق الانتباه لمن يعتمد على الطبقة المجانية في التطوير.</p>
+    <a href="https://the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model-and-lock-5-month-subscribers-out-of-pro/" target="_blank">the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model</a>
+    <div class="date">4 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>📉 Virgil: وكيل برمجة يقلّص نداءات الواجهة البرمجية حتى 78%</h2>
+    <p class="summary">يقدم Virgil، الوكيل الجديد، تقنية تقلل عدد نداءات النموذج في المهام المتكررة حتى 78% عبر إعادة استخدام السياق بدل إعادة إرساله. العرض يمسّ مباشرةً موضوع ترشيد استهلاك الرموز وخفض التكاليف في الجلسات الطويلة.</p>
+    <a href="https://virgil-ai.cloud/try" target="_blank">virgil-ai.cloud/try</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🧪 Senro: تقييم ومراقبة لواجهة WebMCP</h2>
+    <p class="summary">Show HN جديد يقدم أدوات لتقييم سلوك وكلاء WebMCP ومراقبة أدائهم، فمنصّة لاختبار الوكلاء المتصلين بالمواقع قبل نشرهم. الأدوات من هذا النوع تملأ فراغاً متزايد الأهمية في ضبط جودة الوكلاء.</p>
+    <a href="https://senro.ai" target="_blank">senro.ai</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🎯 Higherlevel: تعريف ومراجعة ما يبنيه الوكلاء</h2>
+    <p class="summary">منصّة جديدة تتيح للفريق وصف ما يجب أن يبنيه الوكيل ثم مراجعة مخرجاته في طبقة تجريد أعلى من الشيفرة، بدل التحديق في الفروق السطرية. الفكرة تعكس اتجاهاً صاعداً نحو التحكم بالوكلاء على مستوى النوايا لا الأكواد.</p>
+    <a href="https://higherlevel.to/" target="_blank">higherlevel.to</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🖱️ CircleIt: دوّر على الخلل في الصفحة والوكيل يصلحه</h2>
+    <p class="summary">أداة Show HN بسيطة الفكرة: تحوّط بالدائرة حول العنصر المعطوب في صفحة الويب، ويتولى وكيل البرمجة تحديد موضعه وإصلاحه. النمط البصري في التواصل مع الوكلاء يقلّص جهد وصف الأخطاء نصياً.</p>
+    <a href="https://circleit.ai" target="_blank">circleit.ai</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>📞 VoiceGremlin: اختبارات آلية لوكلاء الهاتف</h2>
+    <p class="summary">أداة SaaS تُجري اختبارات آلية على وكلاء المكالمات الهاتفية الذكية، لتتحقق الشركات من سلوك الوكيل الصوتي قبل تفاعله مع العملاء الحقيقيين. السوق يتوسّع في هذا الاتجاه مع انتشار الوكلاء الصوتيين.</p>
+    <a href="https://voicegremlin.com/" target="_blank">voicegremlin.com</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>📱 OpenCode يصدر إلى iOS</h2>
+    <p class="summary">كشف الفريق عن نسخة iOS من OpenCode، وكيل البرمجة المفتوح المصدر، مما يفتح الباب لإدارة جلسات البرمجة من الهاتف. الخطوة تواكب اتجاهاً عاماً لتشغيل الوكلاء ومراقبتهم بعيداً عن حاسوب المكتب.</p>
+    <a href="https://twitter.com/thdxr/status/2108284341923049578" target="_blank">twitter.com/thdxr/status/2108284341923049578</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <footer style="text-align:center; font-size:0.8rem; opacity:0.6; margin-top:2rem; padding-bottom:2rem;">
+    حقوق المحتوى متاحة للجميع
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('data:text/javascript;base64,' + btoa(`
+        self.addEventListener('fetch', function(e) {
+          e.respondWith(fetch(e.request).catch(function() {
+            return new Response('لا يوجد اتصال بالإنترنت', {status: 503, headers: {'Content-Type': 'text/plain; charset=utf-8'}});
+          }));
+        });
+      `));
+    }
+  </script>
+</body>
+</html>
