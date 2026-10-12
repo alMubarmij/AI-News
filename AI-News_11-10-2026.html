@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 النشرة التقنية اليومية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f8f9fa; --card:#fff; --text:#1a1a2e; --accent:#6c63ff; --border:#e0e0e0; }
+    body.dark { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:1rem; transition:background .2s,color .2s; }
+    h1 { font-family:'Cairo',sans-serif; text-align:center; font-size:1.8rem; margin:1.5rem 0; }
+    h2 { font-family:'Cairo',sans-serif; font-size:1.25rem; margin:0.5rem 0; line-height:1.6; }
+    .subtitle { text-align:center; font-size:0.95rem; opacity:0.7; margin-bottom:2rem; }
+    .news-item { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.2rem; margin-bottom:1.2rem; }
+    .news-item h2 { color:var(--accent); }
+    .news-item .summary { font-size:1.05rem; margin:0.6rem 0; }
+    .news-item a { color:var(--accent); font-size:0.9rem; word-break:break-all; }
+    .news-item .date { font-size:0.8rem; opacity:0.6; margin-top:0.4rem; }
+    .toggle { display:block; margin:0 auto 1.5rem; padding:0.5rem 1.2rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:8px; font-family:'Tajawal',sans-serif; cursor:pointer; }
+    @media (min-width:700px) { body { max-width:700px; margin:0 auto; } }
+  </style>
+</head>
+<body>
+  <h1>📰 النشرة التقنية اليومية</h1>
+  <p class="subtitle">أحدث أخبار البرمجة بالذكاء الاصطناعي — 11 أكتوبر 2026</p>
+
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">🌓 تبديل الوضع</button>
+
+  <div class="news-item">
+    <h2>📖 «البرمجة بالذكاء الاصطناعي» تدخل قاموس ميريام وبستر</h2>
+    <p class="summary">أضافت ميريام وبستر مصطلحات الذكاء الاصطناعي إلى نسختها الإلكترونية، منها «البرمجة الحسية» و«الوكيلية» و«الحوسبة» اسمًا لا مصدرًا. يرى معجميو القاموس أن مستوى التعقيد في هذه الدفعة يعد تعليقًا على اللغة ذاتها، إذ لم يبقَ شرح هذه المصطلحات حكرًا على المتخصصين. اعتراف لغوي رسمي بحركة برمجية صاعدة.</p>
+    <a href="https://www.nature.com/articles/d41586-026-03044-9" target="_blank">nature.com/articles/d41586-026-03044-9</a>
+    <div class="date">11 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🐎 Anthropic تطلق Haiku 5.5: أرخص وأسرع نموذج صغير لها</h2>
+    <p class="summary">صُمم Haiku 5.5 للمهام عالية الحجم الحساسة للكلفة كالملخصات والضغط والاستعلامات والتصنيف، وهو أسرع نموذج أصدرته Anthropic حتى الآن. يقترح المختصون استخدامه كوكيل فرعي إلى جانب Opus 5.5 في أعمال البرمجة، بخفض فاتورة الرموز دون التضحية بالسرعة. أعلن عنه في ٧ أكتوبر وتصدّر مناقشات Hacker News.</p>
+    <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank">anthropic.com/claude-haiku-5-5</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>☁️ Google Cloud تطلق «وكيل Gemini» الموحّد لبيئات العمل</h2>
+    <p class="summary">كشف Thomas Kurian في مؤتمر Gemini at Work 2026 عن وكيل واحد للشركات يحمل سياق العمل كاملاً وينفّذ مهام متعددة الخطوات بدل أن ينتظر تعليمات مفصّلة: كتابة الشيفرة وصياغة المستندات وتوليد الصور. التغطية الإخبارية قرأت الخطوة كمحاولة صريحة لتحويل المحادثة إلى «موظف رقمي» في سباق مع Microsoft وOpenAI وAnthropic.</p>
+    <a href="https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026" target="_blank">cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🎮 ٥٠٠ مليار رمز لاحقًا: وكلاء يعيدون بناء لعبة إطلاق نار كاملة</h2>
+    <p class="summary">أمضى فريق ثلاثة أشهر في تفكيك لعبة إطلاق نار شهيرة إلى C++ بواسطة وكلاء ذكاء اصطناعي، بهدف إعادة إنتاج دقيقة تُصرَّف وتعمل لا مجرد نموذج تجريبي. المقالة عن هندسة الأتمتة نفسها: كيف ضُبطت البنية التحتية والبيئة المعزولة لإبقاء عشرات الوكلاء منسّقين على مدى أشهر. درس عملي في تشغيل الوكلاء لمدد طويلة.</p>
+    <a href="https://momo5502.com/posts/2026-10-09-game-decompilation/" target="_blank">momo5502.com/posts/2026-10-09-game-decompilation</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>✂️ دراسة: حين يعيد النماذج تعلّم «لغة البرق» لتقليل الرموز</h2>
+    <p class="summary">في ١٨٦٦ كان الوارد من الكابل الأطلسي يُحاسب على كل كلمة، فنشأت لغة مختصرة اسمها «cablese». الدراسة تقارن هذا الضغط النقدي بضغط نافذة السياق اليوم، وتُظهر أن النماذج تتعلّم الاختزال نفسه عندما يُفرض عليها قياس صارم على الإنتاج. التجربة قابلة للتكرار كاملة مع دفعات مجمّدة، والخلاصة: الاقتصاد في الرموز مهارة قابلة للتدريب لا مجرد قيد.</p>
+    <a href="https://fiveminutesforward.com/post/2026-10-04-telegraph-test/" target="_blank">fiveminutesforward.com/post/2026-10-04-telegraph-test</a>
+    <div class="date">4 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🧠 ذاكرة طويلة الأمد لوكلاء البرمجة كشجرة ملفات نصية</h2>
+    <p class="summary">مشروع مفتوح يعيد التفكير في ذاكرة الوكلاء: بدل قاعدة بيانات متجهات، تُخزَّن المعرفة المتراكمة في شجرة من الملفات النصية العادية التي يمكن قراءتها وتعديلها يدويًا. الفكرة تخفض الكلفة وترفع قابلية التدقيق، وتجعل الذاكرة أصلًا تحت سيطرة المطور لا صندوقًا مغلقًا. من Show HN اليوم.</p>
+    <a href="https://github.com/gonzaroman/IHMT-MEMORY" target="_blank">github.com/gonzaroman/IHMT-MEMORY</a>
+    <div class="date">11 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🪶 Kolibri: نموذج أوروبي بأوزان مفتوحة و٧٨ مليار معامل</h2>
+    <p class="summary">أطلقت Aleph Alpha نموذج Kolibri ثنائي اللغة (ألماني/إنجليزي) بمعمارية خليط الخبراء: ٧٨.١ مليار معامل مع تنشيط ٣.٤٦ مليار فقط لكل رمز، وسياق يبلغ مليون رمز. الأوزان متاحة للتنزيل كاملة برخصة Apache 2.0، ليعمل داخل المؤسسة دون إرسال بيانات إلى مزود خارجي. موجّه للقطاعات الحكومية والمنظّمة.</p>
+    <a href="https://www.testingcatalog.com/aleph-alpha-releases-open-weight-kolibri-with-1m-context/" target="_blank">testingcatalog.com/aleph-alpha-releases-open-weight-kolibri-with-1m-context</a>
+    <div class="date">10 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🪫 ضغط دون بت واحد: تفكيك كامن لتصغير النماذج</h2>
+    <p class="summary">معامل Samsung Labs يقترح تفكيكًا كامنًا لضغط النماذج إلى ما دون بت واحد لكل وزن، عبر إسقاط كل بعد فردي إلى تمثيل كامن. النتيجة نموذج أصغر بكثير مع الحفاظ على الأداء، وهو ما يهمّ بشدة تشغيل الوكلاء محليًا وعلى الأجهزة المحدودة. حلقة الوصل بين ترشيد الرموز وتقليل حجم النموذج.</p>
+    <a href="https://github.com/SamsungLabs/LittleBit" target="_blank">github.com/SamsungLabs/LittleBit</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🦀 ناقل مصرف TypeScript إلى Rust بيد النماذج اللغوية</h2>
+    <p class="summary">مشروع مفتوح ينقل مصرف TypeScript وفاحصه وخادمه اللغوي إلى Rust بمساعدة النماذج اللغوية الكبيرة، في تجربة واسعة على حجم شيفرة ضخم. القيمة ليست في اللغة الهدف فقط، بل في كونها نموذجًا حقيقيًا لإعادة بناء بنية تقنية معقّدة بالوكلاء وقياس ما ينجح فيها. تصدّر مناقشات المطورين بأكثر من مئة نقطة.</p>
+    <a href="https://github.com/pingdotgg/ts-rust" target="_blank">github.com/pingdotgg/ts-rust</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🛡️ Anthropic تحظر «المعاملة القاسية أو المسيئة» مع Claude</h2>
+    <p class="summary">حدّثت Anthropic سياسة الاستخدام لتضع حدودًا صريحة على طريقة التعامل مع Claude، ومنها حظر السلوك المسيء أو القاسي نحو النموذج. القرار يفتح بابًا للجدل حول أخلاقيات التعامل مع الأنظمة الحوارية وحول حدود ما يجب أن تفرضه الشركات على مستخدميها. نقاش نشط بين المطورين عن المعنى العملي للسياسة.</p>
+    <a href="https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude" target="_blank">theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🗝️ دليل مُحدَّث للنماذج المجانية عبر واجهات البرمجة</h2>
+    <p class="summary">قائمة منتقاة تُحدَّث باستمرار تجمع نماذج الذكاء الاصطناعي وواجهاتها البرمجية المتاحة بلا مقابل، مع حدود الاستخدام وشروط كل مزود. مفيدة لمن يبني تجارب برمجية أو وكلاء بلا فاتورة ثابتة، وتُذكّر بأن الطبقات المجانية متحركة: ما كان متاحًا أمس قد يتغير غدًا. تحقق من الحالة الحالية قبل الاعتماد عليها.</p>
+    <a href="https://github.com/12britz/awesome-free-models" target="_blank">github.com/12britz/awesome-free-models</a>
+    <div class="date">11 أكتوبر 2026</div>
+  </div>
+
+  <footer style="text-align:center; font-size:0.8rem; opacity:0.6; margin-top:2rem; padding-bottom:2rem;">
+    حقوق المحتوى متاحة للجميع
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('data:text/javascript;base64,' + btoa(`
+        self.addEventListener('fetch', function(e) {
+          e.respondWith(fetch(e.request).catch(function() {
+            return new Response('لا يوجد اتصال بالإنترنت', {status: 503, headers: {'Content-Type': 'text/plain; charset=utf-8'}});
+          }));
+        });
+      `));
+    }
+  </script>
+</body>
+</html>
