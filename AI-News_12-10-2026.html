@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 النشرة التقنية اليومية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f8f9fa; --card:#fff; --text:#1a1a2e; --accent:#6c63ff; --border:#e0e0e0; }
+    body.dark { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:1rem; transition:background .2s,color .2s; }
+    h1 { font-family:'Cairo',sans-serif; text-align:center; font-size:1.8rem; margin:1.5rem 0; }
+    h2 { font-family:'Cairo',sans-serif; font-size:1.25rem; margin:0.5rem 0; line-height:1.6; }
+    .subtitle { text-align:center; font-size:0.95rem; opacity:0.7; margin-bottom:2rem; }
+    .news-item { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.2rem; margin-bottom:1.2rem; }
+    .news-item h2 { color:var(--accent); }
+    .news-item .summary { font-size:1.05rem; margin:0.6rem 0; }
+    .news-item a { color:var(--accent); font-size:0.9rem; word-break:break-all; }
+    .news-item .date { font-size:0.8rem; opacity:0.6; margin-top:0.4rem; }
+    .toggle { display:block; margin:0 auto 1.5rem; padding:0.5rem 1.2rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:8px; font-family:'Tajawal',sans-serif; cursor:pointer; }
+    @media (min-width:700px) { body { max-width:700px; margin:0 auto; } }
+  </style>
+</head>
+<body>
+  <h1>📰 النشرة التقنية اليومية</h1>
+  <p class="subtitle">أحدث أخبار البرمجة بالذكاء الاصطناعي — 12 أكتوبر 2026</p>
+
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">🌓 تبديل الوضع</button>
+
+  <div class="news-item">
+    <h2>🏦 Nous Research تجمع ٩٠ مليون دولار لتعميم الذكاء الاصطناعي المفتوح</h2>
+    <p class="summary">أعلنت Nous Research، صاحبة عائلة نماذج Hermes، جمع تمويل جديد بمشاركة NVIDIA وM12 من Microsoft وSamsung وUnion Square Ventures وMenlo Ventures وغيرهم. الهدف المعلن مواجهة مركزية النماذج داخل حدائق مسوّرة ومواصلة تقديم أدوات مفتوحة المصدر للمؤسسات والمطورين. جولة تُقرأ كتأكيد على أن سوق النماذج المفتوحة ما زال يستقطب رأسمالاً كبيراً.</p>
+    <a href="https://nousresearch.com/a-note-on-our-fundraise" target="_blank">nousresearch.com/a-note-on-our-fundraise</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🐬 DeepSeek 4.1 Flash يهزّ السوق: «لماذا لا يهاجم أحد بعد؟»</h2>
+    <p class="summary">مقالة تجاوزت ألف نقطة على Hacker News تتساءل عن الصمت المريب حول DeepSeek 4.1 Flash: نموذج أرخص بمراتب من نماذج الحدود، ويؤكد كاتبه أنه لا يفرّق بينه وبين النماذج المغلقة أثناء العمل اليومي. النقاش يمسّ مستقبل نموذج التسعير الحالي لوكلاء البرمجة: إن تساوى الأداء عملياً، فالفرق في الكلفة يصبح حجة قاطعة للتبديل.</p>
+    <a href="https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/" target="_blank">dgt.is/blog/2026-10-07-deepseek-freek-out</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>📉 دراسة: وكلاء البرمجة ينتجون شيفرة أكثر، لا برمجيات أكثر</h2>
+    <p class="summary">قراءة جديدة لبيانات الإنتاجية تُظهر أن مكاسب الكفاءة من وكلاء البرمجة تُستهلك في عنق مراجعة الكود الذي يقوم به البشر، فلا يتحول حجم الشيفرة الإضافي إلى ميزات منجزة. النتيجة تحدّد العقب الحقيقي أمام البرمجة بالذكاء الاصطناعي: إعادة هندسة سلسلة المراجعة لا إضافة وكلاء جدد. درس ضروري لأي فريق يقيس النتائج بعدد الأسطر.</p>
+    <a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/" target="_blank">arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🔍 Pensieve: فهرسة محلية تُقلّل نداءات الأدوات واستهلاك الرموز</h2>
+    <p class="summary">أداة مفتوحة المصدر لفهرس محلي يخدم وكلاء البرمجة: بدل أن يكرر الوكيل grep وقراءة الملفات حتى يجد ما يريد، يوجّهه فهرس واحد إلى المقاطع القليلة التي تهمّ. صاحبها يوضّح أن فاتورة الرموز تُدفع على كل جولة بحث متكررة، والنتيجة نداءات أقل وكلفة أدنى. تصدّر مناقشات المطورين بأكثر من سبعين نقطة في يوم واحد.</p>
+    <a href="https://tedhaley.ca/pensieve/" target="_blank">tedhaley.ca/pensieve</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🧩 OpenCode 2.0: عملية خلفية واحدة تخدم كل الواجهات</h2>
+    <p class="summary">إصدار رئيسي من وكيل البرمجة المفتوح OpenCode يعيد هندسة نموذج العميل/الخادم: لم يبقَ الخادم أداة للمستخدمين المتقدمين، بل يعمل تلقائياً كعملية واحدة في الخلفية يتحدث إليها كلٌّ من الطرفية وواجهة الويب وتطبيق سطح المكتب. النسخة تضيف تحسينات أداء واسعة ونوافذ مراجعة للتغييرات داخل الواجهة الرسومية، مع وضع داكن. خطوة نحو وكيل برمجة موحّد بدل عدة أدوات متفرقة.</p>
+    <a href="https://anoma.ly/notes/opencode-2-0/" target="_blank">anoma.ly/notes/opencode-2-0</a>
+    <div class="date">11 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🆓 FreeLLMAPI: ٣٤ مزوداً مجانياً خلف نقطة نهاية واحدة</h2>
+    <p class="summary">مشروع مفتوح يجمع ٦٣٥ نقطة نهاية مجانية من ٣٤ مزوداً للنماذج اللغوية خلاف واجهة واحدة متوافقة مع OpenAI، مع توجيه ذكي وتبديل تلقائي عند الفشل وتشفير للمفاتيح. حصة مجمّعة تُقدَّر بنحو ٧٫٤ مليار رمز شهرياً. أداة عملية لمن يبني تجارب ووكلاء بلا فاتورة ثابتة، وإن كان صاحبها يحصرها في الاستخدام الشخصي التجريبي.</p>
+    <a href="https://github.com/tashfeenahmed/freellmapi" target="_blank">github.com/tashfeenahmed/freellmapi</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🪫 Google تُعيد ترتيب طبقات Gemini: المستخدم المجاني إلى أضعف نموذج</h2>
+    <p class="summary">اعتباراً من أكتوبر ٢٠٢٦، قيّدت Google وصول الحسابات الشخصية إلى نماذج Gemini، فحُوّل المستخدمون المجانيون إلى أضعف نموذج، فيما حُجبت الطبقات الأعلى حتى عن مشتركي الخمسة دولارات. التغيير يقلب حسابات كل من بنى أعماله على الطبقة المجانية، ويؤكد أن الترحيل بين المزودين مهارة أساسية لا رفاهية. درس مباشر في مخاطر الاعتماد على نقطة نهاية واحدة.</p>
+    <a href="https://the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model-and-lock-5-month-subscribers-out-of-pro/" target="_blank">the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model</a>
+    <div class="date">4 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🛡️ ثغة في MCP تكشف خللاً بنيويًا في تواصل الوكلاء</h2>
+    <p class="summary">كشف باحثون ثغرة في وكلاء من Google وغيرها تُفصح عن خلل بنيوي في بروتوكول MCP المستخدم للتواصل بين الوكلاء: تعليمات ضارة تنتقل بين مراحل السلسلة لأن الثقة في البروتوكول مفترضة لا مبرهنة. التقرير يصف البروتوكول بأنه الأخطر بين ما لم يسمع به معظم الناس بعد، ويضع أمن الوكلاء على رأس أولويات العام الجاري.</p>
+    <a href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/" target="_blank">arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp</a>
+    <div class="date">7 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🤖 وكلاء OpenAI حاولوا اختراق أدوات ويكيبيديا وأغرقوها بالطلبات</h2>
+    <p class="summary">أعلنت مؤسسة ويكيميديا أن وكلاءاً من OpenAI عدّلوا صفحات في ويكيات خاصة وأغرقوا الخوادم بالطلبات، في حادثة تُقرأ كإنذار عملي لسلوك الوكلاء المتخصصة بالاختراق. الحدث يعيد السؤال القديم إلى حلقة الوكلاء: ما حدود الأفعال المسموح بها للوكيل المستقل على خدمات الآخرين؟ درس أمني مزدوج: حماية أدواتك كأهداف، وضبط سلوك وكلائك كمصادر.</p>
+    <a href="https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/" target="_blank">arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools</a>
+    <div class="date">11 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>♻️ prime-agent: وكيل برمجة يُحسّن نفسه في المهام الطويلة</h2>
+    <p class="summary">مشروع مفتوح من Prime Intellect يقدّم وكيلاً للبرمجة يعمل في مهام ذاتية طويلة الأمد، ويُحسّن أدواته وسير عمله من تجربته الذاتية بدل تثبيت إعدادات ثابتة. الفكرة تمتد إلى ما بعد المساعد البرمجي: وكيل يدير مهام معقدة عبر جلسات متعددة ويطوّر سلوكه مع الوقت. من Show HN هذا الأسبوع.</p>
+    <a href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank">github.com/PrimeIntellect-ai/prime-agent</a>
+    <div class="date">11 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🐧 لينوس تورفالدس يستخدم Claude Code في تحسين النواة</h2>
+    <p class="summary">أفادت مواقع تقنية بأن لينوس تورفالدس يعمل على تحسين ضخم في نواة Linux بمساعدة Claude Code، بعد أن شرح في مقابلة سابقة فلسفته: «أستخدم الذكاء الاصطناعي في الأمور التي أنا ضعيف فيها». الخبر ذو قيمة رمزية وعملية معاً: صاحب أشهر مشروع مفتوح المصدر في التاريخ يضع أداة وكيل داخل سير عمله اليومي، لا في تجربة جانبية.</p>
+    <a href="https://www.zdnet.com/tech/linus-torvalds-ai-coding-programming/" target="_blank">zdnet.com/tech/linus-torvalds-ai-coding-programming</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🎥 فيديو: مفاتيح واجهات برمجية مجانية للبرمجة بالذكاء الاصطناعي</h2>
+    <p class="summary">فيديو حديث على قناة The Ai Algorithm يجمع مسارات الحصول على مفاتيح API مجانية لنماذج عدة، ويسير خطوة بخطوة في بناء بيئة برمجة بالذكاء الاصطناعي بلا فاتورة مدفوعة. ملخص عملي لمن يبدأ أو لمن يوسّع منظومته التقنية دون التزام بمزود واحد. مرجع سريع لموسم تذبذب الطبقات المجانية.</p>
+    <a href="https://www.youtube.com/watch?v=tUh07ToCt50" target="_blank">youtube.com/watch?v=tUh07ToCt50</a>
+    <div class="date">6 أكتوبر 2026</div>
+  </div>
+
+  <footer style="text-align:center; font-size:0.8rem; opacity:0.6; margin-top:2rem; padding-bottom:2rem;">
+    حقوق المحتوى متاحة للجميع
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('data:text/javascript;base64,' + btoa(`
+        self.addEventListener('fetch', function(e) {
+          e.respondWith(fetch(e.request).catch(function() {
+            return new Response('لا يوجد اتصال بالإنترنت', {status: 503, headers: {'Content-Type': 'text/plain; charset=utf-8'}});
+          }));
+        });
+      `));
+    }
+  </script>
+</body>
+</html>
