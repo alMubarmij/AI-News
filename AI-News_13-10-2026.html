@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 النشرة التقنية اليومية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f8f9fa; --card:#fff; --text:#1a1a2e; --accent:#6c63ff; --border:#e0e0e0; }
+    body.dark { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#121212; --card:#1e1e1e; --text:#e0e0e0; --accent:#8b83ff; --border:#333; }
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; padding:1rem; transition:background .2s,color .2s; }
+    h1 { font-family:'Cairo',sans-serif; text-align:center; font-size:1.8rem; margin:1.5rem 0; }
+    h2 { font-family:'Cairo',sans-serif; font-size:1.25rem; margin:0.5rem 0; line-height:1.6; }
+    .subtitle { text-align:center; font-size:0.95rem; opacity:0.7; margin-bottom:2rem; }
+    .news-item { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.2rem; margin-bottom:1.2rem; }
+    .news-item h2 { color:var(--accent); }
+    .news-item .summary { font-size:1.05rem; margin:0.6rem 0; }
+    .news-item a { color:var(--accent); font-size:0.9rem; word-break:break-all; }
+    .news-item .date { font-size:0.8rem; opacity:0.6; margin-top:0.4rem; }
+    .toggle { display:block; margin:0 auto 1.5rem; padding:0.5rem 1.2rem; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:8px; font-family:'Tajawal',sans-serif; cursor:pointer; }
+    @media (min-width:700px) { body { max-width:700px; margin:0 auto; } }
+  </style>
+</head>
+<body>
+  <h1>📰 النشرة التقنية اليومية</h1>
+  <p class="subtitle">أحدث أخبار البرمجة بالذكاء الاصطناعي — 13 أكتوبر 2026</p>
+
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">🌓 تبديل الوضع</button>
+
+  <div class="news-item">
+    <h2>🧠 Beam: نموذج مفتوح الأوزان بـ٥٠١ مليار معامل من Reflection</h2>
+    <p class="summary">أعلنت شركة Reflection عن أول نموذج مفتوح الأوزان لها: Beam، خليط خبراء متفرّق يجمع ٥٠١ مليار معامل ويعمل منها ٢٣ ملياراً فقط في كل نداء، مبنيّ للبرمجة والاستدلال وأحمال الوكلاء. دُرّب على ٢٣٫٨ تريليون رمز، وشغّلت الشركة تدريباً مكثّفاً بالتعزيز عبر أكثر من ١٠٠ مليون محاولة على ١٠٫٥ آلاف معالج GB300 من NVIDIA. النشر تصدّر Hacker News بأكثر من ٥٥٠ نقطة، والوزان متاح مجاناً لمن يريد تشغيله محلياً أو على خدماته.</p>
+    <a href="https://reflection.ai/blog/introducing-beam" target="_blank">reflection.ai/blog/introducing-beam</a>
+    <div class="date">5 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🗣️ Mistral تطلق نموذجاً مفتوحاً للتعرف على الكلام العربي في الزمن الحقيقي</h2>
+    <p class="summary">نشرت Mistral بالشراكة مع وزارة الانتقال الرقمي المغربية مجموعة نماذج مفتوحة الأوزان: Voxtral-Mini-4B-Realtime-Arabic للتعرف على الكلام العربي لحظياً، وLIDstral-Arabic لتصنيف اللهجات. المجموعة متاحة مجاناً على Hugging Face، وتغطّي حاجة عملية طويلة الأمد في التطبيقات العربية: نسخ فوري بلا واجهة برمجية مدفوعة، وتعرّف تلقائي على اللهجة قبل المعالجة.</p>
+    <a href="https://huggingface.co/collections/mistralai/mistral-mtnra" target="_blank">huggingface.co/collections/mistralai/mistral-mtnra</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🧊 MXC: بيئة تنفيذ معزولة من Microsoft لشيفرة الوكلاء غير الموثوقة</h2>
+    <p class="summary">فتحت Microsoft مشروع MXC لنظام تنفيذ شيفرة معزول يعمل على Windows وLinux وmacOS، ويهدف إلى تشغيل مخرجات النماذج والإضافات والأدوات بلا ثقة مسبقة. يتيح عدة طبقات عزل من عمليات النظام الأصلية إلى آلات وهمية كاملة، خلف نموذج احتواء واحد وحزم تطوير موثّقة. حصد ١٩٦ نقطة على Hacker News، ويأتي في سياق تصاعد مخاوف تنفيذ الشيفرة المولّدة داخل فرق التطوير.</p>
+    <a href="https://github.com/microsoft/mxc" target="_blank">github.com/microsoft/mxc</a>
+    <div class="date">9 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🏷️ Agent37: بيئات وكلاء معزولة بأقل من عشرة بالمئة من كلفة السوق</h2>
+    <p class="summary">مشروع من دفعة YC F26 يقدّم بيئات تشغيل معزولة للوكلاء بسعر متوسط ٠٫٣٧ دولار للبيئة شهرياً، أي أقل من ١٠٪ من أسعار مزودي البيئات المعتادين، ويؤكد الفريق أن الخطة المجانية صارت ممكنة بعد خفض كلفة التشغيل. صاحب المشروع يروي أن الشركة بدأت كطبقة تغليف حول OpenClaw في فبراير ثم أضافت المزيد من الأطر حتى تحوّلت إلى البنية التحتية نفسها. سؤال الكلفة لكل وكيل صار معياراً مهماً لأي فريق يشغّل عشرات الوكلاء بالتوازي.</p>
+    <a href="https://news.ycombinator.com/item?id=50059096" target="_blank">news.ycombinator.com/item?id=50059096</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🎙️ Atticus: مساعد صوتي لماك يعمل بمفتاح زر ولا يحتاج واجهة برمجية</h2>
+    <p class="summary">مشروع مفتوح لنظام macOS يجعل الحاسوب يطيع الجملة الواحدة: اضغط زراً مع مفتاح alt وspace واطلب ما تريد فيتحرك وينقل النوافذ ويفتح الملفات ويقرأ الشاشة. المشروع بلا مفتاح واجهة برمجية ويحتفظ بذاكرة عن المستخدم، ويتخطى الذكاء الاصطناعي في الطلبات البسيطة فيفتح التطبيق في ٠٫٠٨ ثانية. تجمّع ١٠٥ نقاط على Hacker News، وهو مثال حيّ على واجهات الحاسوب التي يقودها الوكيل بلا فاتورة سحابية.</p>
+    <a href="https://github.com/SaarthurR/atticus-mac" target="_blank">github.com/SaarthurR/atticus-mac</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🎨 ثماني مطالبات في ثلاث ساعات: نسخة Figma كاملة من Opus 5.5</h2>
+    <p class="summary">عرض مبرمج تجربة بناء نسخة عاملة من Figma بثماني مطالبات فقط خلال ثلاث ساعات، بأدوات متصفح وسحب وإفلات وطبقات، عبر نموذج Opus 5.5. المنشور جمع ٣٩ نقطة على Hacker News وأعاد فتح نقاش البرمجة بالذكاء الاصطناعي: أين تنتهي القدرة الواقعية للنموذج الواحد، وما دور المطالبة ذاتها كمهارة تصميم لا مجرد طلب نصّي. دليل عملي على أن جودة المطالبات بقدر أهميتها ذاتها.</p>
+    <a href="https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch" target="_blank">mana.space</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🔌 Treg: دليل أدوات الوكلاء بواجهة واحدة وتسعير يبدأ من سنت</h2>
+    <p class="summary">مشروع مفتوح يصف نفسه بأنه OpenRouter للأدوات بدل النماذج: نقطة نهاية واحدة ومفتاح واحد يمنح الوكيل كتالوجاً من آلاف الأدوات عبر مزودين متعددين، تشمل تحسين محركات البحث والروابط الخلفية وإثراء بيانات الشركات والتوليد الصوتي والمرئي، بتسعير لكل نداء يبدأ من سنت وبلا تسجيل عند كل مزود. الفريق يضيف إمكانية تسجيل مفاتيح الفريق ومهاراته ليتحدث إليها وكلاء الزملاء بلا أن تترك البيانات الاعتمادية الخادم.</p>
+    <a href="https://github.com/superdesigndev/treg" target="_blank">github.com/superdesigndev/treg</a>
+    <div class="date">6 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🪣 Tokenleak: اكشف ما يعيد وكيل البرمجة قراءته في كل نداء</h2>
+    <p class="summary">أداة تحلّل جلسات وكلاء البرمجة لتكشف مواضع هدر الرموز: السياق الذي يعيد الوكيل قراءته في كل جولة بلا حاجة إليه، لا مفاتيح الواجهات المسروقة. الفكرة أن فاتورة الرموز لا تُدفع على العمل المفيد وحده بل على إعادة اكتشاف الوكيل لمستودعه في كل نداء. أداة عملية لمن يراقب كلفة وكلائه، وتكمل أدوات الفهرس المحلي التي نشرناها الأسبوع الماضي.</p>
+    <a href="https://github.com/Pazificateur69/tokenleak" target="_blank">github.com/Pazificateur69/tokenleak</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🌍 Ecosia تترك Mistral وتراهن على النماذج الصينية المفتوحة</h2>
+    <p class="summary">أعلنت محركة البحث الأوروبية Ecosia، التي تخدم ملايين المستخدمين، انتقالها من نماذج Mistral إلى نماذج مفتوحة الأوزان من Qwen وGLM وKimi، بذريعة الكلفة والاستقلالية. الحدث يعكس اتجاهاً أوسع: الشركات التي تبحث عن بدائل أرخص وأكثر تحكماً تجد ضالتها في النماذج المفتوحة لا في النماذج المغلقة. قرار بهذا الحجم يمنح النماذج المفتوحة دفعة مصداقية في سوق المؤسسات الأوروبية.</p>
+    <a href="https://www.politico.eu/article/germany-ecosia-search-engine-mistral-china-open-source-ai/" target="_blank">politico.eu</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 ٢٠٦ مليار رمز: جامعة Harvard تفتح آثار جلسات وكلاء للجميع</h2>
+    <p class="summary">نشر فريق Harvard Madsys قاعدة بيانات مفتوحة لآثار جلسات وكلاء حقيقية: ٢٠٦ مليار رمز ومليون نداء أداة، مجاناً للبحث والتطوير. البيانات تسمح بدراسة سلوك الوكلاء على نطاق واسع بدل التخمين من التجارب الصغيرة، من تكلفة السياق إلى أنماط نداءات الأدوات. مورد نادر في مجال تفتقر دراسته إلى بيانات عامة بجودة الإنتاج.</p>
+    <a href="https://huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace" target="_blank">huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace</a>
+    <div class="date">8 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🎥 فيديو: البرمجة بالذكاء الاصطناعي بالأرقام — الإنتاجية والأمن وثغرات CVE</h2>
+    <p class="summary">عرض تحليلي على قناة Data Science at Home يجمع أرقام الإنتاجية المعلنة في البرمجة بالذكاء الاصطناعي مع سجل الثغرات الأمنية المرتبطة بها، ويحاكم الوعود ببيانات المنشورات لا بالانطباعات. الفيديو مرجع سريع لمن يبني قرار الاستثمار في الوكلاء أمام إدارته، ويضع الأمن بندا قائماً بذاته لا تبعاً للسرعة.</p>
+    <a href="https://www.youtube.com/watch?v=fH2S35Nxh80" target="_blank">youtube.com/watch?v=fH2S35Nxh80</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <div class="news-item">
+    <h2>🔢 Boole-1.7B: نموذج ببت واحد يتفوق على نموذج بثمانية بت</h2>
+    <p class="summary">أعلنت Precision Numerics عن نموذج لغة بـ١٫٧ مليار معامل يعمل ببت واحد لكل وزن، متجاوزاً في القياسات نموذجاً مماثلاً بثمانية بت. الاتجاه يهم من يشغّل النماذج على أجهزته: تقليل البتات يخفض الذاكرة والاستهلاك بمراتب مع بقاء الأداء قابلاً للاستخدام. خطوة جديدة في سباق تصغير النماذج المحلية بلا مفاتيح ولا فواتير.</p>
+    <a href="https://precisionnumerics.ai/blog/boole-1p7b" target="_blank">precisionnumerics.ai/blog/boole-1p7b</a>
+    <div class="date">12 أكتوبر 2026</div>
+  </div>
+
+  <footer style="text-align:center; font-size:0.8rem; opacity:0.6; margin-top:2rem; padding-bottom:2rem;">
+    حقوق المحتوى متاحة للجميع
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('data:text/javascript;base64,' + btoa(`
+        self.addEventListener('fetch', function(e) {
+          e.respondWith(fetch(e.request).catch(function() {
+            return new Response('لا يوجد اتصال بالإنترنت', {status: 503, headers: {'Content-Type': 'text/plain; charset=utf-8'}});
+          }));
+        });
+      `));
+    }
+  </script>
+</body>
+</html>
