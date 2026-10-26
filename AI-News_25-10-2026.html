@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6fa; --card:#ffffff; --fg:#1a1d29; --muted:#5b6070; --accent:#6c5ce7; --line:#e6e8ef;
+}
+[data-theme="dark"]{
+  --bg:#0e1016; --card:#171a23; --fg:#eef0f6; --muted:#9aa0b2; --accent:#a29bfe; --line:#262a36;
+}
+*{box-sizing:border-box;}
+body{margin:0; background:var(--bg); color:var(--fg); font-family:'Tajawal',sans-serif; font-size:19px; line-height:1.85; transition:background .3s,color .3s;}
+.wrap{max-width:720px; margin:0 auto; padding:28px 18px 80px;}
+header{text-align:center; margin-bottom:10px;}
+h1{font-family:'Cairo',sans-serif; font-weight:900; font-size:34px; margin:0 0 6px;}
+.sub{color:var(--muted); font-size:16px; margin:0;}
+.toggle{position:fixed; top:14px; left:14px; background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-family:'Tajawal'; font-size:15px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,.08); z-index:10;}
+.count{text-align:center; color:var(--muted); font-size:15px; margin:18px 0 24px;}
+.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:0 0 18px; box-shadow:0 1px 3px rgba(0,0,0,.04); transition:transform .15s,box-shadow .15s;}
+.card:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.08);}
+.card h2{font-family:'Cairo',sans-serif; font-weight:700; font-size:22px; line-height:1.5; margin:0 0 10px;}
+.sum{margin:0 0 14px; color:var(--fg);}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:12px;}
+.date{color:var(--muted); font-size:15px;}
+.lnk{color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;}
+.lnk:hover{text-decoration:underline;}
+footer{text-align:center; color:var(--muted); font-size:14px; margin-top:30px;}
+.offline{display:none; background:var(--accent); color:#fff; text-align:center; padding:8px; font-size:14px; position:sticky; top:0;}
+.offline.show{display:block;}
+@media (max-width:520px){h1{font-size:27px;}.card h2{font-size:19px;}body{font-size:17px;}}
+</style>
+</head>
+<body>
+<div id="offline" class="offline">⚠️ وضع عدم الاتصال — يعاد تحميل المحتوى تلقائيًا عند عودة الشبكة</div>
+<button class="toggle" onclick="var d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('t',d);">🌓 الوضع</button>
+<div class="wrap">
+  <header>
+    <h1>نشرة الذكاء الآلية</h1>
+    <p class="sub">٢٥ أكتوبر ٢٠٢٦ — برمجة بالذكاء · وكلاء · هندسة السياق · مفاتيح مجانية</p>
+  </header>
+  <p class="count">١١ خبرًا من آخر ١٠ أيام · مصادر: Hacker News · The Verge · Phoronix · GitHub · YouTube</p>
+    <article class="card">
+      <h2>🧠 حالة هندسة السياق لعام ٢٠٢٦: متى نستخدم الحتمي ومتى نترك النموذج</h2>
+      <p class="sum">محاضرة في AGNTCon بعنوان «Context Fails & Fixes» تلخّص مرحلة هندسة السياق: إدارة الذاكرة والانضغاط والاسترجاع، والأهم معرفة متى نعتمد على الحلول الحتمية ومتى نترك النموذج الاحتمالي. قراءة موجّهة لمن يبني أدوات الوكلاء.</p>
+      <div class="meta"><span class="date">٢٤ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🐧 Borealis: مشغّل رسومات Apple Silicon لـ Linux مُطوَّر بالكامل عبر البرمجة بالذكاء</h2>
+      <p class="sum">فريق Asahi Linux أصدر نسخة من مشغّل Mesa Vulkan باسم Borealis بُنيت عبر البرمجة بالذكاء لتسريع تطوير تعريفات بطاقات GPU في حواسب آبل على Linux، مثال نادر على تعريف نظام تشغيل يُنتج عبر الذكاء.</p>
+      <div class="meta"><span class="date">٢٣ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.phoronix.com/news/Borealis-Vulkan-Driver" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>📺 المطوّرون يُحسّنون أجهزتهم المنزلية عبر البرمجة بالذكاء</h2>
+      <p class="sum">تقرير من The Verge يظهر انتقال البرمجة بالذكاء من كتابة الكود إلى ضبط أنظمة التلفزيون والأجهزة الاستهلاكية، حيث يعدّل المستخدمون واجهات أجهزتهم ويطوّرونها بأدوات الذكاء.</p>
+      <div class="meta"><span class="date">٢٣ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.theverge.com/tech/1016116/vibe-coding-tv-os" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🐍 «كلود لم يخترع مضاد سم العقرب»: تحقّق يكشف ادعاءً ذكاءً آليًا خاطئًا</h2>
+      <p class="sum">The Verge تنشر تحقّقًا يدحض ادعاءً منشورًا عن اكتشاف طبي منسوب إلى ذكاء آلي، ويُعدّ تحذيرًا صريحًا من اعتماد مخرجات البرمجة بالذكاء دون تحقق بشري.</p>
+      <div class="meta"><span class="date">٢٤ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🧩 Skillstore: متجر مهارات يختارها الوكيل بنفسه أثناء العمل</h2>
+      <p class="sum">منصة تزوّد الوكلاء البرمجين بمهارات جاهزة يستدعيها النموذج حسب المهمة، ما يوسّع قدراته دون إثقال السياق بكل التعليمات، اتجاه نحو بنية تقنية مرنة للوكلاء.</p>
+      <div class="meta"><span class="date">٢٢ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://skillstore-jk.fly.dev/developers" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🔧 تفكيك Claude Code وتحويله إلى دورة مجانية عن هندسة الأدوات</h2>
+      <p class="sum">مطوّر ينشر دورة مجانية بعد تفكيك بنية أداة Claude Code، يتناول «هندسة الهيكل» (harness engineering) وكيفية بناء أدوات ذكاء فعّالة تُحسّن أداء النموذج لا مجرد استدعائه.</p>
+      <div class="meta"><span class="date">٢٤ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://news.ycombinator.com/item?id=50219641" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>📦 genaicode: تضمين واجهات شبيهة بـ Claude Code داخل تطبيقك</h2>
+      <p class="sum">أداة Show HN تسمح بدمج واجهات برمجية مشابهة لـ Claude Code داخل تطبيقاتك الخاصة لبناء تدفّق برمجة ذكي مخصّص يُضمّن في منتجك مباشرة.</p>
+      <div class="meta"><span class="date">٢٤ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/gtanczyk/genaicode" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🧠 OneMemory: ذاكرة مشتركة ذاتية الاستضافة للوكلاء عبر MCP</h2>
+      <p class="sum">مشروع مفتوح المصدر يمنح فرق الوكلاء ذاكرة مشتركة قابلة للمشاركة عبر بروتوكول MCP، مع تحكم كامل في البيانات وغياب الاعتماد على خدمات سحابية خارجية.</p>
+      <div class="meta"><span class="date">٢٥ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/calasdan-sketch/onememory" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>⚡ Respan: بوابة ذكاء مفتوحة المصدر مكتوبة بـ Rust لتوفير الرموز</h2>
+      <p class="sum">بوابة (gateway) ذاتية الاستضافة بـ Rust توجّه طلبات الذكاء وتتحكّم بالتكلفة وتوفّر الرموز عبر وحدات plugins، بديل حرّ لمنصّات الوكيل المغلقة.</p>
+      <div class="meta"><span class="date">٢٠ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://news.ycombinator.com/item?id=50167583" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🎨 مهارات Claude مفتوحة المصدر بديلة لمنصّة Higgsfield المدفوعة</h2>
+      <p class="sum">حزمة مهارات مفتوحة المصدر لأداة Claude تنفّذ مهام توليد الصور والمحتوى التي كانت حصريةً لمنصّات مدفوعة، ما يجعلها في متناول الجميع بلا تكلفة.</p>
+      <div class="meta"><span class="date">٢٢ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/SupercmoHQ/superCMO-skills" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+    <article class="card">
+      <h2>🚀 سير عمل Vercel الذكي للبرمجة: ٧ تقنيات قابلة للنسخ في Claude Code</h2>
+      <p class="sum">مقطع يحلّل سير عمل الرئيس التنفيذي لشركة Vercel مع الذكاء ويحوّله إلى إعداد قابل للنسخ في Claude Code: فحص الاتجاه، وكوّاتر الأخطاء (breaker agents)، واختبار المستخدم الأول.</p>
+      <div class="meta"><span class="date">١٩ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.youtube.com/watch?v=y2ifUC9_zuU" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+  <footer>حقوق المحتوى متاحة للجميع · مولّد آليًا · لا تُباع ولا تُجمع بيانات</footer>
+</div>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){});}
+window.addEventListener('online',function(){var e=document.getElementById('offline');if(e)e.classList.remove('show');});
+window.addEventListener('offline',function(){var e=document.getElementById('offline');if(e)e.classList.add('show');});
+(function(){var s=localStorage.getItem('t');if(s==='dark')document.documentElement.setAttribute('data-theme','dark');})();
+</script>
+</body>
+</html>
