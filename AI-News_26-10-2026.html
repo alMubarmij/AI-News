@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6fa; --card:#ffffff; --fg:#1a1d29; --muted:#5b6070; --accent:#6c5ce7; --line:#e6e8ef;
+}
+[data-theme="dark"]{
+  --bg:#0e1016; --card:#171a23; --fg:#eef0f6; --muted:#9aa0b2; --accent:#a29bfe; --line:#262a36;
+}
+*{box-sizing:border-box;}
+body{margin:0; background:var(--bg); color:var(--fg); font-family:'Tajawal',sans-serif; font-size:19px; line-height:1.85; transition:background .3s,color .3s;}
+.wrap{max-width:720px; margin:0 auto; padding:28px 18px 80px;}
+header{text-align:center; margin-bottom:10px;}
+h1{font-family:'Cairo',sans-serif; font-weight:900; font-size:34px; margin:0 0 6px;}
+.sub{color:var(--muted); font-size:16px; margin:0;}
+.toggle{position:fixed; top:14px; left:14px; background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-family:'Tajawal'; font-size:15px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,.08); z-index:10;}
+.count{text-align:center; color:var(--muted); font-size:15px; margin:18px 0 24px;}
+.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:0 0 18px; box-shadow:0 1px 3px rgba(0,0,0,.04); transition:transform .15s,box-shadow .15s;}
+.card:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.08);}
+.card h2{font-family:'Cairo',sans-serif; font-weight:700; font-size:22px; line-height:1.5; margin:0 0 10px;}
+.sum{margin:0 0 14px; color:var(--fg);}
+.videob{background:rgba(108,92,231,.09); border-radius:10px; padding:10px 14px; font-size:16px; color:var(--muted); margin:0 0 14px;}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:12px;}
+.date{color:var(--muted); font-size:15px;}
+.lnk{color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;}
+.lnk:hover{text-decoration:underline;}
+footer{text-align:center; color:var(--muted); font-size:14px; margin-top:30px;}
+.offline{display:none; background:var(--accent); color:#fff; text-align:center; padding:8px; font-size:14px; position:sticky; top:0;}
+.offline.show{display:block;}
+@media (max-width:520px){h1{font-size:27px;}.card h2{font-size:19px;}body{font-size:17px;}}
+</style>
+</head>
+<body>
+<div id="offline" class="offline">⚠️ وضع عدم الاتصال — يعاد تحميل المحتوى تلقائيًا عند عودة الشبكة</div>
+<button class="toggle" onclick="var d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('t',d);">🌓 الوضع</button>
+<div class="wrap">
+  <header>
+    <h1>نشرة الذكاء الآلية</h1>
+    <p class="sub">٢٦ أكتوبر ٢٠٢٦ — برمجة بالذكاء · وكلاء · هندسة السياق · مفاتيح مجانية</p>
+  </header>
+  <p class="count">١١ خبرًا من آخر ١٠ أيام · مصادر: Hacker News · The Verge · BleepingComputer · GitHub · YouTube</p>
+
+    <article class="card">
+      <h2>🛡️ تحذير أمني: ملفات AGENTS.md تختطف الوكلاء البرمجين من مجلد التنزيلات</h2>
+      <p class="sum">تحرٍّ من Forever Security رصد هجومًا جديدًا يُزرع فيه ملف تعليمات بصيغة Markdown داخل مجلد التنزيلات، فيحوّل الوكيل ضد صاحبه ويستغله في Claude Code وCodex. يُعدّ تحذيرًا صريحًا من فتح أي ملف نصي ينتمي لجهة خارجية قبل فحصه.</p>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🔐 IDHN: صلاحيات نظام ملفات محدودة بمهمة واحدة لكل وكيل</h2>
+      <p class="sum">مشروع Show HN على GitHub يمنح الوكيل صلاحيات وصول إلى نظام الملفات مرتبطة بمهمة محددة لا تتجاوزها، ما يقلّص سطح الهجوم ويحدّ من الأذونات الموسّعة التي تُطلب غالبًا دون داعٍ.</p>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/mohsa/idhn" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🤝 AgentTrust: أمان بلا ثقة وموافقة بشرية للوكلاء</h2>
+      <p class="sum">أداة مفتوحة المصدر تطبّق مبدأ «عدم الثقة أبدًا» (zero-trust) في الوكلاء، وتطلب موافقة إنسان قبل تنفيذ المهام الحساسة، لتجسّد طبقة أمان بشرية الإشراف على الأتمتة.</p>
+      <div class="meta"><span class="date">٢٥ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/SRN0129/Agenttrust" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>📜 CVE.now: خلاصة مجانية لثغرات أمن الوكلاء</h2>
+      <p class="sum">إطلاق sazabi لخلاصة مجانية تتبّع الثغرات الأمنية الخاصة بالوكلاء البرمجيين، لتبقى فرق الأمن على اطّلاع بمخاطر جديدة تظهر في البنية التقنية للوكلاء بلا تكلفة.</p>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.sazabi.com/blog/introducing-cve-now" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🎸 البرمجة بالذكاء تقلب عالم معدات الموسيقى رأسًا على عقب</h2>
+      <p class="sum">تقرير من The Verge يوثّق انتقال البرمجة بالذكاء من كتابة الكود إلى تعديل ثوابت أجهزة الموسيقى، حيث يعدّل الهواة والمصنعون firmware أجهزتهم ويبتكرون ميزات جديدة بأدوات الذكاء.</p>
+      <div class="meta"><span class="date">٢٥ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>💰 Tokensaver: اعرف أي أجزاء طلبك تكلفتك الرموز</h2>
+      <p class="sum">أداة على GitHub تعرض الجزء الأغلى في كل طلب (prompt) مرسَل إلى نموذج ذكاء، لتساعد المطوّر على توفير التكلفة عبر معرفة ما يُهدَر من الرموز وتعديله قبل الإرسال.</p>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/behrouzbk/tokensaver" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🔑 دليل مجاني لاكتشاف نماذج مفتوحة لعدة خدمات عبر API</h2>
+      <p class="sum">مقطع عملي يعرّف على AnyRouter كتالوج مجاني لنماذج ذكاء متعددة، مع مقارنة حسب نافذة السياق والسعر، موجه للمبرمجين الذين يبنون وكلاء أو مهام يومية بلا تكلفة مسبقة.</p>
+      <div class="videob">🎬 ملخص الفيديو: استعراض أي روبوتر (AnyRouter) لاكتشاف نماذج مجانية قابلة للاستخدام في البرمجة والوكلاء، ومقارنتها حسب سياقها وسعرها قبل الاعتماد عليها.</div>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.youtube.com/watch?v=gz7wMreoRNk" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🏗️ المستودعات المصمّمة أولًا للوكيل (Agent-first repos)</h2>
+      <p class="sum">مقال يطرح مفهومًا جديدًا: قواعد كود تُبنى لتُطوَّر وتُدار بواسطة الوكيل نفسه لا الإنسان، مع بنية تقنية تيسّر على النموذج الفهم والتعديل والتشغيل دون تدخل مباشر.</p>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://agent-hypervisor.ai/posts/agent-first-repos/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🧠 Humanlayer: إدخال الوكلاء في قواعد كود معقّدة</h2>
+      <p class="sum">مشروع على GitHub يقدّم طريقة لتسيير الوكلاء البرمجيين داخل أكواد ضخمة ومعقّدة، فيعالج أحد أصعب تحديات البرمجة بالذكاء: فهم السياق في مشاريع كبيرة قبل التعديل.</p>
+      <div class="meta"><span class="date">٢٦ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/humanlayer/humanlayer" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>📝 أفضل ممارسات هندسة التعليمات للمطوّرين</h2>
+      <p class="sum">دليل حديث يوجّه المطوّرين إلى أفضل ممارسات هندسة التعليمات (Prompt Engineering): كيف تُصاغ الطلبات، وتُنظَّم القيود، وتُحقَّق مخرجات أكثر دقة واستقرارًا في النماذج.</p>
+      <div class="meta"><span class="date">٢٣ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://aiqualityhq.com/ai-prompt-engineering-best-practices" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🗂️ خادم MCP مجاني للحقائق التي تخطئ فيها النماذج</h2>
+      <p class="sum">خادم MCP مفتوح المصدر يقدم للنماذج حقائق دقيقة غالبًا ما تُخطئها (المناطق الزمنية، العطل الرسمية، أسعار الصرف)، ليُدخلها في السياق عبر بروتوكول MCP بدل الاعتماد على ذاكرة النموذج.</p>
+      <div class="meta"><span class="date">١٩ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://apistack.online/mcp" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+  <footer>حقوق المحتوى متاحة للجميع · مولّد آليًا · لا تُباع ولا تُجمع بيانات</footer>
+</div>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){});}
+window.addEventListener('online',function(){var e=document.getElementById('offline');if(e)e.classList.remove('show');});
+window.addEventListener('offline',function(){var e=document.getElementById('offline');if(e)e.classList.add('show');});
+(function(){var s=localStorage.getItem('t');if(s==='dark')document.documentElement.setAttribute('data-theme','dark');})();
+</script>
+</body>
+</html>
