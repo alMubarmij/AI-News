@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6fa; --card:#ffffff; --fg:#1a1d29; --muted:#5b6070; --accent:#6c5ce7; --line:#e6e8ef;
+}
+[data-theme="dark"]{
+  --bg:#0e1016; --card:#171a23; --fg:#eef0f6; --muted:#9aa0b2; --accent:#a29bfe; --line:#262a36;
+}
+*{box-sizing:border-box;}
+body{margin:0; background:var(--bg); color:var(--fg); font-family:'Tajawal',sans-serif; font-size:19px; line-height:1.85; transition:background .3s,color .3s;}
+.wrap{max-width:720px; margin:0 auto; padding:28px 18px 80px;}
+header{text-align:center; margin-bottom:10px;}
+h1{font-family:'Cairo',sans-serif; font-weight:900; font-size:34px; margin:0 0 6px;}
+.sub{color:var(--muted); font-size:16px; margin:0;}
+.toggle{position:fixed; top:14px; left:14px; background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-family:'Tajawal'; font-size:15px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,.08); z-index:10;}
+.count{text-align:center; color:var(--muted); font-size:15px; margin:18px 0 24px;}
+.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:0 0 18px; box-shadow:0 1px 3px rgba(0,0,0,.04); transition:transform .15s,box-shadow .15s;}
+.card:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.08);}
+.card h2{font-family:'Cairo',sans-serif; font-weight:700; font-size:22px; line-height:1.5; margin:0 0 10px;}
+.sum{margin:0 0 14px; color:var(--fg);}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:12px;}
+.date{color:var(--muted); font-size:15px;}
+.lnk{color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;}
+.lnk:hover{text-decoration:underline;}
+footer{text-align:center; color:var(--muted); font-size:14px; margin-top:30px;}
+.offline{display:none; background:var(--accent); color:#fff; text-align:center; padding:8px; font-size:14px; position:sticky; top:0;}
+.offline.show{display:block;}
+@media (max-width:520px){h1{font-size:27px;}.card h2{font-size:19px;}body{font-size:17px;}}
+</style>
+</head>
+<body>
+<div id="offline" class="offline">⚠️ وضع عدم الاتصال — يعاد تحميل المحتوى تلقائيًا عند عودة الشبكة</div>
+<button class="toggle" onclick="var d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('t',d);">🌓 الوضع</button>
+<div class="wrap">
+  <header>
+    <h1>نشرة الذكاء الآلية</h1>
+    <p class="sub">٢٨ أكتوبر ٢٠٢٦ — برمجة بالذكاء · وكلاء · هندسة السياق · مفاتيح مجانية</p>
+  </header>
+  <p class="count">١١ خبرًا من آخر ١٠ أيام · مصادر: Hacker News · GitHub · مدونات تقنية</p>
+
+    <article class="card">
+      <h2>🧠 حالة هندسة السياق في أواخر ٢٠٢٦</h2>
+      <p class="sum">مقال يحصِي ممارسات هندسة السياق (Context Engineering): كيف تُدار ذاكرة الوكيل ونوافذ السياق الطويلة، ومتى يُعوّل على ملفات خارجية بدل إغراق النموذج بكل شيء. يقدّم خارطة نضج واضحة لفرق تبني وكلاء موثوقين.</p>
+      <div class="meta"><span class="date">٢٥ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🛡️ هل تُحسّن الحواجز أداء الوكلاء؟ ٢٧٠ تشغيلًا تكشف الحقيقة</h2>
+      <p class="sum">تجربة مضبوطة بـ ٢٧٠ تشغيلًا تقيس إن كانت حواجز الأمان (guardrails) ترفع فعلاً جودة مخرجات الوكلاء البرمجيين. النتائج مفصلة: بعض القيود يحسّن الجودة وبعضها يُعقّد المهمة دون فائدة، دليل لفرز ما يستحق إدراجه في البنية التقنية للوكيل.</p>
+      <div class="meta"><span class="date">٢٨ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://secondtimeisabug.com/blog/coding-agent-guardrails-270-runs/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🎸 من «البرمجة بالذكاء» إلى «البرمجة المتناغمة»</h2>
+      <p class="sum">مقالة تقترح تحوّلاً من البرمجة بالذكاء (vibe coding) إلى «البرمجة المتناغمة» (resonance coding): شراكة واعية مع الوكيل قائمة على الفهم والمتابعة بدل الإرسال العشوائي. إطار عملي للمبرمجين الذين يريدون مخرجات قابلة للصيانة.</p>
+      <div class="meta"><span class="date">٢٧ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://alphapixeldev.com/vibe-coding-vs-resonance-coding/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🧷 Spider Protocol: حبل الأمان للبرمجة بالذكاء</h2>
+      <p class="sum">بروتوكول مفتوح المصدر يعمل كحبل أمان: يضع حدودًا ومراجعات قبل أن ينفّذ الوكيل تغييرات خطرة. يستجيب لمخاوف الأمان بعد حوادث اختطاف الوكلاء عبر ملفات تعليمات، ويمنح مطوّري البرمجة بالذكاء طبقة تحقق إضافية.</p>
+      <div class="meta"><span class="date">٢٧ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/Algoza-Solutions/spider-protocol" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🔒 AgenticBench: ٩ اختبارات أمان على ٢٥ وكيلًا برمجيًا</h2>
+      <p class="sum">منصة تقيّم ٢٥ وكيلًا برمجيًا عبر ٩ اختبارات أمان واقعية: كيفية تعاملها مع تعليمات ضارة وطلبات صلاحيات مفرطة. مرجع لمَن يريد مقارنة مقاومة الوكلاء للمخاطر قبل اعتمادها في فريق.</p>
+      <div class="meta"><span class="date">٢٧ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://agenticbench.org/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>💸 البرمجة بالذكاء مجانًا: ماذا يمنحك صفر دولار في ٢٠٢٦</h2>
+      <p class="sum">دليل موجز يوضّح ما يمكن بناءه بالبرمجة بالذكاء دون إنفاق: نماذج مجانية وواجهات API بمحفظة صفرية وخطط سخية للمبتدئين. خريطة طريق للمبرمجين الذين يريدون تجربة الوكلاء قبل أي تكلفة.</p>
+      <div class="meta"><span class="date">٢٥ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://codingplans.dev/briefs/vibe-coding-for-free/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🧩 تراما: وكيل برمجة بالذكاء من الطراز الثاني</h2>
+      <p class="sum">إطلاق النسخة ٠.١.١ من «تراما» (Trama)، وكيل يضيف طبقات تنظيمية تتيح إدارة مشاريع أكبر من مجرد محادثة واحدة. تطوير نشط على أدوات البرمجة بالذكاء المفتوحة التي تتعامل مع المشاريع المعقّدة كبنية تقنية لا كنصوص منفصلة.</p>
+      <div class="meta"><span class="date">٢٧ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://nicchia-code.github.io/trama/" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🎓 تفكيك Claude Code وتحويله إلى دورة مجانية عن هندسة الـ harness</h2>
+      <p class="sum">مطوّر فكّ تجميع (Claude Code) لفهم كيف يُشغَّل الوكيل من الداخل، ثم حرّر ذلك إلى دورة مجانية عن «هندسة الـ harness»: البنية التي تحيط بالنموذج وتوجّهه وتزوّده بالسياق. درس قيّم لمن يريد بناء هيكل قوي للوكلاء.</p>
+      <div class="meta"><span class="date">٢٤ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://news.ycombinator.com/item?id=50219641" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🧠 Skillstore: مهارات متخصصة يستدعيها الوكيل أثناء العمل</h2>
+      <p class="sum">متجر «Skillstore» يمنح الوكيل البرمجي مهارات متخصصة يستدعيها حسب الحاجة أثناء العمل، بدل تحميل كل شيء في السياق دفعة واحدة. أسلوب لتوفير الرموز (tokens) ورفع الدقة عبر استدعاء المعرفة فقط عند الطلب.</p>
+      <div class="meta"><span class="date">٢٢ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://skillstore-jk.fly.dev/developers" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>⏳ Moonfold: مهام برمجة تنجو من حدود استخدام الوكلاء</h2>
+      <p class="sum">أداة «Moonfold» تحفظ سياق مهمة البرمجة عبر حدود الاستخدام اليومية للنماذج: إذا نفذت حصتك، ينظّم استئناف المهمة دون فقدان الخيط. حل عملي لإحدى مزعجات البرمجة بالذكاء اليومية حين تتوقف المهمة عند سقف الرموز.</p>
+      <div class="meta"><span class="date">٢٨ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/Mr-Dark-debug/Moonfold" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+    <article class="card">
+      <h2>🧾 ٥١ سير عمل جاهزًا للوكلاء بصيغة SKILL.md</h2>
+      <p class="sum">حزمة من ٥١ سير عمل بصيغة SKILL.md للوكلاء البرمجيين والتسويقيين: قوالب جاهزة تُدرَّس للوكيل كيفية إنجاز مهام متكررة بشكل صحيح. مورد لرفع إنتاجية البرمجة بالذكاء عبر مهارات مُعدّة مسبقًا.</p>
+      <div class="meta"><span class="date">٢٧ أكتوبر ٢٠٢٦</span><a class="lnk" href="https://github.com/milord-ahmd/agent-skills" target="_blank" rel="noopener">القراءة / المصدر ↗</a></div>
+    </article>
+
+  <footer>حقوق المحتوى متاحة للجميع · مولّد آليًا · لا تُباع ولا تُجمع بيانات</footer>
+</div>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){});}
+window.addEventListener('online',function(){var e=document.getElementById('offline');if(e)e.classList.remove('show');});
+window.addEventListener('offline',function(){var e=document.getElementById('offline');if(e)e.classList.add('show');});
+(function(){var s=localStorage.getItem('t');if(s==='dark')document.documentElement.setAttribute('data-theme','dark');})();
+</script>
+</body>
+</html>
