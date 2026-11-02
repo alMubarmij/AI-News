@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #555;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+  }
+  [data-theme="dark"] {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --border: #334155;
+    --accent: #60a5fa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    transition: background 0.3s, color 0.3s;
+    padding: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+  }
+  h1 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent);
+  }
+  button#theme-toggle {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  article {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  article h2 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+  article p {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  article .meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  article a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .youtube-note {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body data-theme="light">
+<header>
+  <h1>نشرة الذكاء الآلية - ٠١ نوفمبر ٢٠٢٦</h1>
+  <button id="theme-toggle" onclick="toggleTheme()">🌙 الوضع الداكن</button>
+</header>
+<main>
+
+<article>
+  <h2>🧠 OpenIDEA: بيئة تطوير مألوفة معاد بناؤها بلغة Rust</h2>
+  <p>مشروع جديد يقدّم نسخة مفتوحة المصدر من IDE ب estilo IntelliJ IDEA مكتوبة بالكامل بلغة Rust. يهدف إلى تجميع سرعة Rust مع واجهة مستخدم مألوفة للمطورين، مع دعم توسعات الشبكة وبدء تشغيل أسرع.</p>
+  <p class="meta">📅 ٠١ نوفمبر ٢٠٢٦ | <a href="https://github.com/l0ng-ai/openidea">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🔌 تشغيل Claude Code داخل OpenCode عبر-plugin رسمي</h2>
+  <p>أداة مفتوحة المصدر تتيح تشغيل Claude Code مباشرة داخل بيئة OpenCode باستخدام واجهة سطر الأوامر الرسمية. الخطوة تقلّل الحاجة إلى التبديل بين الأداتين وتمنح المطورين أفضل ما في كلا النظامين في نافذة واحدة.</p>
+  <p class="meta">📅 ٣١ أكتوبر ٢٠٢٦ | <a href="https://github.com/khalilgharbaoui/opencode-claude-code-plugin">المصدر</a></p>
+</article>
+
+<article>
+  <h2>💳 اشتراك Claude يعمل الآن داخل OpenCode بشكل رسمي</h2>
+  <p>أعلن فريق OpenCode عن دعم اشتراكات Claude المدفوعة مباشرة داخل المحرر. يعني ذلك أن مستخدمي OpenCode يمكنهم الاستفادة من نماذج Claude بدون مغادرة البيئة أو الاعتماد على مفاتيح API منفصلة.</p>
+  <p class="meta">📅 ٣٠ أكتوبر ٢٠٢٦ | <a href="https://twitter.com/opencode/status/2116198602523513081">المصدر</a></p>
+</article>
+
+<article>
+  <h2>😴 ذاكرة دورية للنوم للوكلاء: التقاط المعلومات أثناء اليقظة والتقطير أثناء النوم</h2>
+  <p>مشروع تجريبي يضيف ذاكرة دورية للوكلاء البرمجية تحاكي دورة النوم البشري: تلتزم المعلومات أثناء التنشيط النشط، ثم تُقطّر وتُنظّف أثناء فترات الراحة. يقلل النهج من استهلاك الرموز مع تحسين استدعاء الذاكرة على المدى الطويل.</p>
+  <p class="meta">📅 ٠١ نوفمبر ٢٠٢٦ | <a href="https://github.com/aydinnyunus/sleep">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🛡️ EraseAI Firewall: منع الأسرار والبيانات الشخصية من الوصول إلى نماذج اللغة العامة</h2>
+  <p>جدار ناري جديد يعمل كطبقة حماية بين الوكيل البرمجي والنماذج اللغوية العامة. يكتشف ويمنع إرسال كلمات المرور ومفاتيح API والبيانات الشخصية الحساسة تلقائياً قبل أن تصل إلى الخدمات الخارجية.</p>
+  <p class="meta">📅 ٠١ نوفمبر ٢٠٢٦ | <a href="https://news.ycombinator.com/item?id=50326183">المصدر</a></p>
+</article>
+
+<article>
+  <h2>📚 Prompt Layering: كيف تتكدّس التعليمات وتتجاوز بعضها في الوكلاء</h2>
+  <p>مقال تعليمي من AgentPatterns يشرح كيفية تراكم الطبقات في system prompt - من prompt النظام العام إلى تعليمات المشروع ثم مهارات الوكيل وصولاً إلى رسالة المستخدم. فهم الأولوية بين الطبقات يمنع سلوكاً غير متوقع للوكيل.</p>
+  <p class="meta">📅 ٢٩ أكتوبر ٢٠٢٦ | <a href="https://agentpatterns.ai/context-engineering/prompt-layering/">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🗑️ جامع نفايات لنوافذ سياق LLM مكتوب بلغة Rust</h2>
+  <p>أداة مفتوحة المصدر تعمل كجامع نفايات لنوافذ السياق في النماذج اللغوية الكبيرة. تكتشف تلقائياً الأجزاء غير المستخدمة من السياق وتحرر الرموز، مما يقلل تكلفة الاستدعاء ويزيد من سرعة الاستجابة دون فقدان المعلومات المهمة.</p>
+  <p class="meta">📅 ٢٨ أكتوبر ٢٠٢٦ | <a href="https://news.ycombinator.com/item?id=50274683">المصدر</a></p>
+</article>
+
+<article>
+  <h2>📖 حالة هندسة السياق: بين Deterministic والاحتمالي</h2>
+  <p>مقال معمّق لدrew Breunig يشرح كيف تغيرت هندسة السياق خلال العام الماضي. يشير إلى أن التحدي الأساسي ليس حجم السياق بل معرفة متى نستخدم استدعاءً حاسماً ومتى نترك النموذج يعمل بشكل احتمالي.</p>
+  <p class="meta">📅 ٢٥ أكتوبر ٢٠٢٦ | <a href="https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🤖 Beolis: إدارة الوكلاء البرمجية من واجهة واحدة</h2>
+  <p>منصة جديدة تتيح إدارة وتنسيق عدة وكلاء برمجية من لوحة تحكم واحدة. تراقب أداء كل وكيل وتُظهر الفرق بين النشاط الشرعي والنشاط الضار، مما يسهل على الفرق مراقبة سير العمل الآلي بشكل مركزي.</p>
+  <p class="meta">📅 ٣٠ أكتوبر ٢٠٢٦ | <a href="https://beolis.com">المصدر</a></p>
+</article>
+
+<article>
+  <h2>📉 عملاء MCP يحمّلون أسماء الأدوات فقط: وفرت ٧٠٪ من الرموز</h2>
+  <p>دراسة من MCP Rating تكشف أن عملاء MCP الحديثين يحمّلون أسماء الأدوات فقط وليس schemas كاملة. هذا التغيير ألغى معظم الادعاءات السابقة بتوفير ١٠ أضعاف الرموز، ووفر فعلياً نحو ٣ أضعاف مع استقرار الأداء.</p>
+  <p class="meta">📅 ٢٨ أكتوبر ٢٠٢٦ | <a href="https://mcprating.io/blog/clients-load-tool-names-now">المصدر</a></p>
+</article>
+
+<article>
+  <h2>⚡ قرارات في Skills: توفير ٧٠٪ من الرموز وتسريع ٥ أضعاف</h2>
+  <p>مناقشة على Reddit تشرح كيف أن استخدام نماذج قرار داخل Skills بدلاً من استدعاءات متكررة للنموذج الكبير يوفّر ٧٠٪ من الرموز ويحسّن السرعة خمس مرات. النهج مناسب جداً للسياقات التي تتطلب قرارات سريعة متكررة.</p>
+  <p class="meta">📅 ٢٥ أكتوبر ٢٠٢٦ | <a href="https://www.reddit.com/r/claude/s/BoV9JLMZvA">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🎥 Claude Code + Fable 5.1: تشغيل مجاني غير محدود</h2>
+  <p>فيديو تعليمي جديد يعرض طريقة تشغيل Claude Code و Claude AI و Fable 5.1 بشكل مجاني وغير محدود. يركز على الاستخدام اليومي للوكلاء البرمجية بدون تكلفة اشتراك، مع شرح خطوات التثبيت والتشغيل.</p>
+  <p class="meta">📅 ٠١ نوفمبر ٢٠٢٦ | <a href="https://www.youtube.com/watch?v=Gnxw9vxmrbY">المصدر</a></p>
+</article>
+
+</main>
+<footer>
+  نشرة الذكاء الآلية | محتوى تحت ترخيص Creative Commons
+</footer>
+<script>
+function toggleTheme() {
+  const body = document.body;
+  const btn = document.getElementById('theme-toggle');
+  const current = body.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  body.setAttribute('data-theme', next);
+  btn.textContent = next === 'dark' ? '☀️ الوضع الفاتح' : '🌙 الوضع الداكن';
+  localStorage.setItem('theme', next);
+}
+(function() {
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.body.setAttribute('data-theme', saved);
+    document.getElementById('theme-toggle').textContent = saved === 'dark' ? '☀️ الوضع الفاتح' : '🌙 الوضع الداكن';
+  }
+})();
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(
+    'self.addEventListener("fetch", function(e) { e.respondWith(fetch(e.request).catch(function() { return new Response("تعذّر الاتصال", {status: 503}); })); });'
+  )).catch(function(){});
+}
+</script>
+</body>
+</html>
