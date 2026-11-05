@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #555;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+  }
+  [data-theme="dark"] {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --border: #334155;
+    --accent: #60a5fa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    transition: background 0.3s, color 0.3s;
+    padding: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+  }
+  h1 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent);
+  }
+  button#theme-toggle {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  article {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  article h2 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+  article p {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  article .meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  article a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .youtube-note {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body data-theme="light">
+<header>
+  <h1>نشرة الذكاء الآلية - ٠٢ نوفمبر ٢٠٢٦</h1>
+  <button id="theme-toggle" onclick="toggleTheme()">🌙 الوضع الداكن</button>
+</header>
+<main>
+
+<article>
+  <h2>🤖 DeepSeek تفتح مصدر وكيل برمجي شبه مستقل يُشغّل نفسه بنفسه</h2>
+  <p>أطلقت DeepSeek مشروع dsh-superagent مفتوح المصدر، وهو وكيل برمجي يُشغّل نفسه ذاتياً ويُجري عمليات سحب ودمج autonomously. البنية تقول إن الوكلاء المستقبليين سيبنون ويُصلحون أنفسهم دون تدخل بشري مباشر.</p>
+  <p class="meta">📅 ٣١ أكتوبر ٢٠٢٦ | <a href="https://github.com/deepseek-ai/dsh-superagent-prototype">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🔗 Skep: جلسات برمجة حية متزامنة بين أجهزة الوكلاء البرمجية</h2>
+  <p>أداة جديدة تتيح جلسات برمجة زمنية حية (time-travel debugging) متعددة الأجهزة للوكلاء البرمجيين. يمكن للمطوّرين تتبّع تنفيذ الوكيل خطوة بخطوة عبر أجهزة مختلفة، مما يختبر إحدى مشاكل البرمجة بالذكاء: كيف تتابع عملاً يحدث في مكان آخر.</p>
+  <p class="meta">📅 ٢ نوفمبر ٢٠٢٦ | <a href="https://skepagent.com/">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🏭 «تصنيع البرمجة بالذكاء»: تحول من النماذج إلى الإنتاج الفعلي</h2>
+  <p>تقرير من Business Insider يوثّق تحوّلاً في البرمجة بالذكاء من مجرّد إنشاء نماذج أولية إلى «تصنيع» برمجيات كاملة. الشركات begin treating vibe coding كمرحلة إنتاج معتمدة، لا كتجربة مؤقتة.</p>
+  <p class="meta">📅 ١ نوفمبر ٢٠٢٦ | <a href="https://www.businessinsider.com/vibe-manufacturing-ai-prototypes-cad-coding-2026-11">المصدر</a></p>
+</article>
+
+<article>
+  <h2>📐 الرياضيات التي قد تنقذ البرمجة بالذكاء من نفسها</h2>
+  <p>مقال في Wired يستعرض كيف أن التحقق البرمجي (software verification) يعود كجواب لأزمة أمان الذكاء الاصطناعي. الفكرة: وضع ضوابط رياضية على مخرجات الوكيل قبل تنفيذها، بدلاً من الاعتماد على الحواجز النصية فقط.</p>
+  <p class="meta">📅 ٣٠ أكتوبر ٢٠٢٦ | <a href="https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🛡️ EraseAI: جدار ناري لمنع الأسرار والبيانات الحساسة من الوصول إلى نماذج الذكاء العامة</h2>
+  <p>أداة جديدة تعترض الأسرار ومعلومات التعريف الشخصية (PII) قبل إرسالها إلى واجهات برمجة التطبيقات العامة للذكاء الاصطناعي. تهدف إلى حل إحدى أكبر مخاوف المؤسسات: كيف تستفيد من النماذج العامة دون كشف بيانات داخلية.</p>
+  <p class="meta">📅 ١ نوفمبر ٢٠٢٦ | <a href="https://news.ycombinator.com/item?id=50326183">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🔍 Sweet-search: بحث محلي في الشيفرة يخفض تكلفة تشغيل الوكلاء ٥-٣٣٪</h2>
+  <p>أداة بحث محلي في الشيفرة مفتوحة المصدر تتيح للوكلاء البرمجيين العثور على السياق دون إرسال نصوص البرمجة كاملة إلى خدمات خارجية. الفارق: تشغيل أرخص بنسبة ٥ إلى ٣٣٪ حسب البنية.</p>
+  <p class="meta">📅 ١ نوفمبر ٢٠٢٦ | <a href="https://github.com/mrsladoje/sweet-search">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🧩 OpenIDEA: إعادة بناء IDE معروف بالكامل بلغة Rust</h2>
+  <p>مشروع مفتوح المصدر يُعيد بناء IDE معروف من الصفر بلغة Rust، مع دعم كامل للوكلاء البرمجيين. الهدف هو سرعة فائقة وذاكرة أقل، مع واجهة برمجة تطبيقات تسمح للوكلاء بالتحكم في المحرر مباشرة.</p>
+  <p class="meta">📅 ١ نوفمبر ٢٠٢٦ | <a href="https://github.com/l0ng-ai/openidea">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🧠 معايير ذاكرة الوكلاء تحتاج إلى مسار تقييم قابل للتكرار</h2>
+  <p>منشور تقني يطرح أن معظم معايير ذاكرة الوكلاء الحالية غير قابلة للتكرار. يقترح مساراً موحداً لتقييم ذاكرة الوكلاء البرمجيين، لأن المقارنات الحالية تختلف في المنهجية ولا يمكن الاعتماد عليها لاتخاذ قرارات هندسية.</p>
+  <p class="meta">📅 ٢ نوفمبر ٢٠٢٦ | <a href="https://x.com/AgentMemoryL/">المصدر</a></p>
+</article>
+
+<article>
+  <h2>⚙️ عملاء MCP يحملون الأدوات بكسل/wait، وتوفير الرموز يختفي</h2>
+  <p>تحليل لبنية بروتوكول MCP يكشف أن عملاء MCP الجدد يحملون أسماء الأدوات بكسل/wait بدلاً من تحميلها عند الطلب. النتيجة: توفير الرموز المتوقع من البوابة يختفي تقريباً، وفرق البنية التقنية تحتاج إلى إعادة حسابات التكلفة.</p>
+  <p class="meta">📅 ٢٨ أكتوبر ٢٠٢٦ | <a href="https://mcprating.io/blog/clients-load-tool-names-now">المصدر</a></p>
+</article>
+
+<article>
+  <h2>❓ هل تقرأ خطط وكيلك البرمجي قبل الموافقة؟</h2>
+  <p>مناقشة على Hacker News تطرح سؤالاً عملياً: هل يقرأ المطوّرون خطط الوكلاء البرمجيين قبل الموافقة على تنفيذها؟ الإجابات تكشف عن نمطين: من يثق بالوكيل تماماً، ومن يفرض مراجعة يدوية لكل خطوة كبيرة.</p>
+  <p class="meta">📅 ٢ نوفمبر ٢٠٢٦ | <a href="https://news.ycombinator.com/item?id=50334078">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🔬 Heretic 2.0: تعديل نماذج لغوية بدون تدريب مسبق</h2>
+  <p>إصدار جديد من أداة Heretic يسمح بتعديل نماذج لغوية كبيرة بدون الحاجة إلى إعادة تدريب. يمكن للمطوّرين توجيه النموذج إلى سلوكيات جديدة عبر واجهة بسيطة، مما يقلل تكلفة تجربة الأفكار على نماذج مفتوحة المصدر.</p>
+  <p class="meta">📅 ١ نوفمبر ٢٠٢٦ | <a href="https://news.ycombinator.com/item?id=50328567">المصدر</a></p>
+</article>
+
+<article>
+  <h2>🧪 طبقات المطالبة: هندسة السياق تقترح هيكلاً جديداً للتعامل مع النموذج</h2>
+  <p>مقال من منصّة Agent Patterns يقدّم مفهوم «طبقات المطالبة» (Prompt Layering): تقسيم التعليمات إلى طبقات hierarchy تتعامل معها النماذج بترتيب-first. يقترح أن هذا الهيكل يقلل التضارب بين المطالبات المتعارضة.</p>
+  <p class="meta">📅 ٢٩ أكتوبر ٢٠٢٦ | <a href="https://agentpatterns.ai/context-engineering/prompt-layering/">المصدر</a></p>
+</article>
+
+</main>
+<footer>
+  نشرة الذكاء الآلية | محتوى تحت ترخيص Creative Commons
+</footer>
+<script>
+function toggleTheme() {
+  const body = document.body;
+  const btn = document.getElementById('theme-toggle');
+  const current = body.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  body.setAttribute('data-theme', next);
+  btn.textContent = next === 'dark' ? '☀️ الوضع الفاتح' : '🌙 الوضع الداكن';
+  localStorage.setItem('theme', next);
+}
+(function() {
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.body.setAttribute('data-theme', saved);
+    document.getElementById('theme-toggle').textContent = saved === 'dark' ? '☀️ الوضع الفاتح' : '🌙 الوضع الداكن';
+  }
+})();
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(
+    'self.addEventListener("fetch", function(e) { e.respondWith(fetch(e.request).catch(function() { return new Response("تعذّر الاتصال", {status: 503}); })); });'
+  )).catch(function(){});
+}
+</script>
+</body>
+</html>
