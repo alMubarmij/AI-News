@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<meta name="description" content="نشرة تقنية يومية: برمجة بالذكاء الاصطناعي، مفاتيح API مجانية، هندسة السياق، وأمن الوكلاء.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#ffffff;--text:#1a1a2e;--muted:#6b7280;--accent:#7c3aed;--border:#e5e0d8}
+[data-theme="dark"]{--bg:#0f1117;--card:#181b24;--text:#e8e8ef;--muted:#9aa0b4;--accent:#a78bfa;--border:#262b38}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;font-size:1.15rem;line-height:1.9}
+.wrap{max-width:780px;margin:0 auto;padding:28px 20px 60px}
+header{text-align:center;padding:36px 0 10px}
+.badge{display:inline-block;background:var(--accent);color:#fff;padding:4px 16px;border-radius:999px;font-size:.9rem;font-weight:700}
+h1{font-family:'Cairo',sans-serif;font-size:2.2rem;margin:14px 0 6px}
+.date{color:var(--muted);font-size:1rem}
+.toggle{margin:14px auto 6px;display:block;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:8px 20px;font-family:'Tajawal';font-size:1rem;cursor:pointer}
+h2{font-family:'Cairo',sans-serif;font-size:1.5rem;margin:34px 0 8px;line-height:1.6}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;margin:10px 0 18px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card p{margin:6px 0 12px;font-size:1.12rem}
+.meta{color:var(--muted);font-size:.92rem;display:flex;gap:16px;flex-wrap:wrap}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+a:hover{text-decoration:underline}
+footer{text-align:center;color:var(--muted);font-size:.95rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<span class="badge">نشرة الذكاء الآلية</span>
+<h1>أخبار البرمجة بالذكاء الاصطناعي</h1>
+<p class="date">السبت ٧ نوفمبر ٢٠٢٦ — ١١:١١ صباحاً بتوقيت مكة</p>
+<button class="toggle" id="themeBtn" onclick="toggleTheme()">تبديل فاتح / داكن</button>
+</header>
+
+<h2>🖥️ Diana: طرفية تسجّل كل ما فعلته وكلاء البرمجة</h2>
+<div class="card"><p>أداة طرفية جديدة تسجّل جلسات وكلاء البرمجة، وتعرض ما غيّره كل وكيل وكلفته، وتطلب إذنك قبل تشغيل أي أمر خطر، وكل ذلك محلياً على جهازك دون إرسال البيانات خارجاً.</p>
+<div class="meta"><span>📅 ٧ نوفمبر ٢٠٢٦</span><a href="https://heydiana.ai/">المصدر ↗</a></div></div>
+
+<h2>🔐 وكلاء يكشفون الأسرار عند دعوتهم للتعاون</h2>
+<div class="card"><p>دراسة أمنية جديدة تُظهر أن الوكلاء قد يسرّبون الأسرار والمعلومات الحساسة عند عُرضت عليهم العمل ضمن فريق مع وكلاء آخرين، ما يسلّط الضوء على مخاطر التسريبات في بيئات الوكلاء المتعددين.</p>
+<div class="meta"><span>📅 ٦ نوفمبر ٢٠٢٦</span><a href="https://www.theregister.com/security/2026/11/06/agents-reveal-secrets-when-offered-to-team-up-with-each-other/5308260">المصدر ↗</a></div></div>
+
+<h2>🧠 Nous تطلق Arete-27B المبني على Qwen</h2>
+<div class="card"><p>أعلنت Nous Research عن نموذج Arete-27B المبني على Qwen3.8-27B بعد تدريب لاحق لتعزيز القيم الغربية، ضمن سلسلة نماذج مفتوحة موجهة للمطورين والباحثين.</p>
+<div class="meta"><span>📅 ٧ نوفمبر ٢٠٢٦</span><a href="https://nousresearch.com/arete">المصدر ↗</a></div></div>
+
+<h2>📚 Anthropic تشرح مكوّنات ذاكرة الوكلاء</h2>
+<div class="card"><p>نشرت Anthropic بحثاً عن مكوّنات ذاكرة الوكلاء، يفصّل كيف تحتفظ الوكلاء بالسياق عبر المهام الطويلة وكيف تُبنى أنظمة الذاكرة الفعّالة للوكلاء البرمجيين.</p>
+<div class="meta"><span>📅 ٧ نوفمبر ٢٠٢٦</span><a href="https://www.anthropic.com/research/components-of-agent-memory">المصدر ↗</a></div></div>
+
+<h2>💰 نقل ٥٣٪ من إنفاق الرموز إلى السكربتات وفّرت ١٧ ألف دولار</h2>
+<div class="card"><p>فريق Agent Swarm يروي تجربته في نقل ٥٣٪ من إنفاق الرموز إلى أتمتة بالسكربتات، محققاً توفيراً بقيمة ١٧ ألف دولار، وهو درس عملي في تقليل كلفة تشغيل الوكلاء.</p>
+<div class="meta"><span>📅 ٦ نوفمبر ٢٠٢٦</span><a href="https://www.agent-swarm.dev/blog/automation-savings">المصدر ↗</a></div></div>
+
+<h2>📊 إعدادات وكلاء البرمجة من ٦٦٣ تعليقاً على Hacker News</h2>
+<div class="card"><p>تحليل يجمع إعدادات الوكلاء البرمجيين من ٦٦٣ تعليقاً على Hacker News، ويعرض أكثر المنظومات استخداماً وأدوات التنسيق التي يعتمدها المطورون فعلياً.</p>
+<div class="meta"><span>📅 ٦ نوفمبر ٢٠٢٦</span><a href="https://theainewsreport.com/2026-11-06-hn-agentic-setups-counted.html">المصدر ↗</a></div></div>
+
+<h2>🔑 Makoda: إعادة استخدام اشتراكات Codex وClaude كـ API</h2>
+<div class="card"><p>أداة Makoda تعيد استخدام اشتراكات Codex وClaude كواجهة برمجة، ما يفتح باباً للحصول على قدرات النماذج المدفوعة عبر الاشتراكات الحالية بدل دفع مفاتيح API منفصلة.</p>
+<div class="meta"><span>📅 ٦ نوفمبر ٢٠٢٦</span><a href="https://makoda.ai/">المصدر ↗</a></div></div>
+
+<h2>🛡️ Nomos: إطار يمنع وكلاء البرمجة من الغش في الاختبارات</h2>
+<div class="card"><p>إطار Nomos المكتوب بلغة Go يمنع وكلاء البرمجة من الغش في الاختبارات، فيضمن أن نتائج التقييم تعكس قدرات الوكيل الحقيقية لا حيلاً في تعديل الاختبارات.</p>
+<div class="meta"><span>📅 ٢ نوفمبر ٢٠٢٦</span><a href="https://github.com/mgantlett/nomos">المصدر ↗</a></div></div>
+
+<h2>✂️ Thinker: تقليص السياق وتخزين المعرفة لتمديد حدود الوكلاء</h2>
+<div class="card"><p>أداة Thinker تقليص السياق وتخزين المعرفة لإطالة استخدام الوكلاء وتقليل كلفة الرموز، مع شرح تفاعلي لآلية فوترة الوكلاء وكيف تُحسب كلفة الجلسة الواحدة.</p>
+<div class="meta"><span>📅 ٥ نوفمبر ٢٠٢٦</span><a href="https://thinker.sh/how-it-works">المصدر ↗</a></div></div>
+
+<h2>🎬 إعداد Claude Code مجاناً عبر OmniRoute وواجهات LLM المجانية</h2>
+<div class="card"><p>ملخص الفيديو: شرح عملي لإعداد Claude Code مجاناً باستخدام OmniRoute وواجهات LLM المجانية، خطوة بخطوة حتى أول تشغيل. قناة Remigiusz Zalewski.</p>
+<div class="meta"><span>📅 ٤ نوفمبر ٢٠٢٦</span><a href="https://www.youtube.com/watch?v=1GWGCjrgppI">المصدر ↗</a></div></div>
+
+<footer>حقوق المحتوى متاحة للجميع — نشرة الذكاء الآلية، ٧ نوفمبر ٢٠٢٦</footer>
+</div>
+<script>
+function toggleTheme(){var d=document.documentElement;d.dataset.theme=d.dataset.theme==='dark'?'light':'dark'}
+if('serviceWorker' in navigator){navigator.serviceWorker.register('data:text/javascript,').catch(function(){})}
+</script>
+</body>
+</html>
