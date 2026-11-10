@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<meta name="description" content="نشرة تقنية يومية: برمجة بالذكاء الاصطناعي، مفاتيح API مجانية، هندسة السياق، وأمن الوكلاء.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#ffffff;--text:#1a1a2e;--muted:#6b7280;--accent:#7c3aed;--border:#e5e0d8}
+[data-theme="dark"]{--bg:#0f1117;--card:#181b24;--text:#e8e8ef;--muted:#9aa0b4;--accent:#a78bfa;--border:#262b38}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;font-size:1.15rem;line-height:1.9}
+.wrap{max-width:780px;margin:0 auto;padding:28px 20px 60px}
+header{text-align:center;padding:36px 0 10px}
+.badge{display:inline-block;background:var(--accent);color:#fff;padding:4px 16px;border-radius:999px;font-size:.9rem;font-weight:700}
+h1{font-family:'Cairo',sans-serif;font-size:2.2rem;margin:14px 0 6px}
+.date{color:var(--muted);font-size:1rem}
+.toggle{margin:14px auto 6px;display:block;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:8px 20px;font-family:'Tajawal';font-size:1rem;cursor:pointer}
+h2{font-family:'Cairo',sans-serif;font-size:1.5rem;margin:34px 0 8px;line-height:1.6}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;margin:10px 0 18px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card p{margin:6px 0 12px;font-size:1.12rem}
+.meta{color:var(--muted);font-size:.92rem;display:flex;gap:16px;flex-wrap:wrap}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+a:hover{text-decoration:underline}
+footer{text-align:center;color:var(--muted);font-size:.95rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<span class="badge">نشرة الذكاء الآلية</span>
+<h1>أخبار البرمجة بالذكاء الاصطناعي</h1>
+<p class="date">الاثنين ٩ نوفمبر ٢٠٢٦ — ١١:١١ صباحاً بتوقيت مكة</p>
+<button class="toggle" id="themeBtn" onclick="toggleTheme()">تبديل فاتح / داكن</button>
+</header>
+
+<h2>🧭 Airlock: كود سياسات لإدارة أساطيل الوكلاء البرمجية</h2>
+<div class="card"><p>أداة جديدة تنقل سياسات الحوكمة إلى صيغة كود تُطبق على أساطيل الوكلاء البرمجية، ليوافق المطور مرة واحدة على ما يحق للوكلاء فعله على مستوى المنظومة كلها.</p>
+<div class="meta"><span>📅 ٩ نوفمبر ٢٠٢٦</span><a href="https://airlock.lunareng.com/docs">المصدر ↗</a></div></div>
+
+<h2>📥 Plannotator: صندوق بريد لمراجعة عمل الوكلاء</h2>
+<div class="card"><p>واجهة جديدة تحوّل مراجعة مخرجات الوكلاء إلى صندوق بريد: تفتح كل مهمة كرسالة، تقرر وتعلّق، دون أن تغرق في طرفيات طويلة أو نوافذ مشتتة.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://plannotator.ai/inbox/">المصدر ↗</a></div></div>
+
+<h2>🪙 العمل نفسه بثلث الرموز: ضبط أسطول الوكلاء البرمجية</h2>
+<div class="card"><p>مقال يشرح كيف خفّض ضبط أسطول من الوكلاء البرمجية الاستهلاك إلى نحو ثلث الرموز لتنفيذ المهمة نفسها، عبر توحيد الإعدادات وتوجيه المهام قبل أي توسّع بالحساب.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://alexmarquardt.com/ai-tools/agent-fleet-token-efficiency/">المصدر ↗</a></div></div>
+
+<h2>⚙️ psi: وكيل برمجي محمول بحجم ٦٫٤ ميجابايت</h2>
+<div class="card"><p>وكيل برمجي مفتوح المصدر مكتوب بلغتي C وLua يعمل ملفاً واحداً محمولاً على أنظمة كثيرة، مصمم للمطور الذي يريد أداة صغيرة قابلة للتدقيق والتشغيل دون اعتماد ثقيل.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://psicode.ai/">المصدر ↗</a></div></div>
+
+<h2>🎨 Recto: عدّل ما يصنعه الوكلاء بصرياً</h2>
+<div class="card"><p>أداة جديدة تمنح المطور معاينة بصرية لما ينتجه الوكلاء البرمجية، فيعدّل التصميم والمحتوى مباشرة بالسحب والإفلات بدل إملاء تعديلات نصية متكررة في المطالبة.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://recto.design/">المصدر ↗</a></div></div>
+
+<h2>📲 Loop: وكلاء البرمجة من هاتفك</h2>
+<div class="card"><p>مشروع يتيح تشغيل وكلاء البرمجة من الجوال، لتتابع مهمة وكيل قيد التنفيذ وتراجع مخرجاته وتطلق الخطوة التالية دون العودة إلى مكتبك.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://github.com/j-asefa/loop">المصدر ↗</a></div></div>
+
+<h2>📉 تقارير عن تراجع أداء Opus 5.5 الملاحظ</h2>
+<div class="card"><p>نقاش على Hacker News يجمع تقارير متفرقة عن تراجع جودة مخرجات Opus 5.5 مقارنة بالفترة السابقة، ويبحث في أسباب التغيير وسبل التحقق من تدهور النموذج.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://news.ycombinator.com/item?id=50419019">المصدر ↗</a></div></div>
+
+<h2>🏦 غولدمان ساكس يسحب Claude Code من مصرفييه ومتداوليه</h2>
+<div class="card"><p>تغطية رصدت خطوة غولدمان ساكس في تقييد وصول مصرفييه ومتداوليه إلى Claude Code داخل المؤسسة، مع تدقيق توافق المنتج مع ضوابط المصرفية الصارمة.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers">المصدر ↗</a></div></div>
+
+<h2>🔐 دروس Uber في تأمين وكلاء الذكاء الاصطناعي</h2>
+<div class="card"><p>تدوينة تقنية من Uber تلخص تجربة بناء طبقة أمنية حول الوكلاء قبل نشرهم واسعاً، من تقييد الأدوات إلى مراقبة ما يفعله الوكيل فعلاً داخل المنظومة الإنتاجية.</p>
+<div class="meta"><span>📅 ٧ نوفمبر ٢٠٢٦</span><a href="https://www.uber.com/us/en/blog/securing-ai-agents/">المصدر ↗</a></div></div>
+
+<h2>🏨 Botel: فندق دائم التشغيل لوكلائك</h2>
+<div class="card"><p>خدمة تستضيف وكيلك الخاص على حاسب لينكس، ينام في وضع الخمول ويستيقظ مع كل تبويب وملف ومهمة لم تكتمل، وتدفع فقط مقابل زمن التشغيل الفعلي.</p>
+<div class="meta"><span>📅 ٦ نوفمبر ٢٠٢٦</span><a href="https://botel.dev">المصدر ↗</a></div></div>
+
+<h2>💬 Slack هي بيئة التطوير الجديدة</h2>
+<div class="card"><p>مقال يجادل بأن مساحة العمل المشتركة مثل Slack تحولت إلى بيئة التطوير الفعلية، حيث تلتقي الوكلاء والمراجعات والقرارات في قناة واحدة بدل التنقل بين أدوات منفصلة.</p>
+<div class="meta"><span>📅 ٥ نوفمبر ٢٠٢٦</span><a href="https://opencomputer.dev/blog/slack-is-the-new-ide/">المصدر ↗</a></div></div>
+
+<h2>🎬 فيديو: أول وكيل ذكاء اصطناعي لك في Claude Code خلال ١١ دقيقة</h2>
+<div class="card"><p>فيديو للمبتدئين من Tristen O'Brien يبني أول وكيل في Claude Code خلال ١١ دقيقة خطوة بخطوة، مع شرح ما يفعله الوكيل خلف الكواليس وأين توفر وقتك أولاً.</p>
+<div class="meta"><span>📅 ٥ نوفمبر ٢٠٢٦</span><a href="https://www.youtube.com/watch?v=ge2FmPeVsT8">المصدر ↗</a></div></div>
+
+<footer>حقوق المحتوى متاحة للجميع</footer>
+</div>
+<script>
+const swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))})";
+function toggleTheme(){const h=document.documentElement;const c=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',c);}
+if('serviceWorker' in navigator){try{const blob=new Blob([swCode],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});}catch(e){}}
+window.addEventListener('offline',()=>{document.body.style.opacity='0.85';});
+</script>
+</body>
+</html>
