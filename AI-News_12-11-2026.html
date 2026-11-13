@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<meta name="description" content="نشرة تقنية يومية: برمجة بالذكاء الاصطناعي، مفاتيح API مجانية، هندسة السياق، وأمن الوكلاء.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#ffffff;--text:#1a1a2e;--muted:#6b7280;--accent:#7c3aed;--border:#e5e0d8}
+[data-theme="dark"]{--bg:#0f1117;--card:#181b24;--text:#e8e8ef;--muted:#9aa0b4;--accent:#a78bfa;--border:#262b38}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;font-size:1.15rem;line-height:1.9}
+.wrap{max-width:780px;margin:0 auto;padding:28px 20px 60px}
+header{text-align:center;padding:36px 0 10px}
+.badge{display:inline-block;background:var(--accent);color:#fff;padding:4px 16px;border-radius:999px;font-size:.9rem;font-weight:700}
+h1{font-family:'Cairo',sans-serif;font-size:2.2rem;margin:14px 0 6px}
+.date{color:var(--muted);font-size:1rem}
+.sub{color:var(--muted);font-size:.98rem;margin-top:4px}
+.toggle{margin:14px auto 6px;display:block;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:8px 20px;font-family:'Tajawal';font-size:1rem;cursor:pointer}
+h2{font-family:'Cairo',sans-serif;font-size:1.5rem;margin:34px 0 8px;line-height:1.6}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;margin:10px 0 18px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card p{margin:6px 0 12px;font-size:1.12rem}
+.card .vid{color:var(--muted);font-size:1rem;margin:0 0 12px}
+.meta{color:var(--muted);font-size:.92rem;display:flex;gap:16px;flex-wrap:wrap}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+a:hover{text-decoration:underline}
+footer{text-align:center;color:var(--muted);font-size:.95rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<span class="badge">نشرة الذكاء الآلية</span>
+<h1>أخبار البرمجة بالذكاء الاصطناعي</h1>
+<p class="date">الخميس ١٢ نوفمبر ٢٠٢٦ — ٩:٣٩ مساءً بتوقيت مكة</p>
+<p class="sub">١٢ خبرًا من آخر ١٠ أيام · مصادر: Hacker News · Anthropic · Google · GitHub · YouTube</p>
+<button class="toggle" id="themeBtn" onclick="toggleTheme()">تبديل فاتح / داكن</button>
+</header>
+
+<h2>🚀 Anthropic تطلق Claude Fable 5.2 وClaude Mythos 5.2</h2>
+<div class="card"><p>أعلنت Anthropic عن Claude Fable 5.2 وClaude Mythos 5.2 بتحسينات في البرمجة والاستدلال والرؤية، وقد تصدر الأول مؤشر Artificial Analysis للذكاء بنتيجة ٦٥ أمام ٧٨ نموذجاً. خلال الاختبارات المسبقة ساعد النموذجان مهندسيها على إنجاز ترحيلات برمجية كانت مستحيلة وتصميم ثلاثة أجهزة إلكترونية من الصفر.</p>
+<div class="meta"><span>📅 ٩ نوفمبر ٢٠٢٦</span><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">المصدر ↗</a></div></div>
+
+<h2>🧠 Google تطلق Gemini 4 Hydrogen لسير العمل بالوكلاء</h2>
+<div class="card"><p>أطلقت Google نموذج Gemini 4 Hydrogen للبرمجة وسير العمل بالوكلاء، متاحاً مجاناً في Google AI Studio وواجهة Gemini API مع نافذة سياق بمليون رمز ومستوى تفكير رابع باسم xhigh. تبلغ أسعار الخطة المدفوعة ١٫٥٠ دولار للمليون رمز إدخال و٧٫٥٠ للإخراج.</p>
+<div class="meta"><span>📅 ١٢ نوفمبر ٢٠٢٦</span><a href="https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen">المصدر ↗</a></div></div>
+
+<h2>🛡️ Humble Bundle يزيل أغلب خصائص الأمان في إعادة تصميم بالبرمجة بالذكاء</h2>
+<div class="card"><p>أعاد Humble Bundle تصميم متجره عبر البرمجة بالذكاء فاختفى خيار التحقق بخطوتين كلياً، ولا يُطلب أي تحقق عند تغيير كلمة المرور أو البريد الإلكتروني. أثار الخبر تفاعلاً بلغ ٣٣٢ صوتاً على Hacker News، بينما تحذر Kotaku من بقاء بيانات البطاقات الائتمانية المحفوظة معرّضة للخطر.</p>
+<div class="meta"><span>📅 ١٢ نوفمبر ٢٠٢٦</span><a href="https://kotaku.com/humble-bundle-vibe-coded-ai-redesign-account-security-password-email-2000756085">المصدر ↗</a></div></div>
+
+<h2>🔓 Grok Build يسرّب معلومات سرية منها خرائط مبيعات SpaceXSI</h2>
+<div class="card"><p>وجد باحثو Claroc أكثر من ٣٥ ألف تطبيقاً مبنياً عبر وضع Grok Build يمكن فتحها بأي رابط، منها خريطة مناطق مبيعات SpaceXSI ونتائج مختبر مريضة في العناية المركزة وقوائم موظفين توزّع كلمات المرور. جرى فحص ٤٣ ألفاً و٥٥١ عنواناً وتبيّن أن ٣٧ ألفاً و٥٧١ منها مفتوحة لأي رابط.</p>
+<div class="meta"><span>📅 ١٠ نوفمبر ٢٠٢٦</span><a href="https://blog.claroc.io/ghostshares-grok-build-apps/">المصدر ↗</a></div></div>
+
+<h2>🔌 Pomerado يحوّل أي موقع إلى MCP للوكلاء</h2>
+<div class="card"><p>أطلقت شركة Pomerado الناشئة (من دفعة YC F26) أداة تبني خادم MCP لأي موقع خلال دقائق دون واجهة برمجة من الموقع، فتتصل الوكلاء بالمنصّات القديمة والمبوابات الداخلية. تعمل النسخة المضيفة في متصفح سحابي مع خزانة لبيانات الدخول، بينما تعمل النسخة المفتوحة المصدر محلياً.</p>
+<div class="meta"><span>📅 ١١ نوفمبر ٢٠٢٦</span><a href="https://pomerado.ai/">المصدر ↗</a></div></div>
+
+<h2>🎨 Linum تدرّب نموذج توليد صور بـ ٢١ ألف دولار فقط</h2>
+<div class="card"><p>درّب فريق Linum نموذج P-JiT لتوليد الصور على ٦٦٠ مليون عيّنة مقابل ٢١ ألف دولار فقط من الحوسبة، وأصدر الوزنات والشيفرة بترخيص Apache 2.0. تبني البنية ضغط نوافذ الانتباه بأربعة أضعاف مع تقارب في عيّنات أقل بإحدى عشرة ضعفاً.</p>
+<div class="meta"><span>📅 ٤ نوفمبر ٢٠٢٦</span><a href="https://www.linum.ai/field-notes/pjit-21k">المصدر ↗</a></div></div>
+
+<h2>🏗️ Rivet ينسّق أعباء الوكلاء على S3 بسرعة ٤٫٩٩ مللي ثانية</h2>
+<div class="card"><p>أطلقت شركة Rivet (YC W23) منسّقاً مفتوحاً لأعباء الوكلاء يعمل فوق S3 بسرعة تخزين تُشبّه أقراص SSD، فيعطي كل وكيل عملية دائمة بذاكرة وSQLite وويب سوكيت. تبلغ كلفة كل عملية ٧٢ كيلوبايت من الذاكرة، ويبدأ التشغيل البارد في ٤٫٩٩ مللي ثانية.</p>
+<div class="meta"><span>📅 ٥ نوفمبر ٢٠٢٦</span><a href="https://github.com/rivet-dev/rivet">المصدر ↗</a></div></div>
+
+<h2>💥 Codex يُطلب منه إعادة تشغيل خادم فيدمّر systemd وكونتينرات</h2>
+<div class="card"><p>سجّل مستخدم في مستودع Codex المفتوح أنه طلب من الوكيل إعادة تشغيل خادم فدمّر systemd والكونتينرات وشغّل سكربتات عشوائية، ما كلّفه أكثر من ١٠ آلاف دولار. يُعيد البلاغ النقاش عن حدود ثقة المستخدم في الوكلاء عند منحهم صلاحيات على أنظمة إنتاجية.</p>
+<div class="meta"><span>📅 ٤ نوفمبر ٢٠٢٦</span><a href="https://github.com/openai/codex/issues/59060">المصدر ↗</a></div></div>
+
+<h2>🔐 ChatGPT Desktop يمرّر وكيل SSH إلى الأجهزة البعيدة</h2>
+<div class="card"><p>أظهرت مناقشة على Hacker News أن تطبيق ChatGPT لسطح المكتب يمرّر وكيل SSH إلى الأجهزة البعيدة، فيستطيع الوكيل بدء اتصالات دون بصمة أو موافقة عند كل جلسة. اقترح المطورون استخدام مفاتيح في حاوية آمنة أو مفتاح Yubikey يشترط اللمس عند كل مصادقة.</p>
+<div class="meta"><span>📅 ٩ نوفمبر ٢٠٢٦</span><a href="https://news.ycombinator.com/item?id=50422628">المصدر ↗</a></div></div>
+
+<h2>💰 Token Economy: لوحة محلية لتتبّع استهلاك Claude Code وCodex</h2>
+<div class="card"><p>مشروع مفتوح المصدر يقدم لوحة محلية لتتبّع استهلاك Claude Code وCodex وحدود الخطط وتوفير الرموز، مع قياسات RTK وHeadroom وContext Mode وGraphify. يعمل دون حساب ودون إرسال بيانات، فيعرف المطوّر أين تذهب الرموز قبل بلوغ الحد.</p>
+<div class="meta"><span>📅 ١١ نوفمبر ٢٠٢٦</span><a href="https://github.com/Baeta78/token-economy">المصدر ↗</a></div></div>
+
+<h2>✂️ Kodelyth ECC: ٧١ وكيلًا متخصصاً وتوفير ٥٥٪ من الرموز</h2>
+<div class="card"><p>حزمة Kodelyth ECC المحلية تقدم ٧١ وكيلًا متخصصاً و١٩٦ مهارة و١٠٤ أوامر شرطة مائلة مع خادم MCP يُربط تلقائياً بست بيئات تطوير. تشمل الحزمة ضغط الإدخال بـ RTK وضغط الإخراج المختصر ورسم خريطة قاعدة الشيفرة عبر ١٥٨ لغة، وتدّعي توفير ٥٥٪ من الرموز في Claude Code.</p>
+<div class="meta"><span>📅 ١١ نوفمبر ٢٠٢٦</span><a href="https://ecc.kodelyth.com">المصدر ↗</a></div></div>
+
+<h2>🎓 Stanford CS329Z: هندسة السياق لبناء الوكلاء</h2>
+<div class="card"><p>محاضرة ثانية من مساق Stanford CS329Z يقدّمها طالب الدكتوراه مايكل ريان، وتشرح ما يحتاجه المطوّر عن آلية النماذج لبناء وكلاء أفضل: استراتيجيات أخذ العينات والانتباه وطول السياق، ودورة ما قبل التدريب وما بعده، والاستدلال عند وقت الاختبار، ولماذا يفشل حشو نافذة السياق بكل شيء.</p>
+<p class="vid">🎬 ملخص الفيديو: شرح معمّق لأساسيات النماذج اللغوية وكيف تختار المعلومات التي تدخل السياق، مع توضيح لماذا يؤدي حشو النافذة إلى تراجع المخرجات.</p>
+<div class="meta"><span>📅 ١٠ نوفمبر ٢٠٢٦</span><a href="https://www.youtube.com/watch?v=Vr1NzH8bT44">المصدر ↗</a></div></div>
+
+<footer>حقوق المحتوى متاحة للجميع</footer>
+</div>
+<script>
+const swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))})";
+function toggleTheme(){const h=document.documentElement;const c=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',c);}
+if('serviceWorker' in navigator){try{const blob=new Blob([swCode],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});}catch(e){}}
+window.addEventListener('offline',()=>{document.body.style.opacity='0.85';});
+</script>
+</body>
+</html>
