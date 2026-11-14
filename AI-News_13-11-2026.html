@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 النشرة التقنية اليومية</title>
+<meta name="description" content="نشرة تقنية يومية: برمجة بالذكاء الاصطناعي، مفاتيح API مجانية، هندسة السياق، وأمن الوكلاء.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#ffffff;--text:#1a1a2e;--muted:#6b7280;--accent:#7c3aed;--border:#e5e0d8}
+[data-theme="dark"]{--bg:#0f1117;--card:#181b24;--text:#e8e8ef;--muted:#9aa0b4;--accent:#a78bfa;--border:#262b38}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;font-size:1.15rem;line-height:1.9}
+.wrap{max-width:780px;margin:0 auto;padding:28px 20px 60px}
+header{text-align:center;padding:36px 0 10px}
+.badge{display:inline-block;background:var(--accent);color:#fff;padding:4px 16px;border-radius:999px;font-size:.9rem;font-weight:700}
+h1{font-family:'Cairo',sans-serif;font-size:2.2rem;margin:14px 0 6px}
+.date{color:var(--muted);font-size:1rem}
+.sub{color:var(--muted);font-size:.98rem;margin-top:4px}
+.toggle{margin:14px auto 6px;display:block;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:8px 20px;font-family:'Tajawal';font-size:1rem;cursor:pointer}
+h2{font-family:'Cairo',sans-serif;font-size:1.5rem;margin:34px 0 8px;line-height:1.6}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;margin:10px 0 18px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card p{margin:6px 0 12px;font-size:1.12rem}
+.card .vid{color:var(--muted);font-size:1rem;margin:0 0 12px}
+.meta{color:var(--muted);font-size:.92rem;display:flex;gap:16px;flex-wrap:wrap}
+a{color:var(--accent);text-decoration:none;font-weight:700}
+a:hover{text-decoration:underline}
+footer{text-align:center;color:var(--muted);font-size:.95rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<span class="badge">نشرة الذكاء الآلية</span>
+<h1>أخبار البرمجة بالذكاء الاصطناعي</h1>
+<p class="date">الجمعة ١٣ نوفمبر ٢٠٢٦ — ١١:١١ صباحاً بتوقيت مكة</p>
+<p class="sub">١٢ خبرًا من آخر ١٠ أيام · مصادر: Hacker News · Google · LG AI Research · Microsoft · GitHub</p>
+<button class="toggle" id="themeBtn" onclick="toggleTheme()">تبديل فاتح / داكن</button>
+</header>
+
+<h2>🚀 Google تطلق Gemini Decisions API والنموذج Gemini Decision 1</h2>
+<div class="card"><p>أعلنت Google عن واجهة Gemini Decisions API والنموذج Gemini Decision 1 لمهام اتخاذ القرار متعددة الوسائط ذات الخيارات المغلقة، بسعر ٠٫١٠ دولار لكل مليون رمز إدخال ودون تكلفة على الإخراج، مع شريحة مجانية في Google AI Studio. صُمم النموذج للإجابات السريعة المعايرة بدلاً من توليد نصوص طويلة، وقد نال الخبر ٥٦١ نقطة على Hacker News.</p>
+<div class="meta"><span>📅 ١١ نوفمبر ٢٠٢٦</span><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">المصدر ↗</a></div></div>
+
+<h2>🔓 LG AI Research توفر واجهة K-EXAONE 2.5 مجانًا</h2>
+<div class="card"><p>فتحت LG AI Research واجهة K-EXAONE 2.5 البرمجية مجانًا عبر منصة EXAONE API، ويكفي الحصول على مفتاح لاستخدامها في بناء الخدمات والأبحاث. حققت النسخة في التقييمات الداخلية ٧٤٫٦ على AutomationBench و٥٩٫٢ على SWE-Bench Pro و٧٨ على BrowseComp، لتتنافس مع نماذج متقدمة مثل DeepSeek-V4.1-Flash وGLM-5.3.</p>
+<div class="meta"><span>📅 ٩ نوفمبر ٢٠٢٦</span><a href="https://www.lgresearch.ai/news/view?seq=755">المصدر ↗</a></div></div>
+
+<h2>🛡️ Microsoft تحذر: مهاجمون يستخدمون وكلاء الذكاء لاستغلال الأسرار المكشوفة</h2>
+<div class="card"><p>رصدت Microsoft مهاجمين يستخدمون إطارًا هجوميًا وكيليًا يبحث في مستودعات GitHub العامة عن أسرار مكشوفة ثم يتدرج في استغلالها. تدعو المدونة إلى تدوير المفاتيح وفحص المستودعات باستمرار، وتؤكد أن الوتيرة الآلية تتجاوز قدرة الفرق على الرد اليدوي.</p>
+<div class="meta"><span>📅 ٥ نوفمبر ٢٠٢٦</span><a href="https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/">المصدر ↗</a></div></div>
+
+<h2>🤖 AgentRun: منصة مفتوحة تجعل الوكلاء يحسّنون أنفسهم</h2>
+<div class="card"><p>منصة مفتوحة المصدر من Parcha تضيف التحسين الذاتي والتنفيذ الدائم ولوحة تحكم فوق أدوات الوكلاء المفضلة، فتتعلم من كل مهمة وتستخدم رموزًا أقل. تروي الحالة الدراسية أن فاتورة مراجعة الشيفرة ارتفعت ٣٦ ضعفًا فبنوا مراجعًا خاصًا كلف ١٨ سنتًا للمراجعة الواحدة، ونال المشروع ٩٨ نقطة على Hacker News.</p>
+<div class="meta"><span>📅 ١٢ نوفمبر ٢٠٢٦</span><a href="https://github.com/Parcha-ai/agentrun">المصدر ↗</a></div></div>
+
+<h2>🎨 Meta تطلق Astryx: منظومة تصميم مفتوحة جاهزة للوكلاء</h2>
+<div class="card"><p>أصدرت Meta منظومة التصميم Astryx مفتوحة المصدر بترخيص MIT ومستودع يتجاوز ٢٧ ألف نجمة، مصممة لتكون قابلة للتخصيص كليًا وجاهزة للوكلاء البرمجيين. تتضمن المكونات والرموز بصيغة يفهمها الوكيل، مع ملحقات لـ Claude وملفات إرشاد مدمجة ودعم مكونات الويب.</p>
+<div class="meta"><span>📅 ٨ نوفمبر ٢٠٢٦</span><a href="https://github.com/meta/astryx">المصدر ↗</a></div></div>
+
+<h2>⏱️ Vibetime يتتبع ما تشحنه فعلًا مع وكلاء البرمجة</h2>
+<div class="card"><p>أداة مفتوحة المصدر تغلف Claude Code وCodex وGemini وAster وOpenCode وتعرض ملخص الجلسة بعد كل عمل، دون إعداد أو حساب مسبق، وتتتبع Cursor وZCode عبر خطافات الجلسة. توضح الأداة حجم ما أنجزه الوكيل مقابل ما ظننته، وتخدم نمط البرمجة بالذكاء الاصطناعي مباشرة.</p>
+<div class="meta"><span>📅 ١٢ نوفمبر ٢٠٢٦</span><a href="https://github.com/iamnotstatic/vibetime">المصدر ↗</a></div></div>
+
+<h2>🧩 Brandrail يجعل Claude Code وCursor يتبعان منظومة التصميم</h2>
+<div class="card"><p>خادم MCP مفتوح المصدر يزوّد Claude Code وCursor وGitHub Copilot وCodex برموز التصميم بصيغة DTCG وقواعد الأنماط، فيفحص الشيفرة المنتجة ويكشف انحرافها عن الهوية البصرية. يهدف إلى إنهاء الفجوة بين ما يصممه الفريق وما يولّده الوكيل.</p>
+<div class="meta"><span>📅 ١٣ نوفمبر ٢٠٢٦</span><a href="https://github.com/brandrail-app/brandrail">المصدر ↗</a></div></div>
+
+<h2>🔀 Headwig يشغّل وكلاء البرمجة بالتوازي دون Git worktrees</h2>
+<div class="card"><p>أداة تشغّل عدة وكلاء برمجيين على المشروع نفسه بالتوازي وتختبر تعديل كل وكيل على حدة، فتبقى شيفرتك الأصلية سليمة دون إدارة worktrees أو خوادم تطوير متعددة. تتوفر حاليًا لنظام macOS ١٥ وما بعده كمبكر أولي غير موقّع.</p>
+<div class="meta"><span>📅 ١٢ نوفمبر ٢٠٢٦</span><a href="https://harsh-kr-jha.github.io/headwig/">المصدر ↗</a></div></div>
+
+<h2>📊 MergeAtlas يشرح إيداعات الوكلاء قبل مراجعتها</h2>
+<div class="card"><p>أداة مراجعة مصممة للشيفرة التي يكتبها الوكلاء، فتبدأ بشرح الغرض من التغيير وما يبلغه قبل قراءة أي سطر. تعرض المحادثات والالتزامات والملفات المتأثرة في سياقها، لتعرف ماذا تعتمد عليه فعلًا قبل الموافقة.</p>
+<div class="meta"><span>📅 ٩ نوفمبر ٢٠٢٦</span><a href="https://mergeatlas.dev/">المصدر ↗</a></div></div>
+
+<h2>💾 Neo4j تعلن قاعدة بيانات في الذاكرة مبنية للوكلاء</h2>
+<div class="card"><p>أعلنت Neo4j عن Relate، قاعدة بيانات في الذاكرة مبنية خصيصًا للوكلاء الذكية، تسرّع وصول الوكيل إلى معرفته السياقية وعلاقاتها دون الاستعلام عن قواعد تقليدية بطيئة. تستهدف وكلاء المؤسسات الذين يحتاجون ذاكرة عاملة سريعة للمهام المتكررة.</p>
+<div class="meta"><span>📅 ١١ نوفمبر ٢٠٢٦</span><a href="https://neo4j.com/press-releases/announcing-relate-by-neo4j/">المصدر ↗</a></div></div>
+
+<h2>⚠️ Claude Code أزيلت منه خاصية تعرض تكلفة كل وكيل فرعي</h2>
+<div class="card"><p>سجّل مطورون في مستودع Claude Code أن الإصدار ٢٫١٫٣٢٣ أزال خاصية subagentStatusLine دون بديل، فصارت سياق كل وكيل فرعي وتكلفته ونموذجه ومستوى جهده غير مرئية. أعاد البلاغ النقاش عن شفافية الأدوات الوكيلية وحدود إزالة خصائص يعتمد عليها المستخدمون.</p>
+<div class="meta"><span>📅 ١٣ نوفمبر ٢٠٢٦</span><a href="https://github.com/anthropics/claude-code/issues/109446">المصدر ↗</a></div></div>
+
+<h2>💰 فوترة Claude Code تعتمد على وتيرة انتهاء الذاكرة المؤقتة</h2>
+<div class="card"><p>وجد فريق Hystax أن فوترة Claude Code عبر واجهة API تتبع وتيرة انتهاء صلاحية الذاكرة المؤقتة، إذ يبني الوكيل بادئة طويلة مخزنة في كل طلب. وقدّم الفريق أداة Kompressor مفتوحة المصدر لضغط مخرجات الأدوات المتطابقة التي يعيد الوكلاء إرسالها، فسجل اختباره على Codex خفضًا بنسبة ٢٢٫٧٪.</p>
+<div class="meta"><span>📅 ١٢ نوفمبر ٢٠٢٦</span><a href="https://news.ycombinator.com/item?id=50467233">المصدر ↗</a></div></div>
+
+<footer>حقوق المحتوى متاحة للجميع</footer>
+</div>
+<script>
+const swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(clients.claim()));self.addEventListener('fetch',e=>{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))})";
+function toggleTheme(){const h=document.documentElement;const c=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',c);}
+if('serviceWorker' in navigator){try{const blob=new Blob([swCode],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});}catch(e){}}
+window.addEventListener('offline',()=>{document.body.style.opacity='0.85';});
+</script>
+</body>
+</html>
