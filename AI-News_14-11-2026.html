@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">السبت ١٤ نوفمبر ٢٠٢٦ — ١١:٣٥ صباحاً بتوقيت مكة</p>
+
+  <div class="offline">⚠️ يبدو أن الاتصال انقطع. هذه نسخة محفوظة من النشرة، وقد لا تفتح الروابط حتى يعود الاتصال.</div>
+
+  <div class="card">
+    <h2><span class="emoji">🦙</span> llama.cpp يبلغ الإصدار 1.0 مع تطبيق أصلي لماك</h2>
+    <p>أعلن فريق ggml إطلاق النسخة المستقرة الأولى من محرك التشغيل المحلي llama.cpp بعد سنوات من التطوير، مع تطبيق سطح مكتب أصلي لنظام ماك. النقلة تجعل تشغيل النماذج مفتوحة الأوزان على العتاد الشخصي أكثر استقراراً وأقرب إلى الجاهزية الإنتاجية، ونال الإعلان أكثر من ٢٢٤ نقطة على Hacker News.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🦥</span> Unsloth تطلق ديناميكية Qwen3.8-27B بنسخة v3.1</h2>
+    <p>حدّثت Unsloth حزمة التكميم الخاصة بنموذج Qwen3.8-27B إلى الإصدار Dynamic v3.1، مع تحسينات على الدقة والذاكرة عند التشغيل المحلي. التحديث يستهدف مشغّلي النماذج على أجهزة محدودة الموارد ويتيح تشغيل النموذج عبر واجهة متوافقة مع Claude Code، وتصدّر الخبر الصفحة الأولى على Hacker News بـ ١١٥ نقطة.</p>
+    <div class="row"><span class="date">١٤ نوفمبر ٢٠٢٦</span><a class="src" href="https://unsloth.ai/docs/models/qwen3.8" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">⚡</span> Baseten تكشف DeepSeek Ultrafast: مليون رمز في ١٣ ثانية</h2>
+    <p>أطلقت Baseten محرك استدلال فائق السرعة لنموذج DeepSeek-V4.1-Flash، يدعم نافذة مليون رمز ويشارك ذاكرة KV بين عدة خوادم. تبلغ سرعة فك الترميز ٢٠٦٠ رمزاً في الثانية على ثمانية معالجات B300، ويزرع المحرك مليون رمز تمهيدي في ١١٫٧ ثانية، ما يجعله مرشحاً لأعباء البرمجة الوكيلية الطويلة.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/basetenlabs/deepseek-ultrafast" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔓</span> ثمانية مفاتيح API مجانية في ٢٠٢٦ دون بطاقة بنكية</h2>
+    <p>نشر Berzaf On AI فيديو يستعرض ثماني واجهات برمجية تمنح حصصاً مجانية تشمل Kimi K3 وDeepSeek وQwen، دون اشتراك أو بطاقة. الفيديو مفيد لمن يبني أدوات برمجة بالذكاء الاصطناعي على ميزانية صفرية، إذ يقارن حدود الطلبات المجانية ونماذج السياق المتاحة في كل مزوّد.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=M92M9i1YzYQ" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💸</span> جولة على مفاتيح API منخفضة التكلفة لكل النماذج الكبرى</h2>
+    <p>قدّم Code With Yousaf مراجعة عملية لواجهات برمجية بانخفاض التكلفة أو المجانية تغطي النماذج الرئيسية، مع شرح لطريقة التسجيل وتوليد المفتاح وربطه بأدوات الوكلاء. الفيديو يستهدف المطورين الذين يريدون تبديل المزوّدين بسرعة، ويجمع أكثر من ٤٤٥٠ مشاهدة خلال يومين.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=7H279gmWji8" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💳</span> Brave تقبل الدفع بالوكيل عبر بروتوكول x402 دون مفتاح API</h2>
+    <p>أعلنت Brave أن واجهة البحث الخاصة بها صارت تقبل المدفوعات الوكيلية عبر بروتوكول x402 المفتوح، فتُسدّد كل عملية بحث بالدولار الرقمي USDC لحظياً دون حساب أو مفتاح. الخطوة تفتح نمطاً جديداً للدفع الجزئي في أدوات الوكلاء، إذ يدفع الوكيل ثمن الاستعلام وقت الاستعلام فقط.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://brave.com/blog/search-api-agentic-payments/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🌐</span> Google تصدر مهارات Modern Web لتصحيح وكلاء البرمجة</h2>
+    <p>أصدرت فرق Chrome وEdge وFirefox وMDN مجموعة مهارات مفتوحة تحقن أحدث ممارسات الويب وتوافقات المتصفحات داخل وكلاء البرمجة، لتصرفهم عن الأنماط القديمة نحو إمكانات المنصة الحديثة. التثبيت يتم بأمر واحد عبر npx، ويشمل لوحة تقييم للتحقق من أثر المهارات.</p>
+    <div class="row"><span class="date">١٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/GoogleChrome/modern-web-guidance" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧠</span> ذاكرة الوكلاء تحتاج لحظة OpenTelemetry الخاصة بها</h2>
+    <p>يرى مقال Lorekit أن تنسيق ذاكرة الوكلاء ما زال غائباً عن معايير الرصد والتتبع، وأن الصناعة تحتاج صيغة موحدة تصف ما يتذكره الوكيل ولماذا. المقال يشير إلى أن غياب هذا التنسيق يجعل التنقل بين الأدوات يفقد السياق، ويدعو إلى معيار مفتوح يماثل ما فعله OpenTelemetry في الرصد.</p>
+    <div class="row"><span class="date">٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.lorekit.io/blog/open-agent-memory-format" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> ست مهارات تمنع وكيل البرمجة من لمس الإنتاج</h2>
+    <p>نشرت simba-skills حزمة مهارات لأنظمة Claude Code تحيط أخطر اللحظات بسياج: النشر الآمن، وحلقات التغذية الراجعة، وصيانة الخادم، ونظافة إعداد الوكيل نفسه. الحزمة موجّهة لمن يشغّل تطبيقه على خادم خاص ويستخدم الوكيل على الجهاز نفسه، حيث يمكن لتشغيل اختبار خاطئ أن يصيب بيانات حيّة.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/simbaTmotsi/simba-skills" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🪢</span> Langfuse تطلق بوابة AI Gateway بلغة Rust مفتوحة المصدر</h2>
+    <p>أضافت Langfuse بوابة قائمة بذاتها بلغة Rust توجّه نداءات النماذج الأصلية وتتبّع كل استدعاء، مع مسارين متوافقين مع OpenAI وAnthropic دون إعادة كتابة الحِزم. البوابة مبنية على OpenTelemetry وتتيح الاستضافة الذاتية أو السحابية، وتخدم من يريد تتبعاً موحداً لكل نداء وكل وكيل.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/langfuse/langfuse/tree/main/ai-gateway" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧵</span> Atuin Threads: جلسات الوكلاء على كل الأجهزة</h2>
+    <p>أطلق Atuin ميزة Threads التي تنقل جلسات الوكلاء بين الأجهزة وتزامنها، فتعرض المحادثة نفسها على الحاسوب والهاتف. الميزة تحل مشكلة تشتت العمل الوكيلي بين بيئات متعددة، وينافسها في السوق أدوات مثل Skylands التي تدير أسطولاً من الوكلاء على أي جهاز مع الموافقة من الهاتف.</p>
+    <div class="row"><span class="date">١١ نوفمبر ٢٠٢٦</span><a class="src" href="https://blog.atuin.sh/threads-agent-sessions/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🖥️</span> تقرير: Nvidia هندست ندرة الرقائق بتمويل شركات ناشئة لتشتري شرائحها</h2>
+    <p>يزعم تقرير جديد أن Nvidia موّلت شركات ذكاء اصطناعي ناشئة لتشتري وحداتها، فخلقت طلباً اصطناعياً عزّز صورة الندرة. التقرير يطرح أسئلة عن استدامة الطلب الحقيقي، ويأتي في وقت يتحدث فيه Jensen Huang عن فائض في الرقائق والذاكرة، ما يضيف تعقيداً لرواية النمو المتسارع.</p>
+    <div class="row"><span class="date">١٤ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>
+    حقوق المحتوى متاحة للجميع<br>
+    نشرة يومية · مصادر: Hacker News · Hugging Face · GitHub · Google · Brave · Unsloth · YouTube
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  function apply(mode){
+    root.setAttribute('data-theme', mode);
+    btn.textContent = (mode === 'dark') ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    try { if (window.caches) caches && null; } catch(e){}
+  }
+  apply('light');
+  btn.addEventListener('click', function(){
+    apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+  function net(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+  window.addEventListener('online', net); window.addEventListener('offline', net); net();
+})();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  var SW = "self.addEventListener('install',function(e){self.skipWaiting();});" +
+           "self.addEventListener('activate',function(e){e.waitUntil(self.clients.claim());});" +
+           "self.addEventListener('fetch',function(e){" +
+           "if(e.request.method!=='GET'){return;}" +
+           "e.respondWith(caches.open('ai-news-v1').then(function(c){" +
+           "return c.match(e.request).then(function(hit){" +
+           "var fetchP=fetch(e.request).then(function(res){" +
+           "if(res&&res.status===200){c.put(e.request,res.clone());}return res;" +
+           "}).catch(function(){return hit||caches.match('/offline');});" +
+           "return hit||fetchP;});}));});";
+  try {
+    var blob = new Blob([SW], {type: 'text/javascript'});
+    navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(function(){});
+  } catch(e) {}
+}
+</script>
+</body>
+</html>
