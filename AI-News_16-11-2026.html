@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي والأدوات المجانية</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">الاثنين ١٦ نوفمبر ٢٠٢٦ — ١١:١١ صباحاً بتوقيت مكة</p>
+
+  <div class="card">
+    <h2><span class="emoji">🗣️</span> "On Vibe Coding" جزء 2: الإنتاجية مقابل الاستغناء</h2>
+    <p>مقال تحليلي يتابع الحديث عن البرمجة بالذكاء الاصطناعي، وكيف تتحول المبرمج إلى منسق لسلاسل الوكلاء، وتنقسم فيه النقاشات حول ما يُحتفظ به من القيمة البشرية وما يتخلى عنه.</p>
+    <div class="row"><span class="date">١٤ نوفمبر ٢٠٢٦</span><a class="src" href="https://rz01.org/vibecoding-2/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💻</span> مهارات الوكلاء المصغرة: رسم المخططات من Markdown</h2>
+    <p>مشروع مجاني يمنح وكلاء الذكاء الاصطناعي القدرة على إنشاء مخططات وتصاميم مباشرة من نصوص Markdown، ويبسط واجهة الوكلاء في واجهات الإنتاج.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/markdown-viewer/skills" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🆓</span> مفاتيح API مجانية ٢٠٢٦: ثمانية واجهات دون بطاقة</h2>
+    <p>فيديو يستعرض ثماني واجهات برمجية مجانية (Kimi K3 وDeepSeek وQwen) تعمل دون اشتراك أو بطاقة، ويقارن حدود الطلبات المجانية ونماذج السياق.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=M92M9i1YzYQ" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎬</span> ١٠٠ مليون رمز مجانية في اليوم: مراجعة لجميع النماذج</h2>
+    <p>فيديو Code With Yousaf يغطي واجهات مجانية بانخفاض التكلفة، مع شرح خطوات التسجيل وربط المفتاح بأدوات الوكلاء بسرعة.</p>
+    <div class="row"><span class="date">١٥ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=MWn0qzI1ccA" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">⚡</span> "Prompting Claude" لصياغة أوامر أفضل</h2>
+    <p>دليل رسمي من Anthropic يحدّث ممارسات صياغة أوامر Claude Fable 5.2، ويسجّل الأنماط الجديدة لرفع دقة الردود في الوكلاء.</p>
+    <div class="row"><span class="date">١١ نوفمبر ٢٠٢٦</span><a class="src" href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> Airlock: سياسة الكود لسلاسل وكلاء التطوير</h2>
+    <p>مشروع يمنع الأخطاء عند تشغيل أسطول من الوكلاء عبر تحديد سياسات أمنية قبل التنفيذ، ويُسمح بمراجعة الوصول إلى الموارد المتصرفة.</p>
+    <div class="row"><span class="date">٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://airlock.lunareng.com/docs" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧠</span> Port of Context: تقليل رموز السياق مع الحفاظ على الدقة</h2>
+    <p>طبقة MCP عربية الذاكرة للسياق تقلل هدر الرموز بين جلسات الوكلاء، وتُظهر انخفاضاً في استهلاك السياق دون فقدان المعلومات.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://portofcontext.com" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🤖</span> وكيل محلي بدون Electron: وصول جميع النماذج</h2>
+    <p>مشروع "byob" يجمع واجهة سطح مكتب مركزة مع وكلاء التطوير على أجهزة التطوير، ويعمل مع أي نموذج دون حزمة Electron.</p>
+    <div class="row"><span class="date">١٥ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/Scronkfinkle/byob" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧠</span> Nous تطلق Arete-27B: نموذج بعد تدريب القيم اللغوية</h2>
+    <p>نموذج Qwen3.8-27B صُنع على يد Nous يعزز القيم والاتجاهات الثقافية، ويثير مناقشة حول ما يجب أن يقرره النموذج من مواقف.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://nousresearch.com/arete" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🐑</span> توفير ثلث الرموز لحؤلاء الوكلاء: دراسة جماعية</h2>
+    <p>تكييف أسطول من وكلاء التطوير باستخدام ثلث رموز العمل نفسه، دراسة عملية في كفاءة التكلفة دون تضحية بالجودة.</p>
+    <div class="row"><span class="date">٨ نوفمبر ٢٠٢٦</span><a class="src" href="https://alexmarquardt.com/ai-tools/agent-fleet-token-efficiency/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> simba-skills: ثمانية حواجز لوكيل البرمجة</h2>
+    <p>حزمة مهارات لأنظمة Claude Code تحيط بشروط النشر والملفات الحساسة، وتقلل خطر تضرر المخرجات عند تشغيل اختبارات خاطئة على الجهاز.</p>
+    <div class="row"><span class="date">١٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/simbaTmotsi/simba-skills" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧵</span> Capsules: مشاركة ذاكرة الوكلاء بسلاسة</h2>
+    <p>ميزرة مشتركة للذاكرة تتيح لوكالات التطوير نقل المعلومات بين أنظمة دون خسارة السياق، وتنمو بهذه الطريقة من سلسلة الأفكار.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/OddballInnovator/Huffl-skill" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>
+    حقوق المحتوى متاحة للجميع<br>
+    نشرة يومية · مصادر: Hacker News · YouTube · GitHub · Claude Platform
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  function apply(mode){
+    root.setAttribute('data-theme', mode);
+    btn.textContent = (mode === 'dark') ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+  }
+  apply('light');
+  btn.addEventListener('click', function(){
+    apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+  function net(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+  window.addEventListener('online', net); window.addEventListener('offline', net); net();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  var SW = "self.addEventListener('install',function(e){self.skipWaiting();});" +
+           "self.addEventListener('activate',function(e){e.waitUntil(self.clients.claim());});" +
+           "self.addEventListener('fetch',function(e){" +
+           "if(e.request.method!=='GET'){return;}" +
+           "e.respondWith(caches.open('ai-news-v1').then(function(c){" +
+           "return c.match(e.request).then(function(hit){" +
+           "var fetchP=fetch(e.request).then(function(res){" +
+           "if(res&&res.status===200){c.put(e.request,res.clone());}return res;" +
+           "}).catch(function(){return hit||caches.match('/offline');});" +
+           "return hit||fetchP;});}));});"; 
+  try {
+    var blob = new Blob([SW], {type: 'text/javascript'});
+    navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(function(){});
+
+  } catch(e) {}
+}
+</script>
+</body>
+</html>
