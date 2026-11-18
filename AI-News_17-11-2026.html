@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي والأدوات المجانية</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">الثلاثاء ١٧ نوفمبر ٢٠٢٦ — ١١:١٥ صباحاً بتوقيت مكة</p>
+  <div class="offline">⚠️ يبدو أن الاتصال انقطع. هذه نسخة محفوظة من النشرة، وقد لا تفتح الروابط حتى يعود الاتصال.</div>
+
+  <div class="card">
+    <h2><span class="emoji">🛠️</span> OpenCode يطلق الإصدار ١٫١٩٫٦ لتحسين تجربة وكلاء البرمجة</h2>
+    <p>أصدرت anomalyco تحديثاً جديداً لأداة OpenCode مفتوحة المصدر الموجهة لوكلاء البرمجة داخل الطرفية. يواصل الإصدار تطوير سير العمل اليومي للمطورين الذين يعتمدون على مساعدين برمجيين محليين وقابلين للتخصيص.</p>
+    <div class="row"><span class="date">١٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/anomalyco/opencode/releases/tag/v1.19.6" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💰</span> TokenEconomizer من مايكروسوفت لخفض استهلاك الرموز</h2>
+    <p>قدّم باحثو مايكروسوفت أسلوباً يمكّن وكلاء البرمجة من التعلم من التجارب السابقة لتقليل استهلاك الرموز. الفكرة تستهدف جعل المهام البرمجية الطويلة أقل كلفة وأكثر كفاءة دون التضحية بجودة النتائج.</p>
+    <div class="row"><span class="date">١٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔐</span> Kosem: بيئات أصلية وهوية موحّدة لوكلاء البرمجة</h2>
+    <p>طرحت Kosem تصوراً يمنح وكلاء البرمجة بيئات عمل أصلية مع طبقة هوية ووصول واضحة. المقاربة تعالج تحديات الأمان وإدارة الصلاحيات عند تشغيل الوكلاء على مشاريع برمجية حقيقية.</p>
+    <div class="row"><span class="date">١٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://kosem.ai/blog/coding-agents-workstation-moment" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔁</span> Autopilot: واجهة موحّدة لاستخدام أي نموذج مع وكيل البرمجة</h2>
+    <p>مشروع مفتوح المصدر يقدّم واجهة واحدة تتيح التبديل بين نماذج الذكاء الاصطناعي المختلفة داخل تجربة وكيل برمجي متسقة. يساعد المطورين على تجربة مزودين متعددين دون إعادة بناء سير العمل.</p>
+    <div class="row"><span class="date">١٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/directionally-local/autopilot" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎛️</span> Akai تفتح MPC3 أمام البرمجة بالذكاء الاصطناعي</h2>
+    <p>أضاف تحديث MPC3 من Akai إمكانات تتيح بناء أدوات موسيقية وتدفقات إبداعية بمساعدة الذكاء الاصطناعي. الخطوة توسّع حضور البرمجة بالذكاء الاصطناعي إلى بيئات الإنتاج الموسيقي العملي.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.synthtopia.com/content/2026/11/12/akai-opens-mpc-3-to-vibe-coding-with-latest-update/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📜</span> The Way of Code: تأمل في فن البرمجة بالذكاء الاصطناعي</h2>
+    <p>صفحة تجمع مبادئ وتجارب حول أسلوب البرمجة بالذكاء الاصطناعي بوصفه ممارسة إبداعية تعاونية. تقدم رؤية تركز على الصياغة الواضحة والتكرار السريع مع النماذج.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.thewayofcode.com/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📝</span> Solipsist: العمل مع وكلاء Pi عبر ملفات Markdown</h2>
+    <p>أداة جديدة تتيح تنظيم التفاعل مع وكلاء البرمجة من خلال مستندات Markdown بسيطة. الفكرة تجعل إدارة السياق والتعليمات والمخرجات أكثر وضوحاً وقابلية للمراجعة.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://solipsist.sh/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎥</span> مفاتيح API مجانية لنماذج DeepSeek وGLM وKimi</h2>
+    <p>فيديو يشرح طرق الحصول على مفاتيح وصول مجانية وتجريب نماذج لغوية حديثة عبر واجهات برمجية دون تكلفة مبدئية. يستعرض خطوات التسجيل وربط المفاتيح بأدوات الوكلاء.</p>
+    <div class="row"><span class="date">١٥ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=XkZ-QlJwxYE" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🆓</span> تشغيل Claude Code مجاناً مع إعداد واجهة LLM بديلة</h2>
+    <p>فيديو عملي يوضح كيفية إعداد وصول مجاني وتجربة Claude Code عبر واجهات ونماذج بديلة بخطوات مباشرة. يناسب من يريد اختبار تدفقات البرمجة بالذكاء الاصطناعي دون التزام مالي.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=pxxFxDEAoUs" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📥</span> Mudroom: صندوق موحّد لطلبات الدعم وسياق الهندسة</h2>
+    <p>أداة تجمع طلبات الدعم المتفرقة وتساعد فرق الهندسة على استرجاع السياق بسرعة أثناء التحقيق. تقلل التنقل بين منصات متعددة وتدعم وكلاء جمع المعلومات تلقائياً.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://news.ycombinator.com/item?id=50473419" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>حقوق المحتوى متاحة للجميع — تُحدَّث هذه النشرة آلياً لمتابعة أحدث أدوات البرمجة بالذكاء الاصطناعي.</footer>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeBtn');
+    function apply(theme){
+      root.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch(e){}
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    apply(saved || (prefersDark ? 'dark' : 'light'));
+    btn.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+      try { localStorage.setItem('theme', next); } catch(e){}
+    });
+    function updateOffline(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+    window.addEventListener('online', updateOffline);
+    window.addEventListener('offline', updateOffline);
+    updateOffline();
+    if ('serviceWorker' in navigator) {
+      var swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)||new Response('<html dir=\"rtl\"><body style=\"font-family:sans-serif;padding:2rem;text-align:center\"><h2>لا يوجد اتصال</h2><p>تحقق من الإنترنت ثم أعد المحاولة.</p></body></html>',{headers:{'Content-Type':'text/html; charset=utf-8'}})));}else{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));}});";
+      try {
+        var blob = new Blob([swCode], {type: 'text/javascript'});
+        var url = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(url).catch(function(){});
+      } catch(e){}
+    }
+  })();
+</script>
+</body>
+</html>
