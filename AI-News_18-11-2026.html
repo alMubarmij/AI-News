@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي والأدوات المجانية</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">الأربعاء ١٨ نوفمبر ٢٠٢٦ — ١١:١١ صباحاً بتوقيت مكة</p>
+  <div class="offline">⚠️ يبدو أن الاتصال انقطع. هذه نسخة محفوظة من النشرة، وقد لا تفتح الروابط حتى يعود الاتصال.</div>
+
+  <div class="card">
+    <h2><span class="emoji">🧩</span> LeetCode يطلق تحديات البرمجة بالذكاء الاصطناعي</h2>
+    <p>أضافت LeetCode تحديات مشروع تركز على بناء منتجات بمساعدة وكلاء الذكاء الاصطناعي. تمنح الخطوة المطورين مساحة لتجربة البرمجة بالذكاء الاصطناعي في مهام عملية أقرب إلى بيئات العمل الحقيقية.</p>
+    <div class="row"><span class="date">١٨ نوفمبر ٢٠٢٦</span><a class="src" href="https://leetcode.com/discuss/post/8614473/project-challenge-can-you-build-a-produc-27kz/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🌐</span> OpenCode Browse: متصفح حقيقي لوكلاء البرمجة</h2>
+    <p>قدّمت OpenCode أداة Browse التي تمكّن الوكلاء من استخدام المتصفح الفعلي عبر بروتوكول MCP. يتيح ذلك للنماذج القراءة والنقر والكتابة والتقاط لقطات الشاشة مع إبقاء تسجيل الدخول والتحقق الثنائي بيد المستخدم.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://opencode.ai/product/browse" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧠</span> Nous Research تطلق Arete-27B بعد تدريب لاحق على Qwen3.8-27B</h2>
+    <p>أعلنت Nous Research عن نموذج Arete-27B المبني على Qwen3.8-27B مع تدريب لاحق يهدف إلى تعزيز قيم غربية محددة. رافق الإطلاق تقييم واسع يقيس أثر التعديلات عبر فئات قيمية متعددة.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://nousresearch.com/arete" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">⚙️</span> Claude Code يقدّم وضع Code Mode لتشغيل الأدوات بالكود</h2>
+    <p>طرحت وثائق Claude Code ميزة تجريبية تكتب فيها Claude شيفرة JavaScript تنفّذ عدة استدعاءات أدوات في خطوة واحدة. يقلل هذا الأسلوب التنقل المتكرر بين النموذج والأدوات ويُحسّن كفاءة سير العمل.</p>
+    <div class="row"><span class="date">١٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://code.claude.com/docs/en/code-mode" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">✍️</span> تحديث إرشادات هندسة المطالبات لنموذجي Claude Fable 5.2 وMythos 5.2</h2>
+    <p>نشرت Anthropic أنماط مطالبات مخصصة لنموذجي Fable 5.2 وMythos 5.2، تشمل ضبط الجهد والتوقف المبكر والموافقات وتقسيم العمل إلى وكلاء فرعيين. تساعد الإرشادات المطورين على مواءمة المطالبات مع قدرات النماذج الأحدث.</p>
+    <div class="row"><span class="date">١١ نوفمبر ٢٠٢٦</span><a class="src" href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧷</span> Crosshead: ذاكرة مستمرة لوكلاء Claude Code وCodex</h2>
+    <p>يقدّم Crosshead طبقة ذاكرة تنقل القرارات الأخيرة بين الجلسات وتُسهّل الانتقال بين الأدوات دون إعادة شرح السياق. يستهدف تقليل التكرار في هندسة السياق وتحسين استمرارية العمل مع الوكلاء.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://crosshead.sh/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💸</span> Token Economy: لوحة محلية لتتبّع الاستخدام وتوفير الرموز</h2>
+    <p>أطلق المطورون أداة مفتوحة المصدر تعرض استهلاك Claude Code وCodex وحدود الخطط وفرص توفير الرموز محلياً. تعمل الأداة دون حساب أو قياس عن بُعد، وتركّز على وضوح الكلفة وتحسين الكفاءة.</p>
+    <div class="row"><span class="date">١١ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/Baeta78/token-economy" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🚨</span> تسريب بيانات حساسة عبر وكيل Grok Build البرمجي</h2>
+    <p>كشف تحقيق أمني أن آلاف تطبيقات Grok Build كانت مكشوفة لمن يبحث عنها، مع تسريب معلومات سرية لبعض الجهات. يسلّط الحادث الضوء على مخاطر إعدادات الوصول الافتراضية في بيئات وكلاء البرمجة.</p>
+    <div class="row"><span class="date">١١ نوفمبر ٢٠٢٦</span><a class="src" href="https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> Bot-bottle: بيئة معزولة آمنة لوكلاء البرمجة المحليين</h2>
+    <p>يقدّم مشروع Bot-bottle حاوية تشغيل تعزل بيانات الاعتماد وتفحص كل ما يغادر البيئة قبل إرساله. يهدف إلى منح الوكلاء صلاحيات واسعة داخل مساحة محكومة دون تعريض الأسرار للخطر.</p>
+    <div class="row"><span class="date">١١ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/diderisoft/bot-bottle" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📝</span> تأملات في البرمجة بالذكاء الاصطناعي: الجزء الثاني</h2>
+    <p>يعرض الكاتب تجربة عملية مع البرمجة بالذكاء الاصطناعي وتأثيرها على وتيرة العمل وجودة المخرجات. يركّز النص على موازنة الاستفادة من الأدوات مع الحفاظ على فهم عميق للشيفرة المنتَجة.</p>
+    <div class="row"><span class="date">١٤ نوفمبر ٢٠٢٦</span><a class="src" href="https://rz01.org/vibecoding-2/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>حقوق المحتوى متاحة للجميع — تُحدَّث هذه النشرة آلياً لمتابعة أحدث أدوات البرمجة بالذكاء الاصطناعي.</footer>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeBtn');
+    function apply(theme){
+      root.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    }
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    apply(prefersDark ? 'dark' : 'light');
+    btn.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+    });
+    function updateOffline(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+    window.addEventListener('online', updateOffline);
+    window.addEventListener('offline', updateOffline);
+    updateOffline();
+    if ('serviceWorker' in navigator) {
+      var swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)||new Response('<html dir=\\\"rtl\\\"><body style=\\\"font-family:sans-serif;padding:2rem;text-align:center\\\"><h2>لا يوجد اتصال</h2><p>تحقق من الإنترنت ثم أعد المحاولة.</p></body></html>',{headers:{'Content-Type':'text/html; charset=utf-8'}})));}else{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));}});";
+      try {
+        var blob = new Blob([swCode], {type: 'text/javascript'});
+        var url = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(url).catch(function(){});
+      } catch(e){}
+    }
+  })();
+</script>
+</body>
+</html>
