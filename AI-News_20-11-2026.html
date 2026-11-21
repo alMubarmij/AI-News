@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .card p.vid{color:var(--muted); font-size:16px; border-right:3px solid var(--accent); padding-right:12px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي والأدوات المجانية</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">الجمعة ٢٠ نوفمبر ٢٠٢٦ — ١١:١٧ صباحاً بتوقيت مكة</p>
+  <div class="offline">⚠️ يبدو أن الاتصال انقطع. هذه نسخة محفوظة من النشرة، وقد لا تفتح الروابط حتى يعود الاتصال.</div>
+
+  <div class="card">
+    <h2><span class="emoji">🧰</span> ToolJet 4.0: بناء أدوات داخلية بالذكاء الاصطناعي مع حوكمة</h2>
+    <p>أطلقت ToolJet الإصدار الرابع الذي يجمع بين بناء التطبيقات الداخلية بالذكاء الاصطناعي ولوحة مرئية وواجهة React، مع حوكمة مدمجة وربط بأكثر من مئة قاعدة بيانات وخدمة. يستهدف الإصدار تقليص الفجوة بين النمذجة السريعة ومتطلبات المؤسسات من الأمان والإشراف.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://tooljet.com" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧠</span> LangChain ترصد تحديات جديدة في هندسة السياق</h2>
+    <p>نشرت LangChain مراجعة للتحديات التي تواجه الوكلاء في أواخر ٢٠٢٦، من تتبّع التدهور في الإنتاج إلى إدارة الذاكرة والأدوات. تبيّن المقالة أن ضبط السياق لم يعد مجرد تحسين للمطالبة، بل طبقة هندسية مستقلة تحتاج قياساً واختباراً.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.langchain.com/blog/context-engineering-challenges-late-2026" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💸</span> بوابة Ploy: مهام الوكلاء أسرع ٨ مرات وأرخص ٢٠ مرة</h2>
+    <p>أعلنت Ploy عن بوابة تمنح الوكلاء وصولاً مباشراً إلى أي نموذج، وتُنفّذ المهام الدفعية بسرعة تصل إلى ثمانية أضعاف وتكلفة أقل بعشرين مرة مقارنة بـ Claude Code. تستهدف البوابة خفض فاتورة الرموز في سير العمل الكبير.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://ploy.ai/blog/ploy-ai-gateway" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🤝</span> Hugging Face وOpenRouter يسهّلان تشغيل النماذج المفتوحة</h2>
+    <p>أعلنت المنصتان عن تعاون يقرّب النماذج مفتوحة الأوزان من المطورين عبر واجهة موحّدة للاستدلال. يسمح التكامل بتبديل النماذج دون إعادة بناء التطبيق، ويفتح طريقاً مجانياً أو منخفض الكلفة لتجربة نماذج مثل Qwen وLlama.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://huggingface.co/blog/openrouter" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🆓</span> دليل Itsfree.ai يجمع ٣٤ نموذجاً يمكن استخدامها مجاناً</h2>
+    <p>أطلق المطورون دليلاً يوضح أربعة وثلاثين نموذجاً متاحاً بلا تكلفة، مع بيان مزوّدي كل نموذج وحدود الاستخدام. يضم القائمة نماذج مفتوحة الأوزان مثل Qwen وLlama 3.3، ويساعد على اختيار بديل مجاني قبل دفع فاتورة الواجهات التجارية.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://itsfree.ai/models/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> اختراق نقطة DeepSeek يكشف مخاطر واجهات الوكلاء</h2>
+    <p>أبلغ OpenRouter مستخدميه عن استبدال نقطة خدمة Prime Intellect مدة ثلاث وخمسين ساعة، بعد اشتباه في اختراقها. يذكّر الحادث بضرورة التحقق من هوية مزوّد النموذج ومراقبة تحويلات الطلبات قبل إرسال مفاتيح API أو بيانات حساسة.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://runtimewire.com/article/openrouter-notified-users-of-a-reported-prime-intellect-compromise" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📐</span> Kibi يحفظ نوايا الكود داخل المستودع ليمنع نسيان الوكلاء</h2>
+    <p>يقدّم Kibi إطار متطلبات يوثّق القرارات والافتراضات والمقايضات المتفق عليها أثناء المحادثة، ويربطها بالشيفرة والاختبارات. الهدف أن يلتزم كل وكيل لاحق بالسياق نفسه بدل إعادة شرحه من الصفر.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://looted.github.io/kibi/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🦞</span> Nous Research تطلق Hermes Agent 0.23.3 بـ ٣٧٠ تحسيناً</h2>
+    <p>صدر الإصدار 0.23.3 من وكيل Hermes مفتوح المصدر بعد دمج نحو ثلاثمئة وسبعين طلب تغيير، تشمل تحديثات الواجهة وأدوات التثبيت وحاويات Docker وتكامل المتجر. يمثّل الإصدار استقراراً لسلسلة التحديثات اليومية التي نشرتها الشركة.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.3" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎬</span> فيديو: كل الشيفرة رديئة إلا شيفرتنا — Lauren Tan</h2>
+    <p>يستعرض حديث في مؤتمر AI Engineer كيف تقيّم الفرق مخرجات وكلاء البرمجة، ولماذا تبدو الشيفرة المولّدة مقبولة لدى كاتبها ومريبة لدى مراجعيها.</p>
+    <p class="vid">ملخص الفيديو: جلسة عملية تقارب جودة مخرجات الوكلاء من زاوية المراجعة والثقة، مع أمثلة على الفجوة بين الإنتاج السريع والصيانة طويلة الأمد.</p>
+    <div class="row"><span class="date">١٤ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=O_zcc6Xl12g" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎬</span> فيديو: دورة Codex ووكلاء البرمجة من freeCodeCamp</h2>
+    <p>يقدّم الفيديو مدخلاً عملياً إلى Codex ووكلاء البرمجة، يغطي إعداد البيئة وصياغة المهام ومراجعة التغييرات وبناء سير عمل آمن للاستخدام اليومي.</p>
+    <p class="vid">ملخص الفيديو: دورة عملية تبدأ من التثبيت وتنتهي بسير عمل متكامل، مع توضيح كيف يفوّض المطور المهام للوكيل ويحتفظ بالقرار النهائي.</p>
+    <div class="row"><span class="date">١٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=ajfQWhGQGLE" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧩</span> Terminess: منصة تشغّل واجهتي Claude Code وCodex معاً</h2>
+    <p>أطلق مطورون أداة Terminess التي تعمل منصةً لتشغيل واجهتي Claude Code وCodex الرسميتين داخل بيئة واحدة. تهدف إلى توحيد إعدادات الوكلاء وتسهيل المقارنة بينهما دون تكرار التثبيت أو إدارة مفاتيح متعددة.</p>
+    <div class="row"><span class="date">١٨ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/Terminess/terminess" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🤖</span> وكيل داخلي يصل إلى ٨٠٪ من مطوري شركة واحدة</h2>
+    <p>تكشف تجربة شركة Alan أن وكيل برمجة داخلياً صار يستخدمه أربعة من كل خمسة مطورين. تسرد المقالة كيف انتقل الوكلاء من تجارب فردية إلى أداة يومية مدعومة بالحوكمة والتدريب الداخلي.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://medium.com/alan/hopper-we-built-an-internal-coding-agent-now-80-of-alan-uses-it-9c11e5b62ca5" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>حقوق المحتوى متاحة للجميع — تُحدَّث هذه النشرة آلياً لمتابعة أحدث أدوات البرمجة بالذكاء الاصطناعي.</footer>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeBtn');
+    function apply(theme){
+      root.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    }
+    apply('light');
+    btn.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+    });
+    function updateOffline(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+    window.addEventListener('online', updateOffline);
+    window.addEventListener('offline', updateOffline);
+    updateOffline();
+    if ('serviceWorker' in navigator) {
+      var swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)||new Response('<html dir=\\\"rtl\\\"><body style=\\\"font-family:sans-serif;padding:2rem;text-align:center\\\"><h2>لا يوجد اتصال</h2><p>تحقق من الإنترنت ثم أعد المحاولة.</p></body></html>',{headers:{'Content-Type':'text/html; charset=utf-8'}})));}else{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));}});";
+      try {
+        var blob = new Blob([swCode], {type: 'text/javascript'});
+        var url = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(url).catch(function(){});
+      } catch(e){}
+    }
+  })();
+</script>
+</body>
+</html>
