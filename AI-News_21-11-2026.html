@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .card p.vid{color:var(--muted); font-size:16px; border-right:3px solid var(--accent); padding-right:12px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي والأدوات المجانية</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">السبت ٢١ نوفمبر ٢٠٢٦ — ١٢:٠١ ظهراً بتوقيت مكة</p>
+  <div class="offline">⚠️ يبدو أن الاتصال انقطع. هذه نسخة محفوظة من النشرة، وقد لا تفتح الروابط حتى يعود الاتصال.</div>
+
+  <div class="card">
+    <h2><span class="emoji">🔑</span> Genie 4 في واجهة Gemini API</h2>
+    <p>أتاحت Google نموذج Genie 4 عبر واجهة Gemini API، ليتمكّن المطورون من توليد بيئات وعوالم تفاعلية من مطالبات نصية داخل تطبيقاتهم. تأتي الإضافة ضمن توسيع أدوات المطورين، ويفتح باب التجربة دون بنية تحتية خاصة.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🧭</span> OutcomeOps: هندسة السياق للتطوير بمساعدة الذكاء الاصطناعي</h2>
+    <p>أطلق المطورون مستودعاً مفتوحاً يجمع ممارسات هندسة السياق في سير عمل التطوير بمساعدة الوكلاء. يوضح المشروع كيف تُنظَّم المعلومات والقرارات داخل الجلسة، ويقدّم قوالب قابلة للاستعمال في المستودعات الحقيقية.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/bcarpio/outcome-ops-ai-assist" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">✍️</span> خمسة مفاهيم لا غنى عنها للبرمجة مع الوكلاء</h2>
+    <p>يشرح المقال المفاهيم الخمسة التي يحتاجها المطور عند العمل مع وكلاء البرمجة، من صياغة المطالبة إلى فصل النية عن التنفيذ ومراجعة المخرجات. يربط هذه المفاهيم بأخطاء شائعة تقود إلى شيفرة يصعب الحفاظ عليها.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.davidayo.com/blog/5-concepts-to-know-for-coding-with-ai-agents/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> Pantry: ماسح مفتوح المصدر يراقب أوامر وكلاء البرمجة</h2>
+    <p>قدّم المطورون أداة Pantry لفحص ما ينفّذه وكيل البرمجة فعلياً على الجهاز، من أوامر shell إلى تعديلات الملفات. تمنح الأداة المطور رؤية صريحة قبل أن يمنح الوكيل صلاحيات أوسع.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://waffuru.ai/products/pantry" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🧪</span> RMRFBench: اختبار مدى إفساد الوكلاء للخوادم</h2>
+    <p>أطلق الباحثون معيار RMRFBench لقياس تكرار إتلاف الوكلاء لبيئة الخادم عند طلب حذف ملف بسيط. يكشف الاختبار أن صياغة الأمر وحدها قد تدفع الوكيل إلى تنفيذ عمليات تتجاوز المطلوب.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.rmrfbench.com/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">💾</span> QuadGate: إبقاء ذاكرة الرموز دافئة لتقليل التكلفة</h2>
+    <p>قدّم المطورون أداة QuadGate كطبقة تحكم بأربع بوابات تحافظ على ذاكرة التخزين المؤقت للرموز بين جولات الوكيل. الهدف خفض إعادة حساب السياق الطويل وتقليل فاتورة الاستدلال في المهام متعددة الخطوات.</p>
+    <div class="row"><span class="date">١٨ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/blagoslov333-cloud/quadgate" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">💻</span> البرمجة بالذكاء الاصطناعي تخرج شريحة استدلال</h2>
+    <p>يروي مهندس تجربة تصميم شريحة استدلال كاملة بمساعدة أدوات البرمجة بالذكاء الاصطناعي، من المواصفات الأولية إلى ملفات التصميم والتحقق. يُظهر المشروع أن النماذج انتقلت من كتابة التطبيقات إلى هندسة العتاد نفسه.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://ankitg.me/blog/vibecoding-inference-chip/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🤖</span> OpenComputer: بديل مفتوح المصدر عن Devin</h2>
+    <p>أطلق المطورون OpenComputer كوكيل برمجة مفتوح المصدر يعمل في بيئة حاسوبية كاملة بدلاً من الاكتفاء بمحرر الأكواد. يهدف المشروع إلى منح المطور تحكماً أكبر في الأدوات والبيئة مقارنة بالوكلاء المغلقين.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/diggerhq/opencomputer" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🌍</span> Cursor يبحث التخلص التدريجي من النماذج المفتوحة الأجنبية</h2>
+    <p>أبلغت شركة Cursor الكونغرس الأميركي أنها تدرس تقليص الاعتماد على النماذج مفتوحة الأوزان القادمة من خارج الولايات المتحدة لأسباب تتعلق بالمخاطر الجيوسياسية. يثير القرار المحتمل جدلاً بين من يراها رافعة للمنافسة ومن يراها عبئاً أمنياً.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🎬</span> ثمانية مفاتيح API مجانية إضافية في ٢٠٢٦</h2>
+    <p>يستعرض الفيديو ثمانية مزودين يمنحون مفاتيح API مجانية أو رصيداً تجريبياً دون بطاقة ائتمان، من بينها Kimi K3 وDeepSeek وQwen. يشرح طريقة التسجيل والحدود المتاحة لكل مزود حتى يختار المطور الأنسب لتجاربه.</p>
+    <p class="vid">يقدّم Berzaf خطوات الحصول على المفاتيح ومقارنة سريعة بين الحدود المجانية.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=M92M9i1YzYQ" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🎬</span> قراءة في مشهد النماذج اللغوية لعام ٢٠٢٦</h2>
+    <p>يقدّم Simon Willison قراءة مركّزة في تحولات النماذج اللغوية الكبيرة خلال ٢٠٢٦، مع توقف عند الأدوات التي غيّرت سير عمل المطورين. يربط العرض بين قدرات النماذج الجديدة والطرق العملية لاستثمارها في المشاريع اليومية.</p>
+    <p class="vid">حلقة من قناة AI Engineer تستعرض أبرز ما تغيّر في النماذج ومفتوحة الأوزان.</p>
+    <div class="row"><span class="date">١٧ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=9RKrSF9d2SE" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+  <div class="card">
+    <h2><span class="emoji">🎬</span> البدء في البرمجة بالذكاء الاصطناعي للمبتدئين</h2>
+    <p>يقدّم Mikey No Code دليلاً عملياً للمبتدئين يبدأ من صياغة المطالبة الأولى وينتهي بنشر تطبيق بسيط دون كتابة شيفرة يدوياً. يركّز الدرس على تكرار التجربة ومراجعة المخرجات بدل الاعتماد على نتيجة واحدة.</p>
+    <p class="vid">شرح خطوة بخطوة مع أمثلة تطبيقية لمشاريع صغيرة قابلة للتنفيذ.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=fwHWGV5EKGg" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>حقوق المحتوى متاحة للجميع — تُحدَّث هذه النشرة آلياً لمتابعة أحدث أدوات البرمجة بالذكاء الاصطناعي.</footer>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeBtn');
+    function apply(theme){
+      root.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    }
+    apply('light');
+    btn.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+    });
+    function updateOffline(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+    window.addEventListener('online', updateOffline);
+    window.addEventListener('offline', updateOffline);
+    updateOffline();
+    if ('serviceWorker' in navigator) {
+      var swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)||new Response('<html dir=\\\\\\\"rtl\\\\\\\"><body style=\\\\\\\"font-family:sans-serif;padding:2rem;text-align:center\\\\\\\"><h2>لا يوجد اتصال</h2><p>تحقق من الإنترنت ثم أعد المحاولة.</p></body></html>',{headers:{'Content-Type':'text/html; charset=utf-8'}})));}else{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));}});";
+      try {
+        var blob = new Blob([swCode], {type: 'text/javascript'});
+        var url = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(url).catch(function(){});
+      } catch(e){}
+    }
+  })();
+</script>
+</body>
+</html>
