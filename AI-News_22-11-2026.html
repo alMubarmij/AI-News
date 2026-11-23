@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .card p.vid{color:var(--muted); font-size:16px; border-right:3px solid var(--accent); padding-right:12px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <span class="sub">أخبار البرمجة بالذكاء الاصطناعي والأدوات المجانية</span>
+    </div>
+    <button id="themeBtn" type="button" aria-label="تبديل الوضع">🌙 وضع داكن</button>
+  </header>
+
+  <p class="meta">الأحد ٢٢ نوفمبر ٢٠٢٦ — ١١:٤٣ صباحاً بتوقيت مكة</p>
+  <div class="offline">⚠️ يبدو أن الاتصال انقطع. هذه نسخة محفوظة من النشرة، وقد لا تفتح الروابط حتى يعود الاتصال.</div>
+
+  <div class="card">
+    <h2><span class="emoji">🔑</span> Qlaude: شغّل Claude Code على خادمك الخاص</h2>
+    <p>أتاح مشروع qlaude مفتوح المصدر تشغيل وكيل Claude Code مقابل خادم نماذج تملكه، من دون اشتراك أو حساب في Anthropic. يكفي لصق واحد وخمسة أسئلة إعداد للبدء، ويعمل على لينكس وماك لخفض فاتورة الرموز.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/trail-openers/qlaude" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🌐</span> TonkAI: بوابة OpenAI تجمع خمسة نماذج</h2>
+    <p>أطلقت TonkAI بوابة متوافقة مع واجهة OpenAI توجّه الطلبات إلى GPT وClaude وGemini وDeepSeek وQwen من عنوان واحد. يتيح المشروع تبديل النموذج بسهولة ومقارنة التكلفة والاستجابة داخل سير عمل واحد.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://tonkai.app/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧵</span> Loom: ذاكرة مشتركة للوكلاء من ClickHouse</h2>
+    <p>قدّمت ClickHouse مشروع Loom مفتوح المصدر، الذي يمنح وكلاء البرمجة ذاكرة مشتركة وبحثاً في المستندات وفهرسة للكود. يهدف إلى إبقاء السياق الكامل داخل متناول الوكيل بدل إعادة تحميل الملفات في كل جلسة.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/ClickHouse/loom" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> وكلاء ذكاء اصطناعي يكتشفون ثغرة صفرية بأنفسهم</h2>
+    <p>كشفت AWS عن جهة مرتبطة بالصين استخدمت وكلاء ذكاء اصطناعي لاكتشاف ثغرة يوم الصفر واستغلالها للوصول إلى خادم جامعي من دون تدخل بشري. يعيد الحادث فتح نقاش أمن الوكلاء المستقلين وقدرتهم على التنفيذ الذاتي.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🦀</span> هل يعيد الذكاء الاصطناعي كتابة OpenCode بلغة Rust؟</h2>
+    <p>يستعرض فيديو محاولة إعادة كتابة وكيل OpenCode مفتوح المصدر بلغة Rust بنسبة تسعين في المئة بمساعدة الذكاء الاصطناعي. يغطي التجربة الفروق بين لغتي التنفيذ وأثر إعادة الكتابة على أداء الوكيل الطرفي.</p>
+    <p class="vid">🎬 تجربة عملية في إعادة كتابة وكيل OpenCode بلغة Rust بمساعدة الذكاء الاصطناعي.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=SwX4OoxMaKM" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🇪🇺</span> Arete-27B من Nous Research</h2>
+    <p>أصدرت Nous Research نموذج Arete-27B المبني على Qwen3.8-27B والمُدرَّب لاحقاً على تعزيز القيم الغربية. يوضح الإصدار اتجاه الشركة نحو ضبط سلوك النماذج المفتوحة بعد التدريب الأساسي.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://nousresearch.com/arete" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💾</span> فاتورة Claude Code تتوقف على عمر الذاكرة المؤقتة</h2>
+    <p>يناقش نقاش على Hacker News أن فاتورة واجهة Claude Code تتغير بحسب تكرار انتهاء صلاحية الذاكرة المؤقتة للسياق. يلفت المشاركون إلى أن إدارة ذاكرة الرموز أثر مباشر في تكلفة الجلسات الطويلة واستهلاك الرموز.</p>
+    <div class="row"><span class="date">١٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://news.ycombinator.com/item?id=50467233" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💭</span> هل ما زال ضبط المطالبات مهماً؟</h2>
+    <p>يسأل نقاش على Hacker News عمّا إذا كان ضبط المطالبات لا يزال ممارسة قائمة اليوم، ويستحضر أدوات مثل DSPy. يرى المشاركون أن هندسة السياق وضبط المطالبات آليتان متكاملتان في عمل الوكلاء.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://news.ycombinator.com/item?id=50597235" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎬</span> مفاتيح API مجانية عبر OpenRouter</h2>
+    <p>يشرح فيديو كيفية الحصول على مفاتيح API مجانية في ٢٠٢٦ عبر OpenRouter واستخدام نماذج مثل DeepSeek وLlama وQwen ضمن حدود المجانية. يراجع الخطوات العملية للتسجيل وأول طلب وتتبّع الحصة.</p>
+    <p class="vid">🎬 دليل عملي لتفعيل مفاتيح OpenRouter المجانية وتشغيل نماذج مفتوحة.</p>
+    <div class="row"><span class="date">١٩ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=2DkNDuvhpkY" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔓</span> Gemini يسمح بإلغاء التدريب على بياناتك</h2>
+    <p>أتاحت Google للمستخدمين الخروج من تدريب الذكاء الاصطناعي على محادثاتهم في Gemini من دون فقدان سجل المحادثات. يأتي التغيير استجابة لطلبات الخصوصية ويمنح تحكماً أكبر في بيانات المحادثة.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧰</span> ArkViz: مخططات معمارية يولّدها الذكاء الاصطناعي</h2>
+    <p>يعرض مشروع ArkViz توليد مخططات معمارية للبرمجيات من الوصف النصي أو من الشيفرة نفسها. يستهدف المشروع توثيق البنية بصرياً داخل سير عمل البرمجة بمساعدة الذكاء الاصطناعي.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://arkviz.io" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🤖</span> XSquads: فرق وكلاء تنفّذ المهام تلقائياً</h2>
+    <p>يتيح XSquads تحديد مهمة واحدة لتعمل فرق من الوكلاء بشكل مستقل داخل بيئة التطوير. يركّز المشروع على توزيع العمل بين الوكلاء ومتابعة التنفيذ من دون إشراف مستمر.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٢٦</span><a class="src" href="https://xsquads.ai" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>نشرة الذكاء الآلية — أخبار مختارة من مصادرها الأصلية خلال الأيام العشرة الماضية.<br>حقوق المحتوى متاحة للجميع.</footer>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeBtn');
+    function apply(theme){
+      root.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    }
+    apply('light');
+    btn.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+    });
+    function updateOffline(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+    window.addEventListener('online', updateOffline);
+    window.addEventListener('offline', updateOffline);
+    updateOffline();
+    if ('serviceWorker' in navigator) {
+      var swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)||new Response('<html dir=\\\\\"rtl\\\\\"><body style=\\\\\"font-family:sans-serif;padding:2rem;text-align:center\\\\\"><h2>لا يوجد اتصال</h2><p>تحقق من الإنترنت ثم أعد المحاولة.</p></body></html>',{headers:{'Content-Type':'text/html; charset=utf-8'}})));}else{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));}});";
+      try {
+        var blob = new Blob([swCode], {type: 'text/javascript'});
+        var url = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(url).catch(function(){});
+      } catch(e){}
+    }
+  })();
+</script>
+</body>
+</html>
