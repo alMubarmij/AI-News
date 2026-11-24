@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📰 النشرة التقنية اليومية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#ffffff; --text:#12141a; --muted:#5b6172;
+    --line:#e3e6ef; --accent:#1f6feb; --chip:#eef3ff; --shadow:0 2px 14px rgba(20,25,45,.07);
+  }
+  html[data-theme="dark"]{
+    --bg:#0d1017; --card:#161b25; --text:#e8ecf5; --muted:#9aa3b8;
+    --line:#242c3b; --accent:#6ea8ff; --chip:#1b2740; --shadow:0 2px 18px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Tajawal",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:19px; line-height:1.85; -webkit-font-smoothing:antialiased;
+    transition:background .25s ease,color .25s ease;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:26px 18px 70px}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:26px}
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand h1{font-family:"Cairo",sans-serif; font-weight:900; font-size:27px; margin:0; letter-spacing:-.3px}
+  .brand .sub{color:var(--muted); font-size:15px; font-weight:500}
+  .meta{color:var(--muted); font-size:15px; margin:0 0 22px}
+  #themeBtn{
+    flex:0 0 auto; border:1px solid var(--line); background:var(--card); color:var(--text);
+    border-radius:12px; padding:9px 14px; font-family:"Cairo",sans-serif; font-size:14px;
+    font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+  }
+  #themeBtn:hover{border-color:var(--accent); color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:20px 22px; margin-bottom:16px; box-shadow:var(--shadow);
+  }
+  .card h2{
+    font-family:"Cairo",sans-serif; font-weight:700; font-size:21px; line-height:1.55;
+    margin:0 0 10px; letter-spacing:-.2px;
+  }
+  .card p{margin:0 0 12px; color:var(--text); font-size:18px}
+  .card p.vid{color:var(--muted); font-size:16px; border-right:3px solid var(--accent); padding-right:12px}
+  .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:6px}
+  .date{
+    background:var(--chip); color:var(--accent); border-radius:999px;
+    padding:3px 12px; font-size:14px; font-weight:700; font-family:"Cairo",sans-serif;
+  }
+  a.src{
+    color:var(--accent); text-decoration:none; font-weight:700; font-size:15px;
+    border-bottom:1px solid transparent;
+  }
+  a.src:hover{border-bottom-color:var(--accent)}
+  .emoji{font-size:22px; line-height:1}
+  footer{margin-top:34px; color:var(--muted); font-size:15px; text-align:center; line-height:1.9}
+  .offline{
+    display:none; background:#fff4e5; color:#8a4b00; border:1px solid #ffd9a8;
+    border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:16px; font-weight:600;
+  }
+  html[data-theme="dark"] .offline{background:#33240c; color:#ffc978; border-color:#5c3d13}
+  body.is-offline .offline{display:block}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:20px 14px 60px}
+    .brand h1{font-size:23px}
+    .card{padding:17px 17px}
+    .card h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>نشرة الذكاء الآلية</h1>
+      <div class="sub">ـ السبت ٢٢ نوفمبر ٢٠٢٦</div>
+    </div>
+    <button id="themeBtn">🌙 وضع داكن</button>
+  </header>
+
+  <div class="card">
+    <h2><span class="emoji">🌐</span> ثورة البرمجة بالارتجال تصل إلى الأجهزة اللعبة</h2>
+    <p>تفحص صحيفة The Verge كيف سينعكس "البرمجة بالارتجال" (Vibe Coding) على الجيل القادم من الأجهزة المنزلية والذكية، وتحوّل مفهوم البرمجة من كتابة الكود إلى إدارة الناتج.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛠</span> Trix: مساحة عمل طرفية تفهم وكلاء البرمجة</h2>
+    <p>نشر فريق Trix مشروعاً جديداً لworkspace للوكلاء البرمجيين، يبين لأي نقطة تحتاج التدخل أثناء الإكمال التلقائي، ويحوّل سجل الأوامر إلى بيئة تعاونية.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٦٦</span><a class="src" href="https://trixapp.ai/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔍</span> Taskless: تحويل PR comments إلى فحوص آلية</h2>
+    <p>أطلقتِ Toolboxً حديثة تحوّل تعليقات طلبات الدمج (PR comments) وملفات AGENTS.md إلى فحوص قابلة للتنفيذ تلقائياً، لإزالة الحواجز بين الحديث عن العمل والتحقق منه.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.taskless.io/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📋</span> ToolJet 4.0: البرمجة الجوّية للأدوات الداخلية</h2>
+    <p>أطلق المطورون إصدار 4.0 من ToolJet، إطار العمل المفتوح المصدر لبناء أدوات داخلية، مع حوكمة صارمة، وواجهات برمجية قابلة للتصدير، ودعم دوري الوصول.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://tooljet.com" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📹</span> كيف تستخدم Claude Code مجاناً مع ١٠ مليارات رمز</h2>
+    <p>يشرح فيديو حلّ المستودعات جهاز كمبيوتر شقيق كيفية تشغيل Claude Code مجاناً باستخدام مفاتيح LLM منخفضة التكلفة، ودليل خطوة بخطوة لضبط الإعداد.</p>
+    <p class="vid">🎬 دليل عملي لاستخدام Claude Code مجاناً مع ١٠ مليارات رمز باستخدام مفاتيح LLM منخفضة التكلفة.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=pxxFxDEAoUs" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">⚔️</span> وكلاء الذكاء الاصطناعي حققوا اختراقاً أمنياً ذاتياً</h2>
+    <p>أكدت AWS أن جهة مرتبطة بالصين استخدمت وكلاءاً ذاتياً لاكتشاف واستغلال ثغرة يوم الصفر في خادم جامعي، ما أثار تساؤلات حول ضوابط الوكلاء المستقلين.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🤖</span> OpenNotebook: نسخة ذاتية الاستضافة من NotebookLM</h2>
+    <p>نشر مطوّر مشروع OpenNotebook، وهو بديل مفتوح المصدر لـ NotebookLM، يتيح إنشاء ملخصات فيديو ونصوص من المستندات المرفوعة على الخادم الشخصي.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://github.com/mahmoud-emad/opennotebook" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📹</span> كيف توصّل لربط Claude Code بمفاتيح LLM مجانية</h2>
+    <p>شرح استراتيجي سريع لربط Claude Code بمفاتيح LLM مجانية، وكيفية إدارة الحصص اليومية دون الحاجة إلى بطاقة ائتمان.</p>
+    <p class="vid">🎬 دليل عملي لربط Claude Code بمفاتيح LLM مجانية وإدارة الحصص اليومية.</p>
+    <div class="row"><span class="date">١٦ نوفمبر ٢٠٢٦</span><a class="src" href="https://www.youtube.com/watch?v=6rT7MhOaqAo" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">💾</span> Klistra: محرر فيديو ذكي لبيانات المنتجات</h2>
+    <p>أطلق فريق Klistra منصة ذكاء اصطناعي واحدة لصنع مقاطع الفيديو الترويجية والشهادات والإعلانات، بدون الحاجة إلى منظومة أدوات مستقلة.</p>
+    <div class="row"><span class="date">٢١ نوفمبر ٢٠٢٦</span><a class="src" href="https://klistra.ai/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧠</span> الدروس من بناء تقييمات للوكلاء البرمجيين</h2>
+    <p>تأمل مطوّر في التجارب التي قام بها لبناء تقييمات لوكيل برمجي، ويدافع عن أهمية مقاييس التقييم الدقيقة على التأكيدات العشوائية حول الأداء.</p>
+    <div class="row"><span class="date">٢٢ نوفمبر ٢٠٢٦</span><a class="src" href="https://dblc.fyi/blog/a-retrospective-on-ai-evaluations/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🎲</span> سوق تداول تنبؤي مقيّد بالوكلاء الذكاء الاصطناعي</h2>
+    <p>نشر فريق Source HN مشروعاً لسوق تنبؤي استثماريّ، يسمح للوكلاء الذكاء الاصطناعي فقط بالتداول في عقود التنبؤ بالأحداث القادمة.</p>
+    <div class="row"><span class="date">٢٠ نوفمبر ٢٠٦٦</span><a class="src" href="https://www.vaticin.ai/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🧵</span> تغيّر رأي مطوّر في بروتوكول MCP بعد تجربة حقيقية</h2>
+    <p>نشر مطوّر مقالاً مفتوحاً يشرح كيف تغيّر موقفه من بروتوكول MCP بعد استخدامه في مشروع حقيقي، ويحدّث توصياته للمطورين الجديد.</p>
+    <div class="row"><span class="date">٢٣ نوفمبر ٢٠٢٦</span><a class="src" href="https://frantic.im/mcp/" target="_blank" rel="noopener">المصدر ↗</a></div>
+  </div>
+
+  <footer>نشرة الذكاء الآلية — أخبار مختارة من مصادرها الأصلية خلال الأيام العشرة الماضية.<br>حقوق المحتوى متاحة للجميع.</footer>
+</div>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeBtn');
+    function apply(theme){
+      root.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'dark' ? '☀️ وضع فاتح' : '🌙 وضع داكن';
+    }
+    apply('light');
+    btn.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(next);
+    });
+    function updateOffline(){ document.body.classList.toggle('is-offline', !navigator.onLine); }
+    window.addEventListener('online', updateOffline);
+    window.addEventListener('offline', updateOffline);
+    updateOffline();
+    if ('serviceWorker' in navigator) {
+      var swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)||new Response('<html dir=\\"rtl\\"><body style=\\"font-family:sans-serif;padding:2rem;text-align:center\\"><h2>لا يوجد اتصال</h2><p>تحقق من الإنترنت ثم أعد المحاولة.</p></body></html>',{headers:{'Content-Type':'text/html; charset=utf-8'}})));}else{e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));}});";
+      try {
+        var blob = new Blob([swCode], {type: 'text/javascript'});
+        var url = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(url).catch(function(){}).catch(function(){});
+      } catch(e){}
+    }
+  })();
+</script>
+</body>
+</html>
